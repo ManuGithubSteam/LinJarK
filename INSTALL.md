@@ -8,8 +8,9 @@ Installation of linjark
 
 1. Download the Install.sh script and make it executeable:
 
-wget https://github.com/ManuGithubSteam/LinJarK/blob/master/install.sh
-chmod + install.sh
+wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh
+
+chmod +x install.sh
 
 2. Start the script with "i" parameter to start Install
 

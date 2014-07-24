@@ -23,9 +23,9 @@ if [ "$1" == 'i' ]
     
    wget https://bitbucket.org/marytts/marytts/downloads/marytts-5.1.zip
    unzip marytts-5.1.zip
-   wget wget https://github.com/ManuGithubSteam/LinJarK/blob/master/INSTALL.md
+   wget https://github.com/ManuGithubSteam/LinJarK/blob/master/INSTALL.md
    kate INSTALL.md &
-   wget https://github.com/ManuGithubSteam/LinJarK/blob/master/voxforge-de-r20140719.sbm
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/voxforge-de-r20140719.sbm
    
    cd marytts-5.1/bin
    chmod +x marytts-server.sh
