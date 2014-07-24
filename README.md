@@ -9,6 +9,8 @@ Purpose
 This git repo is set up with the goal of providing an more easy solution for GERMAN speaking people to control their PC, house or whatever with their voice.
 Till now this is not really easy, mostly because the German language model does not support the right words for controlling applications and devices. But also because their are no use cases scenarios written for Simon and scripts to implement things in an easy way.
 
+As this is for the GERMAN model I do obviously speak German and you can use that language if you contact me :-)
+
 Inspiration
 ============
 This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his stuff)
@@ -16,7 +18,7 @@ This project is heavily inspired by the Iron Man movies and the speaking JARVIS 
 Goal
 ====
 - Add missing words to the German open source language model.
-- Write the scripts for the backend.
+- Write the scripts for the backend functions.
 - Write Scenarios for Simon to use the backend-scripts and the model.
 - Raise awareness of free, open source GERMAN speech recognition.
 
@@ -52,10 +54,10 @@ I work actively with him to add new words into the model who can than be underst
 
 If you want to know more about the whole model compilation business check out his awesome tools: https://github.com/gooofy/voxforge/
 
-BACKEND: bash scripts to do stuff
+BACKEND: bash scripts do the stuff
 ----------------------------------
 Here is most of the work done. Get the local weather data and play it back to you, get some jokes from the new etc.
-It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. 
+It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.
 
 FRONTEND: Simon
 -----------------
