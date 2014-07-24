@@ -30,10 +30,7 @@ In the component installer, select:
 
 2. Lang Packs:
 
- - dfki-pavogue-neutral
  - dfki-pavogue-neutral-hsmm
- - bits3-hsmm
- 
  
 3. Click on "Install selected"
 

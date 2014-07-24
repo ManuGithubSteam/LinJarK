@@ -35,20 +35,18 @@ if [ "$1" == 'i' ]
    
    cd ~
       
-   echo "PATH=$PATH:/home/$USER/.linjark/bin" >> .bashrc
-   echo "export \$PATH" >> .bashrc
-   echo "PATH=$PATH:/home/$USER/.linjark/bin" >>.bash_profile
-   echo "export \$PATH" >> .bash_profile
+   echo "PATH=\$PATH:/home/$USER/.linjark/bin" >> .bashrc
+   echo "export PATH" >> .bashrc
 
    PATH=$PATH:/home/$USER/.linjark/bin   
-   export $PATH
+   export PATH
    
    
     echo ""
    echo ""
     echo "#########"
     echo "# ATTENTION!!! PATH variable is modified to be able to launch scripts in .linjark/bin"
-     echo "# .bashrc, .bash_profile was altered!"
+     echo "# .bashrc was altered!"
      echo "#"
      echo "#  PATH=$PATH:/home/$USER/.linjark/bin  "
      echo "#   make sure it gets EXPORTED everytime before you start simon!"
