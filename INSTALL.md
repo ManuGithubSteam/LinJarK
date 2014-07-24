@@ -7,15 +7,15 @@ Installation of linjark
 ------------------------
 
 1. Download the Install.sh script and make it executeable:
-
+```
 wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh
 
 chmod +x install.sh
-
+```
 2. Start the script with "i" parameter to start Install
-
+```
 ./install.sh i
-
+```
 NOTE: Be aware that "/home/$USER/.linjark/bin" gets added to your $PATH var. Be sure that your .bashrc is called or .bash_profile gets executed on login, otherwiese Simon will not function properly!
 
 
