@@ -20,6 +20,7 @@ So my bash script must be able to download a local weather forecast and extract 
 Then generate the Simon scenario and test your work!
 
 NOTE: When you make a Simon Scenario be sure to include a "Training" Section so the user can train the used sentences!
+Also note the naming sheme: [DE/VF/SPHINX] NAME
 
 If the script needs user interaction you should supply a Readme file with the script and explain what needs to be done for ex. placing a local Weather URL code in the script.
 
@@ -32,9 +33,17 @@ scripts go into .linjark/scripts
 
 scripts for a module like "Weather" go into a subfolder: .linjark/scripts/weather
 
+a link from the script goes to .linjark/bin
+
+ALL script links in .linjark/bin are named: linjark_NAME (eg_ linjark_weather)
+
 The local MarryTTS goes into .linjark so it becomes .linjark/marytts-5.1
 
-This is important as you need to refer these paths in the bash scripts to make marry speak with the user and also to link from the simon scenario to the scripts etc.
+This is important as you need to refer these paths in the bash scripts to make marry speak with the user.
+
+__IMPORTANT:__ as Simon can not refer to paths like "~" all scripts need to be adressd with the name who is in .linjark/bin
+
+The __Path__ var of the user will be modiefied to search in .linjark/bin for the script names!!!
 
 __Distribution of modules__
 

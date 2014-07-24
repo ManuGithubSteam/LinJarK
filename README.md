@@ -2,6 +2,8 @@ Status
 =======
 Waiting for the new model from Guenter :-) Thanks a lot for the great work!
 
+ - The current model has only very limited words for controlling some programs and get some basic info.
+
 Always check out: FeatureMatrix.ods
 
 Purpose
@@ -25,7 +27,7 @@ Goal
 - Raise awareness of free, open source GERMAN speech recognition.
 
 - Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux deskop.
-  - A graphics designer would be needed here for the background image
+  - A graphics designer would be needed here for the background image! Please help if you can draw :-D
 - Get all of this stuff onto the Raspberry PI or a similar micro computer (ARM)
 
 Structure / Used technologies
@@ -42,7 +44,7 @@ When you speak in your microphone, simon is comparing your speech with the data 
 
 BASE: language model
 ---------------------
-For a PC to understand humans he needs to know how they sound and what words they use. He does that with a language model. 
+For a PC to understand humans he needs to know how they sound and what words they use. He does that with a language model. It is the brain of this project :-D
 There are two types of models that describe language - grammars and statistical language models. Grammars describe very simple types of languages for command and control, and they are usually written by hand or generated automatically with plain code. 
 
 However, for now not even all command and control words are in the GERMAN language model.
@@ -58,13 +60,13 @@ If you want to know more about the whole model compilation business check out hi
 
 BACKEND: bash scripts do the stuff
 ----------------------------------
-Here is most of the work done. Get the local weather data and play it back to you, get some jokes from the new etc.
+Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the new etc.
 It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.
 
 FRONTEND: Simon
 -----------------
 
-Another great program, it is very powerful and the dev is really helpful and nice guy! I use Simon to do various things from me:
+Great program, it is very powerful and heart of this project the dev is really helpful and nice guy! I use Simon to do various things from me:
 
 - Break down the functionality of the scripts into modules (called Scenarios), so someone can only use the "Search" module and don't has to install all the other modules like Translation etc.
 - It is possible to train the speech model with it to your voice so it understands you better (very important)
@@ -76,7 +78,7 @@ Check out Simon here: http://grasch.net/blog and here https://simon.kde.org/
 
 MarryTTS is used to generate spoken responses and output of the Data. -> https://github.com/marytts/marytts
 
-Want to help ?
+Want to help !?
 ==============
 
 Just get in touch! Help is always needed and there is plenty to do!
