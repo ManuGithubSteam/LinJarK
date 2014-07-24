@@ -11,6 +11,8 @@ Till now this is not really easy, mostly because the German language model does 
 
 As this is for the GERMAN model I do obviously speak German and you can use that language if you contact me :-)
 
+__However this stuff can also be adapted to any other language. As long as there is a language model for it.__
+
 Inspiration
 ============
 This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his stuff)

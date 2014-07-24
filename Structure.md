@@ -19,6 +19,8 @@ For this just think what sould be done. For exampple: When i say 'Computer Wette
 So my bash script must be able to download a local weather forecast and extract some data like temperature and give them to MarryTTS for speaking. After this is done you can start on your activation sentences like: "Computer wie wird das Wetter heute" if you put them into the .ods sheet make sure not to double use some variables for different words.
 Then generate the Simon scenario and test your work!
 
+NOTE: When you make a Simon Scenario be sure to include a "Training" Section so the user can train the used sentences!
+
 If the script needs user interaction you should supply a Readme file with the script and explain what needs to be done for ex. placing a local Weather URL code in the script.
 
 Important stuff you need to know:
@@ -33,6 +35,16 @@ scripts for a module like "Weather" go into a subfolder: .linjark/scripts/weathe
 The local MarryTTS goes into .linjark so it becomes .linjark/marytts-5.1
 
 This is important as you need to refer these paths in the bash scripts to make marry speak with the user and also to link from the simon scenario to the scripts etc.
+
+__Distribution of modules__
+
+A module package is a NAME.tar.gz package who consists of the following files:
+
+scenarioNAME.scenario (Your generated Scenario for Simon to import, gets extracted into the HOME dir)
+.linjark/scripts/FOLDERNAME (Your scriptsfolder, extracts to the .linjark/scripts/ folder)
+
+Note: Your FOLDERNAME folder can hold any files necessary for the scenario to function, like pictures etc. 
+
 
 What's with the J_w# grammar??
 ---------------------------
@@ -51,7 +63,7 @@ Desired Sentence structure: A B2 B3 C2
 
 Now simon would compute solutions like this:
 
-
+```
 A B1 B3 C1
 A B2 B1 C1
 A B2 B3 C1
@@ -71,6 +83,7 @@ A B2 C1
 A B1 C2 
 A B3 C2
 A B2 C2
+```
 
 But only A B1 C1 and A B2 B3 C2 are valid and would trigger the start of a script.
 

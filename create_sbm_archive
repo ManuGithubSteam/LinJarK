@@ -1,0 +1,126 @@
+#!/bin/bash
+# Copyright GPL3
+
+dat=$(date +"%Y-%m-%d")
+dat2=$(echo "$dat""T00:00:00")
+
+echo ""
+echo ".sbm archive creator 0.2"
+echo ""
+echo ""
+echo "Use this in the same directory as the voxforge achive is!"
+echo ""
+echo "Please specify the archive name:"
+echo ""
+
+ls --color=always
+echo ""
+echo ""
+read archname
+echo ""
+
+if [ -z "$archname" ]; then
+    echo ""
+    echo "You must specify a arcive name"
+    echo "exiting"
+    echo ""
+    exit
+fi
+
+tar xzf $archname
+echo ""
+echo "tar extract ok"
+echo ""
+
+echo ""
+echo "please specify the ending of the archive with . eg: .tar.bz2"
+echo ""
+read end
+echo ""
+
+# remove endig .tgz .tar.bz2 or tar.gz brute force method
+cdname=$(echo $archname | sed s"/$end//")
+#cdname2=$(echo "$cdname*")
+
+echo $cdname
+
+cd $cdname
+
+cd model_parameters/*
+
+pwd
+
+#create metadata.xml
+awk_path="./metadata.xml" 
+
+cat > "${awk_path}" <<EOT
+<baseModel>
+ <name>SED1</name>
+ <creationDate>SED2</creationDate>
+ <type>SPHINX</type>
+</baseModel>
+EOT
+
+na=$cdname
+
+
+echo ""
+echo "$cdname"
+echo ""
+echo "Please specify the name of the language base modul:"
+echo "Enter to skip"
+echo ""
+
+read newNA
+
+if [ -z "$newNA" ]; then
+    echo ""
+    echo "using default name $cdname" 
+    echo ""
+    
+else
+    echo ""
+    echo "Using enterned name: $newNA"
+    echo ""
+    na=$newNA
+fi
+# modify name of the sbm package
+sed -i "s/SED1/$na/g" metadata.xml
+sed -i "s/SED2/$dat2/g" metadata.xml
+
+#echo "inside"
+#pwd
+tar -cvf tarballname.tar *
+gzip tarballname.tar
+
+mv tarballname.tar.gz $na.sbm
+
+cp $na.sbm ../../../
+
+rm $na.sbm
+
+echo ""
+echo ""
+echo "Successfully created sbm archive for Simon"
+echo ""
+
+echo ""
+ls --color=always | grep --color=always $na
+echo ""
+
+echo "Copying the correct Dictionary to it."
+echo ""
+
+#pwd
+cd ../../
+#pwd
+lol="_dict.dic"
+na3="$na$lol"
+#cpme=$(echo "cp etc/voxforge.dic ../$na3")
+#echo $cpme
+cp "etc/voxforge.dic" "../$na3"
+
+echo ""
+echo ""
+echo "finished"
+echo ""
