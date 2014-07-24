@@ -23,7 +23,8 @@ if [ "$1" == 'i' ]
     
    wget https://bitbucket.org/marytts/marytts/downloads/marytts-5.1.zip
    unzip marytts-5.1.zip
-   wget https://github.com/ManuGithubSteam/LinJarK/blob/master/INSTALL.md
+   wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL.md
+   sleep 4 
    kate INSTALL.md &
    wget https://github.com/ManuGithubSteam/LinJarK/raw/master/voxforge-de-r20140719.sbm
    
@@ -43,14 +44,15 @@ if [ "$1" == 'i' ]
    export $PATH
    
    
-   
-   echo ""
     echo ""
-    echo "ATTENTION!!! PATH variable is modified to be able to launch scripts in .linjark/bin"
-     echo ".bashrc, .bash_profile was altered!"
+   echo ""
+    echo "#########"
+    echo "# ATTENTION!!! PATH variable is modified to be able to launch scripts in .linjark/bin"
+     echo "# .bashrc, .bash_profile was altered!"
+     echo "#"
+     echo "#  PATH=$PATH:/home/$USER/.linjark/bin  "
+     echo "#   make sure it gets EXPORTED everytime before you start simon!"
+     echo "#########"
      echo ""
-     echo "   make sure it gets EXPORTED everytime before you start simon!"
-     echo ""
-     
     
 fi
