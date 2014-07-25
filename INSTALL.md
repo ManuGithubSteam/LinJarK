@@ -16,8 +16,9 @@ chmod +x install.sh
 ```
 ./install.sh i
 ```
-NOTE: Be aware that "/home/$USER/.linjark/bin" gets added to your $PATH var. Be sure that your .bashrc is called or .bash_profile gets executed on login, otherwiese Simon will not function properly!
 
+IMPORTANT: Be aware that "/home/$USER/.linjark/bin" gets added to your $PATH var. Be sure that your .bashrc is called or .bash_profile gets executed on login, otherwiese Simon will not function properly!
+You can also add the Path to your /etc/environment. Check your distribution dokumentation for that!
 
 Installation of the Marry TTS Lang Packs
 ----------------------------------------
@@ -43,7 +44,7 @@ In the component installer (should be open now), select:
 Installation of Simon
 ----------------------
 
-Use the repository of your distribution to install Simon. It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain, sphinxbase etc). 
+Use the repository of your distribution to install Simon (0.4.1). It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain, sphinxbase etc). 
 
 Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc.
 
@@ -83,5 +84,7 @@ https://github.com/ManuGithubSteam/LinJarK
 Then extract it in your Home folder. The scripts will be automatically installed into the right folder.
 
 Open up Simon and click on "Manage Scenarios" -> "Open" -> "Import from file" then import the .scenario file from your HOME folder.
+
+Check if there is a READEME file in your HOME folder and read it :-)
 
 Enjoy :-)
