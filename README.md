@@ -8,8 +8,9 @@ Always check out: FeatureMatrix in the linjak_grammar#.ods
 
 Purpose
 ========
-This git repo is set up with the goal of providing an more easy solution for GERMAN speaking people to control their PC, house or whatever with their voice.
-Till now this is not really easy, mostly because the German language model does not support the right words for controlling applications and devices. But also because their are no use cases scenarios written for Simon and scripts to implement things in an easy way.
+This git repo is set up with the goal of providing an more easy solution for GERMAN speaking people to control their PC, house or whatever with their voice with open source and free solutions.
+
+Till now this is not really easy, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are no use cases scenarios written for Simon and scripts to implement things in an easy way.
 
 As this is for the GERMAN model I do obviously speak German and you can use that language if you contact me :-)
 
@@ -19,9 +20,11 @@ Inspiration
 ============
 This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his stuff)
 
+Just check out Youtube for some videos etc.
+
 Goal
 ====
-- Add missing words to the German open source language model.
+- Add missing words to the German open source language model. (over 700 added now but model is not yet computed)
 - Write the scripts for the backend functions.
 - Write Scenarios for Simon in German to use the backend-scripts and the model.
 - Raise awareness of free, open source GERMAN speech recognition.
