@@ -4,7 +4,10 @@ Status
 
  - The current model has only very limited words for controlling some programs and get some basic info.
 
-- As Google Speech API v2 now requires personal keys, these Searchmodules will (for now) not be published
+- As Google Speech API v2 now requires personal keys, these modules will (for now) not be published:
+ - Internet search (Amazon, Google etc)
+ - Translation (translate words in other languages)
+ - Music (partly -> the ability to select a specific track by just saying its name) 
  
 Always check out: FeatureMatrix in the linjark_grammar#.ods
 
