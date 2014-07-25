@@ -4,7 +4,7 @@ Waiting for the new model from Guenter :-) Thanks a lot for the great work!
 
  - The current model has only very limited words for controlling some programs and get some basic info.
 
-Always check out: FeatureMatrix.ods
+Always check out: FeatureMatrix in the linjak_grammar#.ods
 
 Purpose
 ========
@@ -23,7 +23,7 @@ Goal
 ====
 - Add missing words to the German open source language model.
 - Write the scripts for the backend functions.
-- Write Scenarios for Simon to use the backend-scripts and the model.
+- Write Scenarios for Simon in German to use the backend-scripts and the model.
 - Raise awareness of free, open source GERMAN speech recognition.
 
 - Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux deskop.
