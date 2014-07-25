@@ -20,6 +20,8 @@ chmod +x install.sh
 IMPORTANT: Be aware that "/home/$USER/.linjark/bin" gets added to your $PATH var. Be sure that your .bashrc is called or .bash_profile gets executed on login, otherwiese Simon will not function properly!
 You can also add the Path to your /etc/environment. Check your distribution dokumentation for that!
 
+NOTE: If you are not happy with the predefined words who are used to adress you (Sir or Miss) just edit .linjark/gender file and write in it waht you want eg. Lord
+
 Installation of the Marry TTS Lang Packs
 ----------------------------------------
 

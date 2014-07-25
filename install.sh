@@ -40,7 +40,7 @@ if [ "$1" == 'i' ]
   echo "Downloading INSTALL.md"
   echo ""
    
-   wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL.md
+   wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL_DE.md
    sleep 4 
    kate INSTALL.md &2> /dev/null
    
