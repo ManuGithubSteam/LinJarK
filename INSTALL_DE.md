@@ -22,6 +22,8 @@ Je nach Desktopumgebung ist es nicht sicher ob der Pfad exportiert wird (KDE wir
 
 Du kannst den Pfad auch in deine /etc/environment eintragen. Ließ dazu die Dokumentation deiner Distribution.
 
+BEACHTE: Falls du nicht glücklich damit sein solltest, wie du angesprochen wirst (Sir, Miss) kannst du das einfach in der Datei /home/$USER/.linjark/gender ändern. zB in Großherzog :-D
+
 Installation des Sprachpaketes für MarryTTS
 -------------------------------------------
 
