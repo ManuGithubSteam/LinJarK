@@ -1,7 +1,7 @@
 Todo
 =====
 
-- Translate INSTALL.md to german :-|
+~~- Translate INSTALL.md to german :-|~~
 ~~- Find formular to get the highest J_w# in ods sheet!~~
 - Upload the working stuff to github
 - Change paths of the working scripts to new location / edit simon scenarios.

@@ -4,7 +4,7 @@ Waiting for the new model from Guenter :-) Thanks a lot for the great work!
 
  - The current model has only very limited words for controlling some programs and get some basic info.
 
-Always check out: FeatureMatrix in the linjak_grammar#.ods
+Always check out: FeatureMatrix in the linjark_grammar#.ods
 
 Purpose
 ========
@@ -20,11 +20,13 @@ Inspiration
 ============
 This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his stuff)
 
-Just check out Youtube for some videos etc. For the english version of the language model and speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
+Just check out Youtube for some videos etc. 
+
+For the english version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
 
 Goal
 ====
-- Add missing words to the German open source language model. (over 700 added now but model is not yet computed)
+- Add missing words to the German open source language model. (over 700 addedm, but model is not yet computed)
 - Write the scripts for the backend functions.
 - Write Scenarios for Simon in German to use the backend-scripts and the model.
 - Raise awareness of free, open source GERMAN speech recognition.
@@ -79,7 +81,13 @@ Great program, it is very powerful and heart of this project the dev is also rea
 
 Check out Simon here: http://grasch.net/blog and here https://simon.kde.org/
 
-MarryTTS is used to generate spoken responses and output of the Data. -> https://github.com/marytts/marytts
+MarryTTS is used to generate spoken responses and output of the data. -> https://github.com/marytts/marytts
+
+Trouble ?
+==========
+
+Please open a "Issue" here on github with a description waht went wrong! Thanks
+
 
 Want to help !?
 ==============
