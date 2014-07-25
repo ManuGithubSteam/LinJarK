@@ -1,9 +1,11 @@
 Status
 =======
-Waiting for the new model from Guenter :-) Thanks a lot for the great work!
+- Waiting for the new model from Guenter :-) Thanks a lot for the great work!
 
  - The current model has only very limited words for controlling some programs and get some basic info.
 
+- As Google Speech API v2 now requires personal keys, these Searchmodules will (for now) not be published
+ 
 Always check out: FeatureMatrix in the linjark_grammar#.ods
 
 Purpose
