@@ -33,15 +33,15 @@ scripts go into .linjark/scripts
 
 scripts for a module like "Weather" go into a subfolder: .linjark/scripts/weather
 
-a link from the script goes to .linjark/bin
+a symbolic link from the script goes to .linjark/bin
 
 ALL script links in .linjark/bin are named: linjark_NAME (eg_ linjark_weather)
 
-The local MarryTTS goes into .linjark so it becomes .linjark/marytts-5.1
+The local MarryTTS gets extracted into .linjark so it becomes .linjark/marytts-5.1
 
 This is important as you need to refer these paths in the bash scripts to make marry speak with the user.
 
-__IMPORTANT:__ as Simon can not refer to paths like "~" all scripts need to be adressd with the name who is in .linjark/bin
+__IMPORTANT:__ as Simon can not refer to paths like "~" all scripts need to be adressd in the scenario commands with the name who is in .linjark/bin
 
 The __Path__ var of the user will be modiefied to search in .linjark/bin for the script names!!!
 
@@ -54,6 +54,9 @@ scenarioNAME.scenario (Your generated Scenario for Simon to import, gets extract
 
 Note: Your FOLDERNAME folder can hold any files necessary for the scenario to function, like pictures etc. 
 
+A README_linjark_NAME file with further inscructions, if the user needs to modify something in the script direclty.
+
+Readmes in another language  the enduser have different sufixes like. README_linjark_NAME.de, README_linjark_NAME.en
 
 What's with the J_w# grammar??
 ---------------------------
