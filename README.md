@@ -45,7 +45,7 @@ Structure / Used technologies
 
 How does all this work ?
 -------------------------
-When you speak in your microphone, Simon is comparing your speech with the data in the language model, if he finds the word in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you.
+When you speak in your microphone, Simon is comparing your speech with the data in the language model, if he finds the word in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you in German with synthesized speech.
 
 BASE: language model
 ---------------------
@@ -77,7 +77,7 @@ Great program, it is very powerful and heart of this project the Dev is also rea
 - It is possible to train the speech model with it to your voice so it understands you better (very important)
 - It handles all the basics like mic calibration, understanding what you are saying, launching commands etc
 - Provides and easy method to change the activation sentences to your likening
-- Can do many more things :-D
+- Can do many more things on its own without the scripts :-D
 
 Check out Simon here: http://grasch.net/blog and here https://simon.kde.org/
 
@@ -95,6 +95,5 @@ Want to help !?
 Just get in touch! Help is always needed and there is plenty to do!
 
 Read the Structure.md and Todo.md
-
 
 
