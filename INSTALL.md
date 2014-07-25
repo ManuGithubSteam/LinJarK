@@ -46,7 +46,7 @@ Installation of Simon
 
 Use the repository of your distribution to install Simon (0.4.1). It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain, sphinxbase etc). 
 
-Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc.
+Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc. You can test this for example with Audacity :-D
 
 See: 
 

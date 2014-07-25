@@ -6,21 +6,21 @@ Installationshinweise für die verschiedenen Programme. Alles (außer Simon) wir
 Installation von linjark
 ------------------------
 
-1. Downloade das install.sh skript und mache es ausführbar:
+1. Downloade das install.sh Skript und mache es ausführbar:
 ```
 wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh
 
 chmod +x install.sh
 ```
-2. Starte das script mit dem "i" parameter um die installation zu starten
+2. Starte das Script mit dem "i" Parameter um die Installation zu starten
 ```
 ./install.sh i
 ```
 
-WICHTIG: Der Pfad "/home/$USER/.linjark/bin" wird zur $PATH variable hinzugefügt. Es sollte sichergestellt sein,das die .bashrc aufegrufen wird, und Simon über die neue Path variable bescheid weiß, sonst funktioniert Simon nicht richtig.
+WICHTIG: Der Pfad "/home/$USER/.linjark/bin" wird zur $PATH variable hinzugefügt. Es sollte sichergestellt sein,das die .bashrc aufegrufen wird, und Simon über die neue Path variable Bescheid weiß, sonst funktioniert Simon nicht richtig.
 Je nach Desktopumgebung ist es nicht sicher ob der Pfad exportiert wird (KDE wird unterstützt, ggf ist ein re-login nötig.)
 
-Du kannst den Pfad auch in deine /etc/environment eintragen. Leis dazu die dokumenation deiner distribution.
+Du kannst den Pfad auch in deine /etc/environment eintragen. Ließ dazu die Dokumentation deiner Distribution.
 
 Installation des Sprachpaketes für MarryTTS
 -------------------------------------------
@@ -39,16 +39,16 @@ Wähle im Komponenten-Installer (sollte jetzt schon geöffnet sein) folgendes:
 
 4. Akzeptiere die Lizenz
 
-5. Warte bis der Download des Paketes abgeschloßen ist und schliese dann den Komponenten-Installer
+5. Warte bis der Download des Paketes abgeschlossen ist und schließe dann den Komponenten-Installer
 
-6. Fahre mit der linjark installation fort (in der Konsole -> geschlecht wählen)
+6. Fahre mit der linjark Installation fort (in der Konsole -> Geschlecht wählen)
 
 Installation von Simon
 ----------------------
 
-Benutze das Repository deiner distribution um Simon (0.4.1) zu Installieren. Es ist ein KDE programm und hat KDE Abhängigkeiten und auch noch welche um das Sprachmodel an zu passen (sphinxtrain, sphinxbase etc)
+Benutze das Repository deiner Distribution um Simon (0.4.1) zu Installieren. Es ist ein KDE Programm und hat KDE Abhängigkeiten und auch noch welche um das Sprachmodel an zu passen (sphinxtrain, sphinxbase etc)
 
-Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikorphon kalibriert und erkannt wird.
+Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird.
 
 Siehe auch: 
 
@@ -66,11 +66,11 @@ Klicke auf "Configure Accoustic Model" -> "Open Model" -> Import
 
 Nun gehe in das Verzeichniss /home/$USER/.linjark/ hier sollte sich eine .sbm Datei befinden. Importiere diese Datei.
 
-Wähle die box: "Adapt base model....." an um das Standartmodel deiner Sprache mit training an zu passen.
+Wähle die box: "Adapt base model....." an um das Standartmodel deiner Sprache mit Training an zu passen.
 
-INFO: Das Model zu trainieren und die verbesserte version "ausrechnen"  zu lassen, kann sehr viele Stunden in Anspruch nehmen. Das hängt von CPU und RAM ab.
+INFO: Das Model zu trainieren und die verbesserte Version "ausrechnen"  zu lassen, kann sehr viele Stunden in Anspruch nehmen. Das hängt von CPU und RAM ab.
 
-TIPP: Simon startet nach __jedem__ abgeschloßenen Training die berechung den neuen Modells. Deshalb ist es eine gute Idee unter "Datei" "Verbindung mit Server" den Haken zu entfernen. 
+TIPP: Simon startet nach __jedem__ abgeschlossenen Training die Berechnung den neuen Modells. Deshalb ist es eine gute Idee unter "Datei" "Verbindung mit Server" den Haken zu entfernen. 
 
 Dadurch wird das Modell nicht immer neu berechnet. 
 Wenn man dann mit dem trainieren fertig ist, kann man den hacken wieder rein machen. Dann wird das Modell mit deinem Sprachmuster gebaut.
@@ -78,13 +78,13 @@ Wenn man dann mit dem trainieren fertig ist, kann man den hacken wieder rein mac
 Installation von Modulen
 ------------------------
 
-Gehe auf Github in den "modules" Order und lade dir die Module in dein Homeverzeichniss herunter.
+Gehe auf Github in den "modules" Order und lade dir die Module in dein Homeverzeichnis herunter.
 
 https://github.com/ManuGithubSteam/LinJarK
 
-Entpacke das tar.gz (ohne! Autodetct Unterordner), die scripte werde automatisch an die richtigen Stellen entpackt.
+Entpacke das tar.gz (ohne! autodetect Unterordner), die Scripte werde automatisch an die richtigen Stellen entpackt.
 
-Öffne Simon und klicke auf "Manage Scenarios" -> "Open" -> "Import from file" dann wähst du die .scenario Datei aus, die sich in dein HOME entpackt hat.
+Öffne Simon und klicke auf "Manage Scenarios" -> "Open" -> "Import from file" dann wählst du die .scenario Datei aus, die sich in dein HOME entpackt hat.
 
 Achte drauf, ob auch eine README entpackt wurde. LESEN!
 

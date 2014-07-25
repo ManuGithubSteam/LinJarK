@@ -18,34 +18,34 @@ __However this stuff can also be adapted to any other language. As long as there
 
 Inspiration
 ============
-This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his stuff)
+This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his work!)
 
 Just check out Youtube for some videos etc. 
 
-For the english version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
+For the English version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
 
 Goal
 ====
-- Add missing words to the German open source language model. (over 700 addedm, but model is not yet computed)
+- Add missing words to the German open source language model. (already over 700 added, but new model is not yet computed)
 - Write the scripts for the backend functions.
 - Write Scenarios for Simon in German to use the backend-scripts and the model.
-- Raise awareness of free, open source GERMAN speech recognition.
+- Raise awareness of free, open source speech recognition, particularly the german model.
 
 - Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux deskop.
   - A graphics designer would be needed here for the background image! Please help if you can draw :-D
-- Get all of this stuff onto the Raspberry PI or a similar micro computer (ARM)
+- Get all of this stuff onto the Raspberry PI or a similar micro computer (ARM) for home automation.
 
 Structure / Used technologies
 =============================
 
 - How does all this work ?
 - Base: language model
-- Backend: Bash-Scripts who do various things
+- Backend: Bash-scripts who do various things
 - Frontend: Simon and MarryTTS
 
 How does all this work ?
 -------------------------
-When you speak in your microphone, simon is comparing your speech with the data in the language model, if he finds the word in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you.
+When you speak in your microphone, Simon is comparing your speech with the data in the language model, if he finds the word in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you.
 
 BASE: language model
 ---------------------
@@ -56,7 +56,7 @@ However, for now not even all command and control words are in the open source G
 
 I use the German language model from Voxforge: http://voxforge.org/
 
-More specificly the on from Guenter: http://goofy.zamia.org/voxforge/
+More specific the on from Guenter: http://goofy.zamia.org/voxforge/
 
 I relay on Guenter to publish new language models (as they wont compile on my machine for some miraculous reason).
 I work actively with him to add new words into the model who can than be understood by Simon and used for doning cool stuff.
@@ -71,7 +71,7 @@ It is all done here. I use bash scripts for this because they are easy to unders
 FRONTEND: Simon
 -----------------
 
-Great program, it is very powerful and heart of this project the dev is also really helpful and nice guy! I use Simon to do various things from me:
+Great program, it is very powerful and heart of this project the Dev is also really helpful and nice guy! I use Simon to do various things from me:
 
 - Break down the functionality of the scripts into modules (called Scenarios), so someone can only use the "Search" module and don't has to install all the other modules like Translation etc.
 - It is possible to train the speech model with it to your voice so it understands you better (very important)
@@ -86,7 +86,7 @@ MarryTTS is used to generate spoken responses and output of the data. -> https:/
 Trouble ?
 ==========
 
-Please open a "Issue" here on github with a description waht went wrong! Thanks
+Please open a "Issue" here on github with a description what went wrong! Thanks.
 
 
 Want to help !?
