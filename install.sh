@@ -42,7 +42,7 @@ if [ "$1" == 'i' ]
    
    wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL.md
    sleep 4 
-   kate INSTALL.md &
+   kate INSTALL.md &2> /dev/null
    
      echo ""
   echo "Downloading LM"
@@ -67,8 +67,8 @@ if [ "$1" == 'i' ]
    if [ $XDG_CURRENT_DESKTOP == 'KDE' ]
   then
   
-   mkdir  ~/.kde4/env/
-   awk_path="~/.kde4/env/linjark_path.sh"
+   mkdir  $HOME.kde4/env/
+   awk_path="$HOME.kde4/env/linjark_path.sh"
 cat > "${awk_path}" <<EOT
 #!/bin/bash
 PATH=\$PATH:/home/$USER/.linjark/bin"

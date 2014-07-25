@@ -22,9 +22,9 @@ NOTE: Be aware that "/home/$USER/.linjark/bin" gets added to your $PATH var. Be 
 Installation of the Marry TTS Lang Packs
 ----------------------------------------
 
-To use MarryTTS you need to install 3 lang packs.
+To use MarryTTS you need to install one language pack.
 
-In the component installer, select:
+In the component installer (should be open now), select:
 
 1. Language: DE
 
@@ -34,12 +34,18 @@ In the component installer, select:
  
 3. Click on "Install selected"
 
+4. Accept License
+
+5. Wait till download is finished and close the application.
+
+6. Continue with the install of linjark (gender selection in bash)
+
 Installation of Simon
 ----------------------
 
-Use the repository of your distribution to install Simon. It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain etc). 
+Use the repository of your distribution to install Simon. It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain, sphinxbase etc). 
 
-Also make sure that your mic is properly configured and seen/heard by simon and alsa etc.
+Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc.
 
 See: 
 
@@ -48,13 +54,14 @@ https://userbase.kde.org/Simon/Handbook
 
 In general it is a very good idea to read the handbook! Simon must work correctly for the speech recognition. 
 
+If you compile it from source, make sure that +nls, +sphinx are compiled in!
 
 Installation of the language model
 -----------------------------------
 
 Navigate in Simon to "Configure Accoustic Model" -> "Open Model" -> Import
 
-Now navigate to /home/USER/.linjark/ there sould be an .sbm file. Import it.
+Now navigate to /home/$USER/.linjark/ there sould be an .sbm file. Import it.
 
 Tick the box: "Adapt base model....."
 
@@ -69,7 +76,7 @@ Tick the box again and the model will compile with your speech patterns.
 Installation of Modules
 ------------------------
 
-Go into the modules folder on github and download the module you want.
+Go into the modules folder on Github and download the module you want.
 
 https://github.com/ManuGithubSteam/LinJarK
 
