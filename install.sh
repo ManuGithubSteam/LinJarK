@@ -64,32 +64,7 @@ if [ "$1" == 'i' ]
   echo "Edit PATH variable to be able to launch scripts"
   echo ""
    
-   if [ $XDG_CURRENT_DESKTOP == 'KDE' ]
-  then
-  
-   mkdir  $HOME.kde4/env/
-   awk_path="$HOME.kde4/env/linjark_path.sh"
-cat > "${awk_path}" <<EOT
-#!/bin/bash
-PATH=\$PATH:/home/$USER/.linjark/bin"
-export PATH
-EOT
-chmod u+x "${awk_path}"
-   
-    echo ""
-   echo ""
-    echo "#########"
-    echo "# ATTENTION!!! PATH variable is modified to be able to launch scripts in .linjark/bin"
-     echo "# ~/.kde4/env/linjark_path.sh was created!"
-     echo "#"
-     echo "#  PATH=\$PATH:/home/$USER/.linjark/bin  "
-     echo "#   make sure it gets EXPORTED everytime before you start Simon!"
-     echo "#"
-     echo "#########"
-     echo ""
-
-else
-   echo "PATH=\$PATH:/home/$USER/.linjark/bin" >> .bashrc
+  echo "PATH=\$PATH:/home/$USER/.linjark/bin" >> .bashrc
    echo "export PATH" >> .bashrc
 
       
@@ -105,8 +80,6 @@ else
      echo "#########"
      echo ""
    
-   
-   fi
    
    PATH=$PATH:/home/$USER/.linjark/bin   
    export PATH
