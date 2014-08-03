@@ -18,7 +18,7 @@ Purpose
 ========
 This git repository is set up with the goal of providing a __more easy solution__ for German speaking people to control their PC, house or whatever with their voice with *open source and free solutions.*
 
-*The more easiness comes in an install.sh that will install some of the components needed for successful speech recognition and provide guidance for installing them and also providing some Scenarios for Simon to use :-D.*
+*The more easiness comes in an install.sh that will install some of the components needed for successful speech recognition and provide guidance for installing the rest and also providing some Scenarios for Simon to use :-D.*
 
 Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are no use-case scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
 
@@ -70,7 +70,7 @@ I work actively with him to add new words into the model who can than be underst
 
 If you want to know more about the whole model compilation business check out his awesome tools: https://github.com/gooofy/voxforge/
 
-BACKEND: bash scripts do the stuff
+BACKEND: bash scripts do the stuff .-)
 ----------------------------------
 Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the net, switch on a lamp etc.
 It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.
