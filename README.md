@@ -24,6 +24,11 @@ Till now this is not really an easy task, mostly because the __open source__ Ger
 
 __However this stuff can also be adapted to any other language. As long as there is a language model for it.__
 
+How does all this work ?
+=========================
+
+When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (in German) with synthesized speech and display the requested information with the scripts.
+
 Goal
 ====
 - Add missing words to the German open source language model. (already over 700 words added, but new model is not yet computed)
@@ -47,14 +52,9 @@ For the English version of the language model / speech recognition check out Bla
 Structure / Used technologies
 =============================
 
-- How does all this work ?
 - Base: language model
 - Backend: Bash-scripts who do various things and MarryTTS
 - Frontend: Simon 
-
-How does all this work ?
--------------------------
-When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (in German) with synthesized speech and display the requested information with the scripts.
 
 BASE: language model
 ---------------------
