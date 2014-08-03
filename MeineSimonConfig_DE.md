@@ -1,11 +1,11 @@
 Meine Simon config
 ================
 
-Meine Anmerkungen zur Simon konfiguration.
+Meine Anmerkungen zur Simon Konfiguration.
 
 Es gibt keine Grantie, das diese Einstellungen gut für deine Hardwarwe sind. Jede Hardware ist verwschieden!
 
-Lies das Handbuch zu Simon!
+Lies das Handbuch von Simon!
 
 ##############
 
@@ -18,7 +18,7 @@ Signal Noise Ratio: 500 (kommt auf die Umgebungsgeräusche an)
 Volume calibatrion: ja
 Power Training: ja  	(am Anfang nicht empfohlen!)
 
-Show warning when ther is a problem with a sample: yes
+Show warning when there is a problem with a sample: yes
 
 Adapt base model using Training samples: ja (sehr wichtig!!!!)
 
