@@ -1,7 +1,16 @@
 Install
 ========
 
+Um Spracherkennung unter Linux einzurichten, benötigt man vier Dinge:
+
+- Ein Sprachmodel, dass die gesagten Wörter enthällt
+- Simon das Spracherkennungsprogramm (gleicht das Gesagte mit dem Model ab)
+- MarryTTS, der Sprachsynthesizer um Antworten zu bekommen
+- Ein Scenario für Simon, um Befehle oder ähnliches auszuführen, wenn ein Satz erkannt wurde
+
 Installationshinweise für die verschiedenen Programme. Alles (außer Simon) wird nach $HOME/.linjark installiert.
+
+Zuerst downloaden wir das LinJarK Script, dieses wird einiges schon einrichten und installieren, so dass weniger Handarbeit erforderlich ist.
 
 Installation von linjark
 ------------------------
@@ -50,6 +59,17 @@ Installation von Simon
 
 Benutze das Repository deiner Distribution um Simon (0.4.1) zu Installieren. Es ist ein KDE Programm und hat KDE Abhängigkeiten und auch noch welche um das Sprachmodel an zu passen (sphinxtrain, sphinxbase etc)
 
+Für __Gentoo__:
+```
+emerge simon
+```
+
+Für __Debain basierende__ distros:
+
+```
+apt-get install simon
+```
+
 Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird.
 
 Siehe auch: 
@@ -61,7 +81,7 @@ Man sollte unbedingt mal ins Handbuch schauen, um Simon richtig zu konfigurieren
 
 Wenn du Simon von dem Quellen kompilierst, vergewissere dich das +nls, +sphinx einkompiliert sind.
 
-Installation des Sprachenmodells
+Installation des Sprachenmodells in Simon
 ---------------------------------
 
 Klicke auf "Configure Accoustic Model" -> "Open Model" -> Import
