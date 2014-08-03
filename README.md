@@ -8,7 +8,8 @@ Status
 - As Google Speech API v2 now requires personal keys, these modules will (for now) not be published:
  - Internet search (Amazon, Google etc)
  - Translation (translate words in other languages)
- - Music (partly -> the ability to select a specific track by just saying its name) 
+ - Music (partly -> the ability to select a specific track by just saying its name)
+ 
  -> I'm looking into potential replacements
  
 Always check out: FeatureMatrix in the linjark_grammar#.ods and the FAQ.md file
