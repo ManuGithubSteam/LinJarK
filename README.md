@@ -20,20 +20,18 @@ This git repository is set up with the goal of providing a __more easy solution_
 
 *The more easiness comes in an install.sh that will install some of the components needed for successful speech recognition and provide guidance for installing them and also providing some Scenarios for Simon to use :-D.*
 
-Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are no use-case scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketshinx output and launch some stuff (at least of that I know of).
-
-As this is for the German model I do obviously speak German and you can use that language if you contact me :-)
+Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are no use-case scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
 
 __However this stuff can also be adapted to any other language. As long as there is a language model for it.__
 
 Goal
 ====
-- Add missing words to the German open source language model. (already over 700 added, but new model is not yet computed)
+- Add missing words to the German open source language model. (already over 700 words added, but new model is not yet computed)
 - Write the scripts for the backend functions.
-- Write Scenarios for Simon in German to use the backend-scripts and the model.
+- Write Scenarios for Simon in German to use the backend-scripts and the german language model.
 - Raise awareness of free, open source speech recognition, particularly the German model.
 
-- Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux deskop.
+- Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux desktop.
   - A graphics designer would be needed here for the background image! Please help if you can draw :-D
 - Get all of this stuff onto the Raspberry PI or a similar micro computer (ARM) for home automation.
 
@@ -43,7 +41,7 @@ This project is heavily inspired by the Iron Man movies and the speaking JARVIS 
 
 Just check out Youtube for some videos etc. 
 
-For the English version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
+For the English version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube: https://www.youtube.com/watch?v=gr1FZ2F7KYA
 
 
 Structure / Used technologies
@@ -101,6 +99,8 @@ Youtube video: http://www.youtube.com/watch?v=x_9ImaiOISs&list=UUiVicBYegdFX9BnY
 
 Trouble ?
 ==========
+
+As this is for the German model I do obviously speak German and you can use that language if you contact me :-)
 
 Please open a "Issue" here on github with a description what went wrong! Thanks.
 
