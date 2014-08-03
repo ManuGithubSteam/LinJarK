@@ -1,7 +1,17 @@
 Install
 ========
 
+To get speech recognition you need basicly four things:
+
+- A Language model that supports your said words
+- Simon, the speech recognition programm
+- MarryTTS the spreech systesizer to answer you
+- A Scenario for Simon, so some action can be done
+
 This document will guide you through the install process. Everything (apart from Simon) is installed in .linjark in your HOME.
+
+First we will download the linjark script, that in turn will download and install MarryTTS and some other things.
+Be aware that you still need to install Simon from your distribution repository.
 
 Installation of linjark
 ------------------------
@@ -46,7 +56,18 @@ In the component installer (should be open now), select:
 Installation of Simon
 ----------------------
 
-Use the repository of your distribution to install Simon (0.4.1). It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain, sphinxbase etc). 
+Use the repository of your distribution to install Simon (min version: 0.4.1). It is a KDE/QT programm and has KDE/QT depencies among others used for speech model generation (sphinxtrain, sphinxbase etc). 
+
+For __Gentoo__ this would be:
+```
+emerge simon
+```
+
+For __Debain based__ distros:
+
+```
+apt-get install simon
+```
 
 Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc. You can test this for example with Audacity :-D
 
@@ -59,8 +80,8 @@ In general it is a very good idea to read the handbook! Simon must work correctl
 
 If you compile it from source, make sure that +nls, +sphinx are compiled in!
 
-Installation of the language model
------------------------------------
+Installation of the language model in Simon
+---------------------------------------------
 
 Navigate in Simon to "Configure Accoustic Model" -> "Open Model" -> Import
 
@@ -84,7 +105,9 @@ Go into the modules folder on Github and download the module you want.
 https://github.com/ManuGithubSteam/LinJarK
 
 Then extract it in your Home folder. The scripts will be automatically installed into the right folder.
-
+```
+tar xvf MODULE.tar.gz
+```
 Open up Simon and click on "Manage Scenarios" -> "Open" -> "Import from file" then import the .scenario file from your HOME folder.
 
 Check if there is a READEME file in your HOME folder and read it :-)
