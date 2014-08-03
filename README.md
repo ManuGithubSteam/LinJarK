@@ -23,12 +23,10 @@ This git repository is set up with the goal of providing a __more easy solution_
 Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are no use-case scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
 
 __However this stuff can also be adapted to any other language. As long as there is a language model for it.__
-
 How does all this work ?
 =========================
 
-When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, he can understand you. Then he will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (in German) with synthesized speech and display the requested information with the scripts.
-
+When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, it can understand you. Then it will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (in German) with synthesized speech and display the requested information with the scripts.
 Goal
 ====
 - Add missing words to the German open source language model. (already over 700 words added, but new model is not yet computed)
