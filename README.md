@@ -25,15 +25,6 @@ As this is for the German model I do obviously speak German and you can use that
 
 __However this stuff can also be adapted to any other language. As long as there is a language model for it.__
 
-
-Inspiration
-============
-This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his work!)
-
-Just check out Youtube for some videos etc. 
-
-For the English version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
-
 Goal
 ====
 - Add missing words to the German open source language model. (already over 700 added, but new model is not yet computed)
@@ -44,6 +35,15 @@ Goal
 - Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux deskop.
   - A graphics designer would be needed here for the background image! Please help if you can draw :-D
 - Get all of this stuff onto the Raspberry PI or a similar micro computer (ARM) for home automation.
+
+Inspiration
+============
+This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his work!)
+
+Just check out Youtube for some videos etc. 
+
+For the English version of the language model / speech recognition check out Blather: https://gitorious.org/blather/pages/Home or Youtube here: https://www.youtube.com/watch?v=gr1FZ2F7KYA
+
 
 Structure / Used technologies
 =============================
@@ -109,6 +109,6 @@ Want to help !?
 
 Just get in touch! Help is always needed and there is plenty to do!
 
-Read the Structure.md and Todo.md
+__Read the Structure.md, Todo.md and FAQ.md!__
 
 
