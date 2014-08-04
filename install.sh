@@ -28,6 +28,7 @@ if [ "$1" == 'i' ]
     mkdir .linjark
     mkdir .linjark/scripts
     mkdir .linjark/conky
+    mkdir .linjark/bin
     cd .linjark/
       
   echo ""
