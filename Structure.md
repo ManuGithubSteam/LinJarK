@@ -9,7 +9,7 @@ Work flow:
 3. Write the Grammar for Simon and create the scenario in Simon with the grammar from the ods file.
 4. Test the scenario 
 5. Test again
-6. Write me so i can put them on here. 
+6. Write me so i can put them on here or open an Issue on github. 
 
 
 If the words for a particular purpose are in the language model, work can start on the backend scripts.
@@ -29,11 +29,11 @@ Important stuff you need to know:
 
 All the programs needed for the end user should be stored in: /home/$USER/.linjark
 
-scripts go into .linjark/scripts
+Scripts go into .linjark/scripts
 
-scripts for a module like "Weather" go into a subfolder: .linjark/scripts/weather
+Scripts for a module like "Weather" go into a subfolder: .linjark/scripts/weather
 
-a symbolic link from the script goes to .linjark/bin
+A symbolic link from the script goes to .linjark/bin
 
 ALL script links in .linjark/bin are named: linjark_NAME (eg_ linjark_weather)
 
@@ -56,7 +56,9 @@ Note: Your FOLDERNAME folder can hold any files necessary for the scenario to fu
 
 A README_linjark_NAME file with further inscructions, if the user needs to modify something in the script direclty.
 
-Readmes in another language  the enduser have different sufixes like. README_linjark_NAME.de, README_linjark_NAME.en
+A COMMANDS_linjark_NAME file with the speakable commands sould be supplied.
+
+Readme's in another language the enduser have different sufixes like. README_linjark_NAME.de, README_linjark_NAME.en
 
 What's with the J_w# grammar??
 ---------------------------
