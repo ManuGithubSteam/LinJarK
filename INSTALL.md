@@ -32,27 +32,6 @@ You can also add the Path to your /etc/environment. Check your distribution doku
 
 NOTE: If you are not happy with the predefined words who are used to adress you (Sir or Miss) just edit .linjark/gender file and write in it waht you want eg. Lord
 
-Installation of the Marry TTS Lang Packs
-----------------------------------------
-
-To use MarryTTS you need to install one language pack.
-
-In the component installer (should be open now), select:
-
-1. Language: DE
-
-2. Lang Packs:
-
- - dfki-pavogue-neutral-hsmm
- 
-3. Click on "Install selected"
-
-4. Accept License
-
-5. Wait till download is finished and close the application.
-
-6. Continue with the install of linjark (gender selection in bash)
-
 Installation of Simon
 ----------------------
 
@@ -63,7 +42,7 @@ For __Gentoo__ this would be:
 emerge simon pocketsphinx sphinx3 SphinxTrain
 ```
 
-For __Debain based__ distros:
+For __Debain/Ubuntu based__ distros:
 
 ```
 apt-get install simon
