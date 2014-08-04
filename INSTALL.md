@@ -60,7 +60,7 @@ Use the repository of your distribution to install Simon (min version: 0.4.1). I
 
 For __Gentoo__ this would be:
 ```
-emerge simon
+emerge simon pocketsphinx sphinx3 SphinxTrain
 ```
 
 For __Debain based__ distros:

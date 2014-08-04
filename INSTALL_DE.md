@@ -64,10 +64,12 @@ Für __Gentoo__:
 emerge simon
 ```
 
-Für __Debain basierende__ distros:
+Für __Debain basierende (testing)__ distros:
 
 ```
-apt-get install simon
+
+sudo apt-get update
+sudo apt-get install simon
 ```
 
 Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird.
