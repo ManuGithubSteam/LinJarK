@@ -21,7 +21,7 @@ if [ "$1" == 'i' ]
   then
   
   echo ""
-  echo "creating folders"
+  echo "Creating folders"
   echo ""
   
     cd ~
@@ -40,6 +40,7 @@ if [ "$1" == 'i' ]
    
    wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
    tar xf marry_5.1_voice.tar.gz
+   cd ..
      
   echo ""
   echo "Downloading INSTALL.md"
@@ -47,22 +48,22 @@ if [ "$1" == 'i' ]
    
    wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL_DE.md
    sleep 4 
-   kate INSTALL.md &2> /dev/null
+   kate INSTALL_DE.md &2> /dev/null
    
      echo ""
   echo "Downloading LM"
   echo ""
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/voxforge-de-r20140719.sbm
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140719.sbm
    
    cd marytts-5.1/bin
    chmod +x marytts-server.sh
    chmod +x marytts-component-installer.sh
    
-        echo ""
-  echo "Install Marry language pack, see readme for the right one :-)"
-  echo ""
-  ./marytts-component-installer.sh
-   
+#         echo ""
+#   echo "Install Marry language pack, see readme for the right one :-)"
+#   echo ""
+#   ./marytts-component-installer.sh
+#    
    cd ~
    
            echo ""
