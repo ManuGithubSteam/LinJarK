@@ -20,6 +20,6 @@ Power Training: ja  	(am Anfang nicht empfohlen!)
 
 Show warning when there is a problem with a sample: yes
 
-Adapt base model using Training samples: ja (sehr wichtig!!!!)
+Adaptiere Basismodell mit Trainingsaufnahmen: ja (sehr wichtig!!!!)
 
 
