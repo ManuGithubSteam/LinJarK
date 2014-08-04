@@ -40,6 +40,11 @@ if [ "$1" == 'i' ]
    
    wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
    tar xf marry_5.1_voice.tar.gz
+   
+   cd bin
+   chmod +x marytts-server.sh
+   chmod +x marytts-component-installer.sh
+   cd ..
    cd ..
      
   echo ""
@@ -51,13 +56,11 @@ if [ "$1" == 'i' ]
    kate INSTALL_DE.md &2> /dev/null
    
      echo ""
-  echo "Downloading LM"
+  echo "Downloading LM for Simon"
   echo ""
    wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140719.sbm
    
-   cd marytts-5.1/bin
-   chmod +x marytts-server.sh
-   chmod +x marytts-component-installer.sh
+
    
 #         echo ""
 #   echo "Install Marry language pack, see readme for the right one :-)"

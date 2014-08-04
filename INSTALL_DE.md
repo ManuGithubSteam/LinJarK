@@ -33,26 +33,6 @@ Du kannst den Pfad auch in deine /etc/environment eintragen. Ließ dazu die Doku
 
 BEACHTE: Falls du nicht glücklich damit sein solltest, wie du angesprochen wirst (Sir, Miss) kannst du das einfach in der Datei /home/$USER/.linjark/gender ändern. zB in Großherzog :-D
 
-Installation des Sprachpaketes für MarryTTS
--------------------------------------------
-
-Um die Sprachausgabe von MarryTTS nutzen zu können, muss man ein Sprachpaket installieren.
-
-Wähle im Komponenten-Installer (sollte jetzt schon geöffnet sein) folgendes:
-
-1. Language: DE
-
-2. Lang Packs:
-
- - dfki-pavogue-neutral-hsmm
- 
-3. Klicke auf "Install selected"
-
-4. Akzeptiere die Lizenz
-
-5. Warte bis der Download des Paketes abgeschlossen ist und schließe dann den Komponenten-Installer
-
-6. Fahre mit der linjark Installation fort (in der Konsole -> Geschlecht wählen)
 
 Installation von Simon
 ----------------------
@@ -61,14 +41,12 @@ Benutze das Repository deiner Distribution um Simon (0.4.1) zu Installieren. Es 
 
 Für __Gentoo__:
 ```
-emerge simon
+emerge simon 
 ```
 
-Für __Debain basierende (testing)__ distros:
+Für __Debain basierende (testing)/K/ubuntu__ distros:
 
 ```
-
-sudo apt-get update
 sudo apt-get install simon
 ```
 
@@ -86,15 +64,15 @@ Wenn du Simon von dem Quellen kompilierst, vergewissere dich das +nls, +sphinx e
 Installation des Sprachenmodells in Simon
 ---------------------------------
 
-Klicke auf "Configure Accoustic Model" -> "Open Model" -> Import
+Klicke auf "Akustikmodel einrichten" -> "Modell öffnen" -> Importieren
 
 Nun gehe in das Verzeichniss /home/$USER/.linjark/ hier sollte sich eine .sbm Datei befinden. Importiere diese Datei.
 
-Wähle die box: "Adapt base model....." an um das Standartmodel deiner Sprache mit Training an zu passen.
+Wähle die Box: "Adaptiere Basismodell mit Trainingsaufnahmen" an um das Standartmodel deiner Sprache mit Training an zu passen.
 
-INFO: Das Model zu trainieren und die verbesserte Version "ausrechnen"  zu lassen, kann sehr viele Stunden in Anspruch nehmen. Das hängt von CPU und RAM ab.
+INFO: Das Model zu trainieren und die verbesserte Version berechnen zu lassen, kann sehr viele Stunden in Anspruch nehmen. Das hängt von CPU und RAM ab.
 
-TIPP: Simon startet nach __jedem__ abgeschlossenen Training die Berechnung den neuen Modells. Deshalb ist es eine gute Idee unter "Datei" "Verbindung mit Server" den Haken zu entfernen. 
+TIPP: Simon startet nach __jedem__ abgeschlossenen Training die Berechnung des neuen Modells. Deshalb ist es eine gute Idee unter "Datei" "Verbindung mit Server" den Haken zu entfernen wenn man mehrmals Traingsaufnahmen einsprechen will. 
 
 Dadurch wird das Modell nicht immer neu berechnet. 
 Wenn man dann mit dem trainieren fertig ist, kann man den hacken wieder rein machen. Dann wird das Modell mit deinem Sprachmuster gebaut.
@@ -108,7 +86,9 @@ https://github.com/ManuGithubSteam/LinJarK
 
 Entpacke das tar.gz (ohne! autodetect Unterordner), die Scripte werde automatisch an die richtigen Stellen entpackt.
 
-Öffne Simon und klicke auf "Manage Scenarios" -> "Open" -> "Import from file" dann wählst du die .scenario Datei aus, die sich in dein HOME entpackt hat.
+tar xf MODULE.tar.gz
+
+Öffne Simon und klicke auf "Szenarien verwalten" -> "Öffnen" -> "Aus Datei importieren" dann wählst du die .scenario Datei aus, die sich in dein HOME entpackt hat.
 
 Achte drauf, ob auch eine README entpackt wurde. LESEN!
 
