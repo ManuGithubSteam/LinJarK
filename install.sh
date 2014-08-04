@@ -35,6 +35,11 @@ if [ "$1" == 'i' ]
   echo ""
    wget https://bitbucket.org/marytts/marytts/downloads/marytts-5.1.zip
    unzip marytts-5.1.zip
+   
+   cd marytts-5.1
+   
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
+   tar xf marry_5.1_voice.tar.gz
      
   echo ""
   echo "Downloading INSTALL.md"
@@ -56,7 +61,7 @@ if [ "$1" == 'i' ]
         echo ""
   echo "Install Marry language pack, see readme for the right one :-)"
   echo ""
-   ./marytts-component-installer.sh
+  ./marytts-component-installer.sh
    
    cd ~
    
