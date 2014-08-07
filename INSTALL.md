@@ -68,7 +68,7 @@ Now navigate to /home/$USER/.linjark/ there sould be an .sbm file. Import it.
 
 Tick the box: "Adapt base model....."
 
-NOTE: Be aware that training and computing the model can take many hours dependent on CPU and RAM.
+NOTE: Be aware that training and computing the model can take many hours (12 hours and more!!!) dependent on CPU and RAM.
 
 TIP: As Simon want to compile a new model every time you finished __one__ training session it is a good idea to remove the tick in "File" "Connect to server". Then the model will not be compiled. 
 
