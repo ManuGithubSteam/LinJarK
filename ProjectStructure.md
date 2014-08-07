@@ -17,7 +17,9 @@ If the words for a particular purpose are in the language model, work can start 
 For this just think what sould be done. For exampple: When i say 'Computer Wetterbericht' he should speak to me the local weather. 
 
 So my bash script must be able to download a local weather forecast and extract some data like temperature and give them to MarryTTS for speaking. After this is done you can start on your activation sentences like: "Computer wie wird das Wetter heute" if you put them into the .ods sheet make sure not to double use some variables for different words.
-Then generate the Simon scenario and test your work!
+Then generate the Simon scenario and test your work. Be aware that you need to add the "shadow dict" for that to work. 
+
+The shadow dictionary is in SPHINX format and can be found in your local .linjark install folder. It neds to be addred so simon knows what words are in the model.
 
 NOTE: When you make a Simon Scenario be sure to include a "Training" Section so the user can train the used sentences!
 Also note the naming sheme: [DE/VF/SPHINX] NAME
