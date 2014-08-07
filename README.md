@@ -1,9 +1,8 @@
 Status
 =======
-- Waiting for the new model from Guenter :-) Thanks a lot for the great work!
-
- - The current model has only very limited words for controlling some programs and get some basic info.
- -> I'm working with Guenter on the new model.
+- Pretty good model is online, secarios and scripts can be made.
+ - The current model has many words for controlling and geting information of various sources.
+ -> There are some things missing but this is normal as along the way some things always get added......
 
 - As Google Speech API v2 now requires personal keys, these modules will (for now) not be published:
  - Internet search (Amazon, Google etc)
