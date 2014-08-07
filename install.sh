@@ -58,8 +58,8 @@ if [ "$1" == 'i' ]
      echo ""
   echo "Downloading LM for Simon"
   echo ""
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140719.sbm
-   
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806.sbm
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806_dict.dic
 
    
 #         echo ""
