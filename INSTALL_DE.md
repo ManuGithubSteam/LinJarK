@@ -1,4 +1,4 @@
-Install
+Installationshinweise
 ========
 
 Um Spracherkennung unter Linux einzurichten, benötigt man vier Dinge:
@@ -27,7 +27,11 @@ chmod +x install.sh
 ```
 
 WICHTIG: Der Pfad "/home/$USER/.linjark/bin" wird zur $PATH variable hinzugefügt. Es sollte sichergestellt sein,das die .bashrc aufegrufen wird, und Simon über die neue Path variable Bescheid weiß, sonst funktioniert Simon nicht richtig.
-Je nach Desktopumgebung ist es nicht sicher ob der Pfad exportiert wird (KDE wird unterstützt, ggf ist ein re-login nötig.)
+Je nach Desktopumgebung ist es nicht sicher ob der Pfad exportiert wird.
+
+Simon am besten in einem Terminal starten:
+
+PATH=\$PATH:/home/$USER/.linjark/bin simon
 
 Du kannst den Pfad auch in deine /etc/environment eintragen. Ließ dazu die Dokumentation deiner Distribution.
 
@@ -40,22 +44,34 @@ Installation von Simon
 Benutze das Repository deiner Distribution um Simon (0.4.1) zu Installieren. Es ist ein KDE Programm und hat KDE Abhängigkeiten und auch noch welche um das Sprachmodel an zu passen (sphinxtrain, sphinxbase etc)
 
 Für __Gentoo__:
+
+Es müssen die richtigen USE Flags gesetz werden (kdepim, libsamplerate, nls, opencv, sphinx)
+
 ```
-emerge simon 
+emerge simon SphinxTrain pocketsphinx sphinx3
 ```
 
 Für __Debain basierende (testing)/K/ubuntu__ distros:
 
 ```
-sudo apt-get install simon
+sudo apt-get install simon sphinx3 sphinxtrain
 ```
 
-Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird.
+Für __Opensuse__ :
+```
+zypper in simon
+```
+Außerdem muss noch SphinxTrain von software.opensuse.org installiert werden:
+
+http://software.opensuse.org/package/sphinxtrain?search_term=sphinxtrain
+
+Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird. Auch der Soundausgang muss in Simon richtig konfiguriert werden!
 
 Siehe auch: 
 
 https://userbase.kde.org/Simon
 https://userbase.kde.org/Simon/Handbook
+https://forum.kde.org/viewforum.php?f=216
 
 Man sollte unbedingt mal ins Handbuch schauen, um Simon richtig zu konfigurieren. Wenn Simon nicht korrekt arbeitet, können die linjark Skripte auch nicht richtig funktionieren.
 
@@ -64,13 +80,13 @@ Wenn du Simon von dem Quellen kompilierst, vergewissere dich das +nls, +sphinx e
 Installation des Sprachenmodells in Simon
 ---------------------------------
 
-Klicke auf "Akustikmodel einrichten" -> "Modell öffnen" -> Importieren
+Klicke auf "Akustikmodel einrichten" -> "Modell öffnen" -> "Importieren"
 
-Nun gehe in das Verzeichniss /home/$USER/.linjark/ hier sollte sich eine .sbm Datei befinden. Importiere diese Datei.
+Nun gehe in dein Homeverzeichnis hier sollte sich eine .sbm Datei befinden. Importiere diese Datei.
 
-Wähle die Box: "Adaptiere Basismodell mit Trainingsaufnahmen" an um das Standartmodel deiner Sprache mit Training an zu passen.
+Wähle die Box: "Adaptiere Basismodell mit Trainingsaufnahmen" an um das Standartmodel deiner Sprache mit Training anzupassen.
 
-INFO: Das Model zu trainieren und die verbesserte Version berechnen zu lassen, kann sehr viele Stunden (12 Stunden und mehr!!!) in Anspruch nehmen. Das hängt von CPU und RAM ab.
+INFO: Das Model zu trainieren und die verbesserte Version berechnen zu lassen, kann sehr viele Stunden (5-12 Stunden und mehr!!!) in Anspruch nehmen. Das hängt von CPU und RAM ab.
 
 TIPP: Simon startet nach __jedem__ abgeschlossenen Training die Berechnung des neuen Modells. Deshalb ist es eine gute Idee unter "Datei" "Verbindung mit Server" den Haken zu entfernen wenn man mehrmals Traingsaufnahmen einsprechen will. 
 
