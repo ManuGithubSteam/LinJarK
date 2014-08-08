@@ -58,6 +58,9 @@ sudo apt-get install simon sphinx3 sphinxtrain
 ```
 
 Für __Opensuse__ :
+
+Es muss das Repository: "OpenSUSE Build Service: KDE:Extras" (in Community Repositorys) aktiviert sein!
+
 ```
 zypper in simon
 ```
@@ -65,7 +68,7 @@ Außerdem muss noch SphinxTrain von software.opensuse.org installiert werden:
 
 http://software.opensuse.org/package/sphinxtrain?search_term=sphinxtrain
 
-Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird. Auch der Soundausgang muss in Simon richtig konfiguriert werden!
+Vergewissere dich, das dein Mikrofon unter Linux erkannt wird (zb in Audacity) und das Simon korrekt eingerichtet ist und das Mikrophon kalibriert und erkannt wird. Auch die Soundausgabe muss in Simon richtig konfiguriert werden!
 
 Siehe auch: 
 

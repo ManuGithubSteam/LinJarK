@@ -54,12 +54,7 @@ if [ "$1" == 'i' ]
    wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL_DE.md
    sleep 4 
    kate INSTALL_DE.md &2> /dev/null
-   
-     echo ""
-  echo "Downloading LM for Simon"
-  echo ""
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806.sbm
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806_dict.dic
+
 
    
 #         echo ""
@@ -68,6 +63,13 @@ if [ "$1" == 'i' ]
 #   ./marytts-component-installer.sh
 #    
    cd ~
+   
+      
+  echo ""
+  echo "Downloading LM for Simon"
+  echo ""
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806.sbm
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806_dict.dic
    
            echo ""
   echo "Edit PATH variable to be able to launch scripts"
