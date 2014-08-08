@@ -1,17 +1,20 @@
+What does it do ?
+=======
+It is your own personal electronic butler like in the Iron Man movies. 
 Status
 =======
 - Pretty good model is online, secarios and scripts can be made.
  - The current model has many words for controlling and geting information of various sources.
- -> There are some things missing but this is normal as along the way some things always get added......
+ -> There are some things missing but this is normal as along the way some new things always get added......
 
 - As Google Speech API v2 now requires personal keys, these modules will (for now) not be published:
  - Internet search (Amazon, Google etc)
  - Translation (translate words in other languages)
- - Music (partly -> the ability to select a specific track by just saying its name)
+ - Music (-> the ability to select a specific track by just saying its name)
  
  -> I'm looking into potential replacements
  
-Always check out: FeatureMatrix in the linjark_grammar#.ods and the FAQ.md file
+Always check out: linjark_grammar#.ods for progress and the FAQ.md file
 
 Purpose
 ========
@@ -19,7 +22,7 @@ This git repository is set up with the goal of providing a __more easy solution_
 
 *The more easiness comes in an install.sh that will install some of the components needed for successful speech recognition and provide guidance for installing the rest and also providing some Scenarios for Simon to use :-D.*
 
-Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are no use-case scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
+Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are not many scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
 
 __However this stuff can also be adapted to any other language. As long as there is a language model for it.__
 How does all this work ?
@@ -55,8 +58,8 @@ Structure / Used technologies
 
 BASE: language model
 ---------------------
-For a PC to understand humans it needs to know how they sound and what words they use. He does that with a language model. It is the brain of this project :-D
-There are two types of models that describe language - grammars and statistical language models. Grammars describe very simple types of languages for command and control, and they are usually written by hand or generated automatically with plain code. 
+For a PC to understand humans it needs to know how they sound and what words they use. It does that with a language model. It is the brain of this project :-D
+There are two types of models that describe language - grammars and statistical language models. Grammars describe very simple types of languages for command and control, and they are usually written by hand or generated automatically with plain code (Simon scenarios). 
 
 However, for now not even all command and control words are in the open source GERMAN language model.
 
@@ -64,14 +67,14 @@ I use the German language model from Voxforge: http://voxforge.org/
 
 More specific the on from Guenter: http://goofy.zamia.org/voxforge/
 
-I relay on Guenter to publish new language models (as they won't compile on my machine for some miraculous reason :-( ).
-I work actively with him to add new words into the model who can than be understood by Simon (speech recognition) and used for doning cool stuff.
+I rely on Guenter to publish new language models (as they won't compile on my machine for some miraculous reason :-( ).
+I work actively with him to add new words into the model who can than be understood by Simon (speech recognition) and used for controling various things.
 
 If you want to know more about the whole model compilation business check out his awesome tools: https://github.com/gooofy/voxforge/
 
 BACKEND: bash scripts do the stuff .-)
 ----------------------------------
-Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the net, switch on a lamp etc.
+Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the net, switch on a lamp ??
 It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.
 
 MarryTTS is used to generate spoken responses and output of the data collected. -> https://github.com/marytts/marytts
@@ -107,6 +110,6 @@ Want to help !?
 
 Just get in touch! Help is always needed and there is plenty to do!
 
-__Read the Structure.md, Todo.md and FAQ.md!__
+__Read the ProjectStructure.md, Todo.md and FAQ.md!__
 
 
