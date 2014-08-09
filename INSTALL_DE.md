@@ -111,5 +111,12 @@ tar xf MODULE.tar.gz
 
 Achte drauf, ob auch eine README entpackt wurde. LESEN!
 
+Nutzung
+--------
+
+Wahrscheinlich muss Simon trainiert werden, bevor er deine Aussprache versteht. Dies kannst du mit den mitgelieferten Trainingstexten in den Modulen tun.
+
+Eine Erkennungsrate von 100-120 ist empfehlenswert, mehr ist jedoch immer besser. Es hängt auch von den Wörtern ab, wie viel training benötigt wird.
+
 
 Enjoy :-)

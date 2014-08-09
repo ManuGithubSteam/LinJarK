@@ -85,7 +85,7 @@ Navigate in Simon to "Configure Accoustic Model" -> "Open Model" -> "Import"
 
 Now navigate to you HOME there sould be an .sbm file. Import it.
 
-Tick the box: "Adapt base model....."
+Tick the box: "Adapt base model using training samples"
 
 NOTE: Be aware that training and computing the model can take many hours (5-12 hours and more!!!) dependent on CPU and RAM.
 
@@ -109,5 +109,14 @@ tar xvf MODULE.tar.gz
 Open up Simon and click on "Manage Scenarios" -> "Open" -> "Import from file" then import the .scenario file from your HOME folder.
 
 Check if there is a READEME file in your HOME folder and read it :-)
+
+Use
+----
+
+It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech. To do that, use the provided training sentences in the modules.
+
+A good recognition rate is about 100-120 but more is even better. This depends also on the spoken word, shorter words are harder to train.
+
+
 
 Enjoy :-)
