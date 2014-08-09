@@ -15,6 +15,19 @@ Zuerst downloaden wir das LinJarK Script, dieses wird einiges schon einrichten u
 Installation von linjark
 ------------------------
 
+__Abhänigkeiten/Vorraussetzungen:__
+
+Linkajrk benötigt die folgenden Programme um richtig zu funktioieren:
+
+ wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip
+
+```
+wmctrl xdotool html-xml-utils kdialog sox xclip
+```
+ 
+ 
+__Installation von linjark__
+
 1. Downloade das install.sh Skript und mache es ausführbar:
 ```
 wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh
@@ -116,7 +129,7 @@ Nutzung
 
 Wahrscheinlich muss Simon trainiert werden, bevor er deine Aussprache versteht. Dies kannst du mit den mitgelieferten Trainingstexten in den Modulen tun.
 
-Eine Erkennungsrate von 100-120 ist empfehlenswert, mehr ist jedoch immer besser. Es hängt auch von den Wörtern ab, wie viel training benötigt wird.
+Eine Erkennungsrate von 100-120 ist empfehlenswert, mehr ist jedoch immer besser. Es hängt auch von den einzelnen Wörtern ab, wie viel training benötigt wird.
 
 
 Enjoy :-)
