@@ -4,15 +4,14 @@ It is your own personal electronic butler like in the Iron Man movies.
 Status
 =======
 - Pretty good model is online, secarios and scripts can be made.
- - The current model has many words for controlling and geting information of various sources.
+ - The current model has many words for controlling and getting information of various sources.
  -> There are some things missing but this is normal as along the way some new things always get added......
 
 - As Google Speech API v2 now requires personal keys, these modules will (for now) not be published:
  - Internet search (Amazon, Google etc)
  - Translation (translate words in other languages)
- - Music (-> the ability to select a specific track by just saying its name)
  
- -> I'm looking into potential replacements
+ -> If you are interested, read the "Get_GOOGLE_API_Key.md" and contact me if you want to test the modules.
  
 Always check out: linjark_grammar#.ods for progress and the FAQ.md file
 
