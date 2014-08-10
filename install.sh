@@ -34,7 +34,7 @@ if [ "$1" == 'i' ]
   echo "Downloading/Install MarryTTS...."
   echo ""
    wget https://bitbucket.org/marytts/marytts/downloads/marytts-5.1.zip
-   unzip marytts-5.1.zip
+   unzip marytts-5.1.zip &2> /dev/null
    
    cd marytts-5.1
    
@@ -78,6 +78,16 @@ if [ "$1" == 'i' ]
   echo "PATH=\$PATH:/home/$USER/.linjark/bin" >> .bashrc
    echo "export PATH" >> .bashrc
 
+   
+   mkdir bin
+   awk_path="/home/$USER/bin/linjark"
+cat > "${awk_path}" <<EOT
+#!/bin/bash
+
+PATH=$PATH:/home/$USER/.linjark/bin simon
+EOT
+chmod u+x "${awk_path}"
+   
       
     echo ""
    echo ""
@@ -88,12 +98,19 @@ if [ "$1" == 'i' ]
      echo "#  PATH=$PATH:/home/$USER/.linjark/bin  "
      echo "#   make sure it gets exported everytime before you start Simon!"
      echo "#"
+     echo "#  You can start simon in a bash normaly, as the Path is in your .bashrc"
      echo "#"
-     echo "#  You can start simon like this from a terminal:   "
+     echo "#  You can start simon like this from a non bash terminal:   "
      echo "#"
      echo "#  PATH=$PATH:/home/$USER/.linjark/bin simon"
      echo "#"
+     echo "#  Or you use the 'linjark' start script in $HOME/bin" 
      echo "#"
+     echo "#  To get rid of the 'bin' in you home, you can copy the linjark script to /usr/local/bin"
+     echo "#"
+     echo "#"
+     
+     
      echo "#########"
      echo ""
    
