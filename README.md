@@ -7,11 +7,10 @@ Status
  - The current model has many words for controlling and getting information of various sources.
  -> There are some things missing but this is normal as along the way some new things always get added......
 
-- As Google Speech API v2 now requires personal keys, these modules will (for now) not be published:
- - Internet search (Amazon, Google etc)
- - Translation (translate words in other languages)
+- As Google Speech API v2 now requires personal keys, these modules will (for now) not work:
+  - Translation (translate words in other languages)
  
- -> If you are interested, read the "Get_GOOGLE_API_Key.md" and contact me if you want to test the modules.
+ -> If you are interested, read the "Get_GOOGLE_API_Key.md" and give me some feedback how tey work for you :-D
  
 Always check out: linjark_grammar#.ods for progress and the FAQ.md file
 
