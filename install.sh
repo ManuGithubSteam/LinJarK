@@ -123,6 +123,8 @@ chmod u+x "${awk_path}"
    echo ""
    echo " Please specify your gender/sex:"
    echo ""
+    echo "This will allow MarryTTS to resond to you in the right words :-D"  
+   echo ""
    echo "Press [m] for male (Sir resonse), [f] for female (Miss response)"
    echo ""
    read SEX
