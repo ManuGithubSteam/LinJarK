@@ -16,6 +16,16 @@ Be aware that you still need to install Simon from your distribution repository.
 Installation of linjark
 ------------------------
 
+__Depencies:__
+
+Linkajrk depends on the following to function properly. Please install the necessay packages.
+
+ wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip
+
+```
+wmctrl xdotool html-xml-utils kdialog sox xclip
+```
+
 1. Download the Install.sh script and make it executeable:
 ```
 wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh

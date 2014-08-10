@@ -17,7 +17,7 @@ Installation von linjark
 
 __Abhänigkeiten/Vorraussetzungen:__
 
-Linkajrk benötigt die folgenden Programme um richtig zu funktioieren:
+Linkajrk benötigt die folgenden Programme um richtig zu funktioieren. Bitte installiere die Pakete:
 
  wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip
 
