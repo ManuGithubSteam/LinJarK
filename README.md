@@ -7,8 +7,9 @@ Status
  - The current model has many words for controlling and getting information of various sources.
  -> There are some things missing but this is normal as along the way some new things always get added......
 
-- As Google Speech API v2 now requires personal keys, these modules will (for now) not work:
+- As Google Speech API v2 now requires personal keys, these modules will (for now) not work out of the box:
   - Translation (translate words in other languages)
+  - Internetsearch (search for something you said on the net)
  
  -> If you are interested, read the "Get_GOOGLE_API_Key.md" and give me some feedback how tey work for you :-D
  
