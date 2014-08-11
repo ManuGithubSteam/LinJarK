@@ -15,6 +15,8 @@ Status
  
 Always check out: linjark_grammar#.ods for progress and the FAQ.md file
 
+This project is considered active in development and not stable or bugfree!
+
 Purpose
 ========
 This git repository is set up with the goal of providing a __more easy solution__ for German speaking people to control their PC, house or whatever with their voice with *open source and free solutions.*
