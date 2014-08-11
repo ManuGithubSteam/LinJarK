@@ -30,7 +30,7 @@ How does all this work ?
 When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, it can understand you. Then it will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (in German) with synthesized speech and display the requested information with the scripts.
 Goal
 ====
-- Add missing words to the German open source language model. (already over 700 words added, but new model is not yet computed)
+- Add missing words to the German open source language model. (already over 700 words added)
 - Write the scripts for the backend functions.
 - Write Scenarios for Simon in German to use the backend-scripts and the german language model.
 - Raise awareness of free, open source speech recognition, particularly the German model.
