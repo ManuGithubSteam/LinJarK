@@ -23,9 +23,9 @@ This git repository is set up with the goal of providing a __more easy solution_
 
 *The more easiness comes in an install.sh that will install some of the components needed for successful speech recognition and provide guidance for installing the rest and also providing some Scenarios for Simon to use :-D.*
 
-Till now this is not really an easy task, mostly because the __open source__ German language model does not support the right words for controlling applications and devices. But also because their are not many scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
+Till now this is not really an easy task, mostly because the open source __German__ language model does not support the right words for controlling applications and devices. But also because their are not many scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
 
-__However this stuff can also be adapted to any other language. As long as there is a language model for it.__
+__However this stuff can also be adapted to any other language. As long as there is a language model with the words you need to control somehting for it.__
 How does all this work ?
 =========================
 
