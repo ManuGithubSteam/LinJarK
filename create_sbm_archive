@@ -5,7 +5,7 @@ dat=$(date +"%Y-%m-%d")
 dat2=$(echo "$dat""T00:00:00")
 
 echo ""
-echo ".sbm archive creator 0.2"
+echo ".sbm archive creator 0.3"
 echo ""
 echo ""
 echo "Use this in the same directory as the voxforge achive is!"
@@ -35,9 +35,17 @@ echo ""
 echo ""
 echo "please specify the ending of the archive with . eg: .tar.bz2"
 echo ""
+echo "For default ending (.tgz) just press Enter"
+echo ""
 read end
 echo ""
 
+if [ -z "$end" ]; then
+    echo ""
+    echo "using default name .tgz" 
+    echo ""
+    end=".tgz"
+fi
 # remove endig .tgz .tar.bz2 or tar.gz brute force method
 cdname=$(echo $archname | sed s"/$end//")
 #cdname2=$(echo "$cdname*")
