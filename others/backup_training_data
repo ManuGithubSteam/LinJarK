@@ -2,6 +2,9 @@
 
 dat=$(date +"%Y-%m-%d-%Hh%Mm%Ss")
 
+echo ""
+echo "use 'e' parameter to backup to external hdd!!"
+echo ""
 cd ~
 
 cd .kde4/share/apps/simon/model/
