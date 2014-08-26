@@ -68,10 +68,10 @@ if [ "$1" == 'i' ]
   echo ""
   echo "Downloading LM for Simon"
   echo ""
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806.sbm
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140813.sbm
    
    cd .linjark/
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140806_dict.dic
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140813_dict.dic
    cd ~
            echo ""
   echo "Edit PATH variable to be able to launch scripts"
