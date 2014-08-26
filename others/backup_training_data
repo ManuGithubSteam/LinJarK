@@ -1,0 +1,28 @@
+#!/bin/bash
+
+dat=$(date +"%Y-%m-%d-%Hh%Mm%Ss")
+
+cd ~
+
+cd .kde4/share/apps/simon/model/
+
+XZ_OPT=-9
+
+tar cfJ training.data.archive.tar.xz training.data/
+
+mv training.data.archive.tar.xz training.data.archive_$dat.tar.xz
+
+if [ "$1" == "e" ]; then
+    echo ""
+    echo "Moving backup to external HDD!"
+    echo ""
+    mv training.data.archive_$dat.tar.xz /run/media/manuel/bea5b975-3643-48ae-b0e3-9157b0905250/BACKUP/
+else
+
+mv training.data.archive_$dat.tar.xz /mnt/data
+
+echo "moved archive to /mnt/data"
+
+fi
+
+echo "done"
