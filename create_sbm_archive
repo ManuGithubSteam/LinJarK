@@ -5,7 +5,7 @@ dat=$(date +"%Y-%m-%d")
 dat2=$(echo "$dat""T00:00:00")
 
 echo ""
-echo ".sbm archive creator 0.3"
+echo ".sbm archive creator 0.5"
 echo ""
 echo ""
 echo "Use this in the same directory as the voxforge achive is!"
@@ -16,6 +16,11 @@ echo ""
 ls --color=always
 echo ""
 echo ""
+echo "Best guess:"
+ls --color=always -1 voxf*tgz | tail -n 1
+echo ""
+echo ""
+
 read archname
 echo ""
 
@@ -121,7 +126,6 @@ echo ""
 
 #pwd
 cd ../../
-#pwd
 lol="_dict.dic"
 na3="$na$lol"
 #cpme=$(echo "cp etc/voxforge.dic ../$na3")
@@ -129,6 +133,11 @@ na3="$na$lol"
 cp "etc/voxforge.dic" "../$na3"
 
 echo ""
+echo "Cleaning up"
+echo ""
+echo $cdname
+cd ..
+rm -fr $cdname
 echo ""
 echo "finished"
 echo ""
