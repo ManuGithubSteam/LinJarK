@@ -102,7 +102,7 @@ Nun gehe in dein Homeverzeichnis hier sollte sich eine .sbm Datei befinden. Impo
 
 Wähle die Box: "Adaptiere Basismodell mit Trainingsaufnahmen" an um das Standartmodel deiner Sprache mit Training anzupassen.
 
-INFO: Das Model zu trainieren und die verbesserte Version berechnen zu lassen, kann sehr viele Stunden (5-12 Stunden und mehr!!!) in Anspruch nehmen. Das hängt von CPU und RAM ab.
+INFO: Das Model zu trainieren und die verbesserte Version berechnen zu lassen, kann sehr viele Stunden (6-12 Stunden und mehr!!!) in Anspruch nehmen. Das hängt von CPU und RAM ab.
 
 TIPP: Simon startet nach __jedem__ abgeschlossenen Training die Berechnung des neuen Modells. Deshalb ist es eine gute Idee unter "Datei" "Verbindung mit Server" den Haken zu entfernen wenn man mehrmals Traingsaufnahmen einsprechen will. 
 
