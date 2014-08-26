@@ -1,6 +1,6 @@
 
 
-This is my adapted speech model!!! It is adapted to MY voice! This means it understands me much better than the startdart model, but it does not mean it understands you as well as good!
+This is my adapted speech model!!! It is adapted to MY voice! This means it understands me much better than the standard model, but it does not mean it understands you as well as good!
 
 It is even possible, that the understanding for you is worse!!!
 
