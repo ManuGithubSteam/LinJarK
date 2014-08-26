@@ -129,7 +129,7 @@ Nutzung
 
 Wahrscheinlich muss Simon trainiert werden, bevor er deine Aussprache versteht. Dies kannst du mit den mitgelieferten Trainingstexten in den Modulen tun.
 
-Eine Erkennungsrate von 100-120 ist empfehlenswert, mehr ist jedoch immer besser. Es hängt auch von den einzelnen Wörtern ab, wie viel training benötigt wird.
+Eine Erkennungsrate von 100-120 ist empfehlenswert aber auch bei 30 ist eine Erkennung möglich, mehr ist jedoch immer besser. Es hängt auch von den einzelnen Wörtern ab, wie viel training benötigt wird.
 
 
 Enjoy :-)
