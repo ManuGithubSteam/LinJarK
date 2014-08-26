@@ -6,4 +6,4 @@ Es reichen aber auch nur ca 120 min. So bekommt das Modell eine gute Ahnung wie 
 
 Die Kommandos für Simon spreche ich so oft ein bis ich eine Erkennnungsrate von ca 100 erreicht habe. Gute Resultate bekommt man aber auch schon zwischen 20-30. Hierbei kann es jedoch zu false-positive Ergebnissen kommen, vor allem, wenn man viele Scenarien gleichzeitig verwendet!
 
-
+Generell, sind false-positive Erkennungen auf zu wenig Training zurück zu führen!
