@@ -125,7 +125,7 @@ Use
 
 It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech. To do that, use the provided training sentences in the modules.
 
-A good recognition rate is about 100-120 but more is even better. This depends also on the spoken word, shorter words are harder to train.
+A good recognition rate is about 30-50 but more is even better (100-120). This depends also on the spoken word, shorter words are harder to train.
 
 
 
