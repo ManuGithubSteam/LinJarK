@@ -10,8 +10,8 @@ Lies das Handbuch von Simon!
 ##############
 
 Cutofflevel: 2000
-HeadMargin: 300
-Tail Margin: 550
+HeadMargin: 500
+Tail Margin: 600
 Skip Samples: 150
 
 Signal Noise Ratio: 500 (kommt auf die Umgebungsgeräusche an)

@@ -9,7 +9,7 @@ There is no guarantee that this will work with your setup. Every hardware is dif
 
 Cutofflevel: 2000
 HeadMargin: 300
-Tail Margin: 550
+Tail Margin: 600
 Skip Samples: 150
 
 Signal Noise Ratio: 500 (depends on the environment you are in)
