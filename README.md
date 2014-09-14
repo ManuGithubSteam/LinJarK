@@ -53,11 +53,11 @@ For the English version of the language model / speech recognition check out Bla
 Structure / Used technologies
 =============================
 
-- Base: language model
-- Backend: Bash-scripts who do various things and MarryTTS
+- Backend: language model
+- Middleware: Bash-scripts who do various things and MarryTTS
 - Frontend: Simon 
 
-BASE: language model
+BACKEND: language model
 ---------------------
 For a PC to understand humans it needs to know how they sound and what words they use. It does that with a language model. It is the brain of this project :-D
 There are two types of models that describe language - grammars and statistical language models. Grammars describe very simple types of languages for command and control, and they are usually written by hand or generated automatically with plain code (Simon scenarios). 
@@ -73,7 +73,7 @@ I work actively with him to add new words into the model who can than be underst
 
 If you want to know more about the whole model compilation business check out his awesome tools: https://github.com/gooofy/voxforge/
 
-BACKEND: bash scripts do the stuff .-)
+MIDDLEWARE: bash scripts do the stuff .-)
 ----------------------------------
 Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the net, switch on a lamp ??
 It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.
@@ -84,12 +84,12 @@ FRONTEND: Simon
 -----------------
 
 Great program, it is very powerful and heart of this project! The dev is also really helpful and nice guy! 
-__It handles all the basics like microphone calibration, recording what you are saying, comparinf that with the language model and launching commands etc__
+__It handles all the basics like microphone calibration, recording what you are saying, comparing that with the language model and launching commands etc__
 
 Other than that I use Simon to do various things from me:
 
 - Break down the functionality of the scripts into modules (called Scenarios), so someone can only use the "Search" module and don't has to install all the other modules like Translation etc.
-- It is possible to train the speech model with it to your voice so it understands you better (very important)
+- It is possible to train the speech model to your voice so it understands you (better) (very important!)
 - Provides and easy method to change the activation sentences to your likening
 - Can do many more things on its own without the scripts :-D
 
