@@ -1,6 +1,6 @@
 What does it do ?
 =======
-It is your own personal electronic butler like in the Iron Man movies. 
+It is your own personal electronic butler like in the Iron Man movies for your Linux desktop. 
 Status
 =======
 - Pretty good model is online, secarios and scripts can be made.
@@ -25,16 +25,16 @@ This git repository is set up with the goal of providing a __more easy solution_
 
 Till now this is not really an easy task, mostly because the open source __German__ language model does not support the right words for controlling applications and devices. But also because their are not many scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). __This project will change that!__
 
-__However this stuff can also be adapted to any other language. As long as there is a language model with the words you need to control somehting for it.__
+__However this stuff can also be adapted to any other language even other operating systems. As long as there is a language model with the words you need to control somehting for it.__
 How does all this work ?
 =========================
 
-When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, it can understand you. Then it will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (in German) with synthesized speech and display the requested information with the scripts.
+When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, it can understand you. Then it will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (default: in German) with synthesized speech and display the requested information with the scripts.
 Goal
 ====
-- Add missing words to the German open source language model. (already over 700 words added)
+- Add missing words to the German open source language model. (already over 800 words added)
 - Write the scripts for the backend functions.
-- Write Scenarios for Simon in German to use the backend-scripts and the german language model.
+- Write Scenarios for Simon in German to use the backend-scripts and the German language model.
 - Raise awareness of free, open source speech recognition, particularly the German model.
 
 - Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux desktop.
