@@ -1,0 +1,57 @@
+<html>
+<!Kopf>
+<h1>LinJark - <b>Lin</b>ux-<b>Jar</b><b>K</b>DE Sprachsteuerung f&uuml;r Linux/KDE</h1>
+
+<p><i>Jarvis</i> aus den Ironman-Filmen spricht mit seinem Rechner</p>
+<h3>Zweck</h3>
+<p>Ein Nutzer (z.B. Behinderte oder wichtige Leute) m&ouml;chte seinen Rechner mit Sprachkomandos steuern. Der Rechner soll als elektronischer <A href="http://de.wikipedia.org/wiki/Butler">Butler</A> dienen
+</p>
+
+<h3>Ben&ouml;tigte Komponenten</h3>
+<img src="explorer.png"> <img src="LinJark_Components.png">
+<dl>
+ <dt><A href="https://userbase.kde.org/Simon">Simon</A> - Spracherkennung</dt>
+ <dd>
+  Ubuntu: <tt>apt-get install simon</tt> 
+ </dd>
+ <dt>SpeechDB</dt>
+ <dd>
+ </dd>
+ <dt><A href="http://mary.dfki.de/">MaryTTS</A> - Sprachsynthetisierer - Text to Speech, (<A href="https://github.com/marytts/marytts">GitHub</A>)</dt>
+ <dd>
+ </dd>
+ <dt><A href="https://github.com/ManuGithubSteam/LinJarK">LinJarK</A></dt>
+ <dd>
+  <ul>
+   <li>Installationskript</li>
+   <li>linjark_WETTER_mod - </li>  
+  </ul>
+ </dd>
+ <dt><A href="http://cmusphinx.sourceforge.net/wiki/tutorialam">SphinxTrain</A></dt></dt>
+ <dd>erweitert Basismodell um m&uuml;ndliche Eingaben umd die Erkennung zu erhöhnung<br>
+   Ubuntu: <tt>apt-get install SphinxTrain</tt>
+ </dd>
+</dl>
+
+<h4>Begriffe</h4>
+
+<dl>
+ <dt>Modul</dt>
+ <dd>tar.gz, welches folgende Artefakte enth&auml;lt:
+  <ul>
+    <li>Simon-Szenariodateien</li>
+  </ul>
+ </dd>
+ <dt>.md Markup-Language</dt>
+ <dd>
+   <A href="https://help.github.com/articles/github-flavored-markdown">GitHub Flavored Markdown</A> konvertiert diese als HTML
+ </dd>
+ <dt>Simon Szenario:</dt>
+ <dd>Kombination W&ouml;rter - Grammatik - Komando
+ </dd>
+ <dt><tt>.sbm</tt></dt>
+ <dd>Sprachdatenbank : Phonetikmodel mit Stimmvarianzen </dd>
+</dl>
+    
+
+

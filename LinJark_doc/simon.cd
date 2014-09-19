@@ -1,0 +1,5 @@
+name Simon
+description Interpretiert Sprache und setzt sie in Kommandos um
+port audio provide audio
+port speachdb require speachdb
+port stdio require  shellcommand

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+   <packagedElement xmi:type="uml:Package" xmi:id="0" name="Components" visibility="public">
+      <packagedElement xmi:type="uml:Component" xmi:id="1" name="maryTTS" visibility="public">
+         <ownedPort xmi:type="uml:Port" xmi:id="2" name="audio" visibility="public" aggregation="composite">
+            <required xmi:id="3" name="audio"/>
+         </ownedPort>
+         <ownedPort xmi:type="uml:Port" xmi:id="4" name="stdin" visibility="public" aggregation="composite">
+            <provided xmi:id="5" name="text"/>
+         </ownedPort>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="6" name="scripthandler" visibility="public">
+         <ownedPort xmi:type="uml:Port" xmi:id="7" name="stdio" visibility="public" aggregation="composite">
+            <provided xmi:id="8" name="shellcommand"/>
+         </ownedPort>
+         <ownedPort xmi:type="uml:Port" xmi:id="9" name="syscall" visibility="public" aggregation="composite">
+            <required xmi:id="10" name="exec"/>
+         </ownedPort>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="11" name="Simon" visibility="public">
+         <ownedPort xmi:type="uml:Port" xmi:id="12" name="audio" visibility="public" aggregation="composite">
+            <provided xmi:id="13" name="audio"/>
+         </ownedPort>
+         <ownedPort xmi:type="uml:Port" xmi:id="14" name="speachdb" visibility="public" aggregation="composite">
+            <required xmi:id="15" name="speachdb"/>
+         </ownedPort>
+         <ownedPort xmi:type="uml:Port" xmi:id="16" name="stdio" visibility="public" aggregation="composite">
+            <required xmi:id="17" name="shellcommand"/>
+         </ownedPort>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="18" name="SpeechDB" visibility="public">
+         <ownedPort xmi:type="uml:Port" xmi:id="19" name="speachdb" visibility="public" aggregation="composite">
+            <provided xmi:id="20" name="speachdb"/>
+         </ownedPort>
+      </packagedElement>
+   </packagedElement>
+</uml:Model>
+</xmi:XMI>
