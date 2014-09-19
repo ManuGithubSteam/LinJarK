@@ -28,4 +28,14 @@ echo "moved archive to /mnt/data"
 
 fi
 
+if [ "$1" == "m" ]; then
+    echo ""
+    echo "Backup of current active model to github!"
+    echo ""
+
+    cp /home/manuel/.kde4/share/apps/simond/models/default/active/active.sbm /mnt/data/voxforge/jaRvis/GITHUB/others/
+    
+fi
+
+
 echo "done"
