@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linjark by ManuGithubSteam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Linjark</h1>
+      <h2 class="project-tagline">Using various technologies to bring easy speechrecognition/voicecontrol in (German) to Linux desktops and beyond</h2>
+      <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
+      <a href="https://github.com/ManuGithubSteam/LinJarK/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ManuGithubSteam/LinJarK/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>What does it do ?</h1>
+
+<p>It is your own personal electronic butler like in the Iron Man movies for your Linux desktop. </p>
+
+<h1>
+<a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h1>
+
+<ul>
+<li>
+<p>Pretty good model is online, secarios and scripts can be made.</p>
+
+<ul>
+<li>The current model has many words for controlling and getting information of various sources.
+-&gt; There are some things missing but this is normal as along the way some new things always get added......</li>
+</ul>
+</li>
+<li>
+<p>As Google Speech API v2 now requires personal keys, these modules will (for now) not work out of the box:</p>
+
+<ul>
+<li>Translation (translate words in other languages)</li>
+<li>Internetsearch (search for something you said on the net)</li>
+</ul>
+
+<p>-&gt; If you are interested, read the "Get_GOOGLE_API_Key.md" and give me some feedback how tey work for you :-D</p>
+</li>
+</ul>
+
+<p>Always check out: linjark_grammar#.ods for progress and the FAQ.md file</p>
+
+<p>This project is considered active in development and not stable or bugfree!</p>
+
+<h1>
+<a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose</h1>
+
+<p>This git repository is set up with the goal of providing a <strong>more easy solution</strong> for German speaking people to control their PC, house or whatever with their voice with <em>open source and free solutions.</em></p>
+
+<p><em>The more easiness comes in an install.sh that will install some of the components needed for successful speech recognition and provide guidance for installing the rest and also providing some Scenarios for Simon to use :-D.</em></p>
+
+<p>Till now this is not really an easy task, mostly because the open source <strong>German</strong> language model does not support the right words for controlling applications and devices. But also because their are not many scenarios written for Simon and scripts to implement things in an easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of). <strong>This project will change that!</strong></p>
+
+<p><strong>However this stuff can also be adapted to any other language even other operating systems. As long as there is a language model with the words you need to control somehting for it.</strong></p>
+
+<h1>
+<a id="how-does-all-this-work-" class="anchor" href="#how-does-all-this-work-" aria-hidden="true"><span class="octicon octicon-link"></span></a>How does all this work ?</h1>
+
+<p>When you speak in your microphone, Simon, an open source speech recognition program is comparing your recorded speech with the data (words) in the language model, if it finds the words in the model, it can understand you. Then it will launch some scripts according to what you say eg. check the weather for you. MarryTTS is then used to answer you (default: in German) with synthesized speech and display the requested information with the scripts.</p>
+
+<h1>
+<a id="goal" class="anchor" href="#goal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Goal</h1>
+
+<ul>
+<li>Add missing words to the German open source language model. (already over 800 words added)</li>
+<li>Write the scripts for the backend functions.</li>
+<li>Write Scenarios for Simon in German to use the backend-scripts and the German language model.</li>
+<li><p>Raise awareness of free, open source speech recognition, particularly the German model.</p></li>
+<li>
+<p>Further down the line, write a conkyrc script to implement "Rainmeter" like functionality for the Linux desktop.</p>
+
+<ul>
+<li>A graphics designer would be needed here for the background image! Please help if you can draw :-D</li>
+</ul>
+</li>
+<li>Get all of this stuff onto the Raspberry PI or a similar micro computer (ARM) for home automation.</li>
+</ul>
+
+<h1>
+<a id="inspiration" class="anchor" href="#inspiration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inspiration</h1>
+
+<p>This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his work!)</p>
+
+<p>Just check out Youtube for some videos etc. </p>
+
+<p>For the English version of the language model / speech recognition check out Blather: <a href="https://gitorious.org/blather/pages/Home">https://gitorious.org/blather/pages/Home</a> or Youtube: <a href="https://www.youtube.com/watch?v=gr1FZ2F7KYA">https://www.youtube.com/watch?v=gr1FZ2F7KYA</a></p>
+
+<h1>
+<a id="structure--used-technologies" class="anchor" href="#structure--used-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Structure / Used technologies</h1>
+
+<ul>
+<li>Backend: language model</li>
+<li>Middleware: Bash-scripts who do various things and MarryTTS</li>
+<li>Frontend: Simon </li>
+</ul>
+
+<h2>
+<a id="backend-language-model" class="anchor" href="#backend-language-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>BACKEND: language model</h2>
+
+<p>For a PC to understand humans it needs to know how they sound and what words they use. It does that with a language model. It is the brain of this project :-D
+There are two types of models that describe language - grammars and statistical language models. Grammars describe very simple types of languages for command and control, and they are usually written by hand or generated automatically with plain code (Simon scenarios). </p>
+
+<p>However, for now not even all command and control words are in the open source GERMAN language model.</p>
+
+<p>I use the German language model from Voxforge: <a href="http://voxforge.org/">http://voxforge.org/</a></p>
+
+<p>More specific the on from Guenter: <a href="http://goofy.zamia.org/voxforge/">http://goofy.zamia.org/voxforge/</a></p>
+
+<p>I rely on Guenter to publish new language models (as they won't compile on my machine for some miraculous reason :-( ).
+I work actively with him to add new words into the model who can than be understood by Simon (speech recognition) and used for controling various things.</p>
+
+<p>If you want to know more about the whole model compilation business check out his awesome tools: <a href="https://github.com/gooofy/voxforge/">https://github.com/gooofy/voxforge/</a></p>
+
+<h2>
+<a id="middleware-bash-scripts-do-the-stuff--" class="anchor" href="#middleware-bash-scripts-do-the-stuff--" aria-hidden="true"><span class="octicon octicon-link"></span></a>MIDDLEWARE: bash scripts do the stuff .-)</h2>
+
+<p>Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the net, switch on a lamp ??
+It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.</p>
+
+<p>MarryTTS is used to generate spoken responses and output of the data collected. -&gt; <a href="https://github.com/marytts/marytts">https://github.com/marytts/marytts</a></p>
+
+<h2>
+<a id="frontend-simon" class="anchor" href="#frontend-simon" aria-hidden="true"><span class="octicon octicon-link"></span></a>FRONTEND: Simon</h2>
+
+<p>Great program, it is very powerful and heart of this project! The dev is also really helpful and nice guy! 
+<strong>It handles all the basics like microphone calibration, recording what you are saying, comparing that with the language model and launching commands etc</strong></p>
+
+<p>Other than that I use Simon to do various things from me:</p>
+
+<ul>
+<li>Break down the functionality of the scripts into modules (called Scenarios), so someone can only use the "Search" module and don't has to install all the other modules like Translation etc.</li>
+<li>It is possible to train the speech model to your voice so it understands you (better) (very important!)</li>
+<li>Provides and easy method to change the activation sentences to your likening</li>
+<li>Can do many more things on its own without the scripts :-D</li>
+</ul>
+
+<p>Check out Simon here: <a href="http://grasch.net/blog">http://grasch.net/blog</a> and here <a href="https://simon.kde.org/">https://simon.kde.org/</a> </p>
+
+<p>Youtube video: <a href="http://www.youtube.com/watch?v=x_9ImaiOISs&amp;list=UUiVicBYegdFX9BnYOD2EMNw">http://www.youtube.com/watch?v=x_9ImaiOISs&amp;list=UUiVicBYegdFX9BnYOD2EMNw</a> (quite old but you sould get the idea :-D)</p>
+
+<h1>
+<a id="trouble-" class="anchor" href="#trouble-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trouble ?</h1>
+
+<p>As this is for the German model I do obviously speak German and you can use that language if you contact me :-)</p>
+
+<p>Please open a "Issue" here on github with a description what went wrong! Thanks.</p>
+
+<h1>
+<a id="want-to-help-" class="anchor" href="#want-to-help-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to help !?</h1>
+
+<p>Just get in touch! Help is always needed and there is plenty to do!</p>
+
+<p><strong>Read the ProjectStructure.md, Todo.md and FAQ.md!</strong></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ManuGithubSteam/LinJarK">Linjark</a> is maintained by <a href="https://github.com/ManuGithubSteam">ManuGithubSteam</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
