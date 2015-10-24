@@ -94,10 +94,8 @@ for controlling applications and devices. But also because their are not many sc
 easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of).
  <strong>This project will change that!</strong></p>
 
-<hr width="50">
-
 <b>Contents:</b>
-<a href="href="#status"" name="Status"></a>
+<a id="status" title="Status"></a>
 
 
 <h1>
