@@ -94,9 +94,27 @@ for controlling applications and devices. But also because their are not many sc
 easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of).
  <strong>This project will change that!</strong></p>
 
-<b>Contents:</b>
-<a id="status" title="Status"></a>
+Jump right in and see the contents below :-)
 
+<hr width="50">
+
+<b>Contents:</b>
+<br>
+<a href="#status" >Status of the project/model</a><br>
+
+<a href="#goal" >1. Start the installation</a><br>
+<a href="#goal" >2. Basic Configuration of Simon</a><br>
+<a href="#goal" >3. Install some Linjark-Modules</a><br>
+<a href="#goal" >4. Some things you should know</a><br>
+<a href="#goal" >5. How to train properly</a><br>
+6. Have a blast!<br>
+
+<a href="#goal" >Aim of this project</a><br>
+
+<a href="#inspiration" >Inspiration</a><br>
+<a href="#structure--used-technologie" >Used technologies</a><br>
+<a href="#trouble" >Troubleshoot</a><br>
+<a href="#want-to-help" >Care to help?</a><br>
 
 <h1>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h1>
@@ -156,7 +174,7 @@ easy way or another program who would scan the pocketsphinx output and launch so
 <p>For the English version of the language model / speech recognition check out Blather: <a href="https://gitorious.org/blather/pages/Home">https://gitorious.org/blather/pages/Home</a> or Youtube: <a href="https://www.youtube.com/watch?v=gr1FZ2F7KYA">https://www.youtube.com/watch?v=gr1FZ2F7KYA</a></p>
 
 <h1>
-<a id="structure--used-technologies" class="anchor" href="#structure--used-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Structure / Used technologies</h1>
+<a id="structure--used-technologie" class="anchor" href="#structure--used-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Structure / Used technologies</h1>
 
 <ul>
 <li>Backend: language model</li>
@@ -209,18 +227,17 @@ It is all done here. I use bash scripts for this because they are easy to unders
 <p>Youtube video: <a href="http://www.youtube.com/watch?v=x_9ImaiOISs&amp;list=UUiVicBYegdFX9BnYOD2EMNw">http://www.youtube.com/watch?v=x_9ImaiOISs&amp;list=UUiVicBYegdFX9BnYOD2EMNw</a> (quite old but you sould get the idea :-D)</p>
 
 <h1>
-<a id="trouble-" class="anchor" href="#trouble-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trouble ?</h1>
+<a id="trouble" class="anchor" href="#trouble-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trouble ?</h1>
 
 <p>As this is for the German model I do obviously speak German and you can use that language if you contact me :-)</p>
 
-<p>Please open a "Issue" here on github with a description what went wrong! Thanks.</p>
+<p><a href="https://github.com/ManuGithubSteam/LinJarK/i" target="_blank">Please open a "Issue" here on github with a description what went wrong!</a> Thanks.</p>
 
 <h1>
-<a id="want-to-help-" class="anchor" href="#want-to-help-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to help !?</h1>
+<a id="want-to-help" class="anchor" href="#want-to-help-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to help !?</h1>
 
 <p>Just get in touch! Help is always needed and there is plenty to do!</p>
 
-<p><strong>Read the ProjectStructure.md, Todo.md and FAQ.md!</strong></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/ManuGithubSteam/LinJarK">Linjark</a> is maintained by <a href="https://github.com/ManuGithubSteam">ManuGithubSteam</a>.</span>
