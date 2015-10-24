@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linjark by ManuGithubSteam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Linjark</h1>
+      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux Desktop users</h2>
+      <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
+      <a href="https://github.com/ManuGithubSteam/LinJarK/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ManuGithubSteam/LinJarK/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+
+<a href="index.html"> << go_back</a>
+      <h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation </h1>
+
+<p>
+
+To get speech recognition you need basicly four things:<br>
+<br>
+<ul>A Language model that supports your said words<br></ul>
+   <ul> Simon, the speech recognition programm<br></ul>
+   <ul> MarryTTS the spreech systesizer to answer you<br></ul>
+  <ul>  A Scenario for Simon, so some action can be done<br></ul>
+
+This document will guide you through the install process. Everything (apart from Simon) is installed in .linjark in your HOME.<br>
+
+First we will download the linjark script, that in turn will download and install MarryTTS and some other things. <br>Be aware that you still need to
+ install Simon from your distribution repository.
+<h2>Installation of linjark</h2>
+
+<h4>Depencies:</h4>
+
+Linkajrk depends on the following to function properly. Please install the necessay packages.<br>
+
+wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip<br><br>
+
+<code>wmctrl xdotool html-xml-utils kdialog sox xclip</code>
+<br>
+    Download the Install.sh script and make it executeable:<br>
+
+<code>wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh</code><br>
+
+<code>chmod +x install.sh</code><br>
+
+    Start the script with "i" parameter to start Install<br>
+
+<code>./install.sh i</code><br>
+
+<b>IMPORTANT:</b> Be aware that <i>"/home/$USER/.linjark/bin"</i> gets added to your $PATH var.<br>
+Be sure that your .bashrc is called or .bash_profile gets executed on login, otherwise Simon will not function properly!<br> 
+You can also add the Path to your /etc/environment. Check your distribution dokumentation for that!<br> <br> 
+
+You can start Simon this way in a terminal:<br> <br> 
+
+<code>PATH=\$PATH:/home/$USER/.linjark/bin simon</code><br> <br> 
+
+<b>NOTE:</b> If you are not happy with the predefined words who are used to adress you (Sir or Miss) just edit .linjark/gender file and write in it waht you want eg. Lord
+<h2>Installation of Simon</h2> 
+<br> 
+Use the repository of your distribution to install Simon (min version: 0.4.1).<br>  It is a KDE/QT programm and has KDE/QT
+depencies among others used for speech model generation (sphinxtrain, sphinxbase etc).
+<br> <br> 
+
+For Gentoo this would be:<br> <br> 
+
+
+USE Flags: kdepim, libsamplerate, nls, opencv, sphinx<br> 
+
+
+<code>emerge simon pocketsphinx sphinx3 SphinxTrain</code><br> <br>
+
+For Debain/Ubuntu based distros:<br>
+
+<code>apt-get install simon sphinx3 sphinxtrain</code><br><br>
+
+For Opensuse :<br>
+
+Add the repository: "OpenSUSE Build Service: KDE:Extras" (in Community Repositorys)<br>
+
+<code>zypper in simon</code><br>
+
+Also install SphinxTrain from software.opensuse.org:<br>
+
+http://software.opensuse.org/package/sphinxtrain?search_term=sphinxtrain<br><br>
+
+Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc. You can test this for example with Audacity :-D<br><br>
+
+<b>See:</b>
+
+<a href="https://userbase.kde.org/Simon">https://userbase.kde.org/Simon</a> <br>
+<a href="https://userbase.kde.org/Simon/Handboo">https://userbase.kde.org/Simon/Handboo</a>k <br>
+<a href="https://forum.kde.org/viewforum.php?f=216">https://forum.kde.org/viewforum.php?f=216</a><br>
+
+In general it is a very good idea to read the handbook! Simon must work correctly for the speech recognition.<br>
+
+If you compile it from source, make sure that +nls, +sphinx are compiled in!<br>
+<h2>Installation of the language model in Simon</h2>
+
+Navigate in Simon to "Configure Accoustic Model" -> "Open Model" -> "Import"<br>
+
+Now navigate to you HOME there sould be an .sbm file. Import it.<br>
+
+Tick the box: "Adapt base model using training samples"<br>
+
+<b>NOTE:</b> Be aware that training and computing the model can take many hours (6-12 hours and more!!!) dependent on CPU and RAM.<br><br>
+
+<b>TIP:</b> As Simon want to compile a new model every time you finished one training session it is a good idea to remove the tick in 
+"File" "Connect to server". Then the model will not be compiled.<br><br>
+
+When you are finished training the sentences of your scenarios (recognition rate should be above 30)<br>
+Tick the box again and the model will compile with your speech patterns.<br>
+
+<h2>Installation of Modules</h2>
+
+Go into the modules folder on Github and download the module you want.
+
+<a href="https://github.com/ManuGithubSteam/LinJarK">https://github.com/ManuGithubSteam/LinJarK</a>
+
+Then extract it in your Home folder. The scripts will be automatically installed into the right folder.
+<code>
+tar xvf MODULE.tar.gz</code>
+
+Open up Simon and click on "Manage Scenarios" -> "Open" -> "Import from file" then import the .scenario file from your HOME folder.
+
+Check if there is a <b>READEME</b> file in your HOME folder and read it :-)
+<h2>Use</h2>
+
+It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech. To do that, use the provided training sentences in the modules.
+
+A good recognition rate is about 30-50 but more is even better (100-120). This depends also on the spoken word, shorter words are harder to train.
+
+Enjoy :-)
+ </p>
+<a href="index.html"> << go_back</a>
+      <h1>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ManuGithubSteam/LinJarK">Linjark</a> is maintained by <a href="https://github.com/ManuGithubSteam">ManuGithubSteam</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

@@ -24,7 +24,7 @@
 
 <p>It is your own personal electronic butler like in the Iron Man movies for your Linux desktop :-)<br>
 
-<br> This is achieved with some software who is bundled together by me to make the whole experience somewhat user friendly.
+<br> This is achieved with different software which is bundled together by me to make the whole experience somewhat user friendly.
  </p>
 
       <h1>
@@ -59,9 +59,10 @@ However there are some modules who will send data to the could because you can s
 <br><br>A good example is the translate module: It will rely on the pre-formed sentence: "Simon translate to spanish" when you speak that sentence simon will pick it up and 
 after a ping sound you can say any random word. This will then be sent to Google. Google will return what you have said and Linjark will then translate this word into spanish.
 <br><br>
-Linjark will not listen into your home like other solutions do. <br>
+Linjark will not listen into your home like other solutions do. You can always decide not to use these modules anyway.<br>
 Even the modules who require cloud computing are only started when you ask them and only about 4 seconds of sound/voice is recorded.<br>
 If you don't believe it look into the code :-)
+
 
 </p>
 
@@ -102,7 +103,7 @@ Jump right in and see the contents below :-)
 <br>
 <a href="#status" >Status of the project/model</a><br>
 
-<a href="#goal" >1. Start the installation</a><br>
+<a href="install.html" >1. Start the installation</a><br>
 <a href="#goal" >2. Basic Configuration of Simon</a><br>
 <a href="#goal" >3. Install some Linjark-Modules</a><br>
 <a href="#goal" >4. Some things you should know</a><br>
@@ -231,7 +232,7 @@ It is all done here. I use bash scripts for this because they are easy to unders
 
 <p>As this is for the German model I do obviously speak German and you can use that language if you contact me :-)</p>
 
-<p><a href="https://github.com/ManuGithubSteam/LinJarK/i" target="_blank">Please open a "Issue" here on github with a description what went wrong!</a> Thanks.</p>
+<p><a href="https://github.com/ManuGithubSteam/LinJarK/issues" target="_blank">Please open a "Issue" here on github with a description what went wrong!</a> Thanks.</p>
 
 <h1>
 <a id="want-to-help" class="anchor" href="#want-to-help-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to help !?</h1>
