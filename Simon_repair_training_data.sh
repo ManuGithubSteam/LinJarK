@@ -188,5 +188,5 @@ rm prompts
 
 mv t prompts
 
-kdialog --caption "Bitte warten" --title "Wichtig" --msgbox "Bitte Simon neustarten um das Sprachmodel neu zu berechnen."
+kdialog --caption "Bitte warten" --title "Wichtig" --msgbox "Fertig! Bitte Simon neustarten um das Sprachmodel neu zu berechnen."
 
