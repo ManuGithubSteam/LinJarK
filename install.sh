@@ -3,7 +3,7 @@
 if [ -z "$1" ]
   then
   echo ""
-  echo "# Copyright 2014 Manuel Soukup"
+  echo "# Copyright 2015 Manuel Soukup"
   echo "# License: GPL"
   echo ""
     echo ""
@@ -64,14 +64,21 @@ if [ "$1" == 'i' ]
 #    
    cd ~
    
-      
+  echo ""
+  echo "Downloading Simon repair training data script"
+  echo ""
+   
+  wget https://github.com/ManuGithubSteam/LinJarK/raw/master/Simon_repair_training_data.sh
+  chmod +x Simon_repair_training_data.sh
+  
+  
   echo ""
   echo "Downloading LM for Simon"
   echo ""
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140813.sbm
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20141117.sbm
    
    cd .linjark/
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20140813_dict.dic
+   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/voxforge-de-r20141117_dict.dic
    cd ~
            echo ""
   echo "Edit PATH variable to be able to launch scripts"
@@ -157,7 +164,7 @@ chmod u+x "${awk_path}"
    echo ""
     
     echo ""
-    echo " So get your guns and have fun with your own electronic butler....."
+    echo " Get your guns and have fun with your own electronic butler....."
    echo ""
     
   
