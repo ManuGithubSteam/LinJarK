@@ -45,6 +45,8 @@ Currently supported:<br>
 - Dictating an Email with Thunderbird -> eg: If your hands are full<br>
 - Controlling Mypaint -> eg: Use your voice to select different brush sizes while you draw with your hands.<br>
 - and many more....<br>
+<br>
+For an in detail view what you can do, look into the <a href="https://github.com/ManuGithubSteam/LinJarK/raw/master/linjark_grammar3.ods">Grammar File of Linjark</a>
 
  </p>
       <h1>
@@ -256,7 +258,7 @@ It is all done here. I use bash scripts for this because they are easy to unders
     GNU General Public License for more details.<br>
 <br>
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.</cite></ul>
+    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</cite></ul>
 
 
       <footer class="site-footer">
