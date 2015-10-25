@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linjark by ManuGithubSteam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Linjark</h1>
+      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux Desktop users</h2>
+      <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
+      <a href="https://github.com/ManuGithubSteam/LinJarK/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ManuGithubSteam/LinJarK/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+
+<a href="install_modules.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="train.html"> >> Train properly</a>
+
+      <h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some things to know </h1>
+
+<p>
+<h4>Usage</h4>
+
+It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech.<br>
+ To do that, use the provided training sentences in the modules.<br>
+<br>
+A good recognition rate is about 30-50 but more is even better (100-120). <br>This depends also on the spoken word and your way of saying it, shorter words are harder to train.
+ <br> For very short words who are not clearly spoken sometimes a recognition rate of 500 or more is necessary.
+ 
+ <h4>How much do I need to train ? </h4> 
+<ins>Well this depends on many factors:</ins><br>
+
+How good is the base language model ?<br>
+-> <i>More hours are better!</i><br>
+Do you speak a dialect who is only spoken in three villages ? <br>
+-> <i>This will make it harder to mix your speech with the base model and can lead to many false-positives.</i><br>
+Do you use long Sentences in the commands or short words with a lot of "non-spoken" letters ?<br>
+-> <i>Longer is better.</i><br>
+Do you use shot-cuts like: "recon" instead of "recommend"<br>
+-> <i>Short-cuts are not a problem for Simon, if the language model has that short-cut word built in. However as it is shorter it is harder to recognise.</i><br>
+ <br>
+<ins>For a good recognition rate I would recommend the following:</ins><br>
+
+- Check that your mic is loud enough but not too loud either.
+<a href="https://docs.kde.org/trunk4/en/extragear-accessibility/simon/recording.html#sample_quality_assurance">More information</a><br>
+- Train the <b>basemodel</b> at <a href="http://www.voxforge.org/" target="_blank">Voxforge</a> if possible with your voice. Anything from 120 to 500 minutes is good.
+Read a book or something so it gets a "feel" for your general voice. <br>
+- Simon commands should be trained till the recognition rate is above 100<br><br>
+
+<i>If you get a lot of false-positives, train MORE!!!</i>
+ 
+<h4>Other things of importance </h4> 
+ 
+ Be aware that training and computing the model can take many hours (6-12 hours and more!!!) dependent on CPU and RAM. <br> 
+ Here on my quad 3.ghz cpu with 16 gig of ram with all modules installed and properly trained for me it takes like 10 hours to recalculate to model.<br> <br> 
+ This obviously depends heavily on the amount of trainings samples you speak into Simon.
+<br> 
+<hr>
+As for now (10/2015) there is a bug in Simon(4.0 and 4.1) (using US ASCII) which leads to a malformation of the sample-filenames and also of the prompt-texts
+ if you use German Umlauts in the scenarios.<br> <br>As this is heavily the case for a German speaking community. I wrote a fixing-script for this. 
+Sadly the simon development has stopped and the successor who is being built lacks many features of Simon. <br><br>
+ 
+ For more information see: <a href="train.html">How to train properly.</a>
+ 
+ <hr>
+ Also quite annoying and misleading is the fact, that the progress bar on the lower right side inside of simon (Compiling model)) does not always speak the truth. <br>
+ This means, when it is fished compiling it may show 100% but writes still "Compiling model". To make sure if the model is finished, restart Simon.
+  <hr>
+ During model compile Simon may activate the "listening" part and deactivates it, numerous times. I don't know what is causing this but it still compiles the model successfully.
+ 
+ 
+ <br><br>
+ 
+ <h1>What is the GOOGLE API key ?</h1>
+
+It is an unique key that allows you as user to use sepcial Google services like translation,
+Geolocation and many more WITHOUT the need to use a Webbrowser. This enables you to use these services in your programms and scripts.<br><br>
+
+It allows Google to monitor your usage of these services, so they can block you or charge you for using more than they allow freely.
+<h4>Why do I need one ?</h4>
+
+For the use of the voicecontrol/speech-recognition you don't have to have one but without it you will not be able 
+to use these modules. (This list will most likely grow over time as new words will enter the language model)<br><br>
+
+<ul>   <li> Internet search with your voice (Amazon, Google etc)</li>
+    <li>Translation (translate words in other languages)<br></li>
+    <li>Music (the ability to select a specific track by just saying its name)</li></ul>
+
+<h4>How to get one?</h4>
+
+Follow this Google HowTo -> <a href="http://www.chromium.org/developers/how-tos/api-keys">http://www.chromium.org/developers/how-tos/api-keys</a>
+<br><br>
+Note that the keys you have now acquired are not for distribution purposes and must not be shared with other users.
+
+<h4>Restrictions</h4>
+
+Google restricts the use of their Speech API to 50 uses per day per API-Project.
+
+<h4>How to use the API key with linjark ?</h4>
+
+Copy the API Key (and only the API KEY) and paste it into a bash terminal with this command:<br>
+
+<code>echo PASTE_KEY_HERE > ~/.linjark/google_api</code>
+
+<br>Thats it! The scripts who need access to the Google API will look into that file and get the key. 
+
+
+ </p>
+<a href="install_modules.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="train.html"> >> Train properly</a>
+
+      <h1>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ManuGithubSteam/LinJarK">Linjark</a> is maintained by <a href="https://github.com/ManuGithubSteam">ManuGithubSteam</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

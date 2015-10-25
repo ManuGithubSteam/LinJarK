@@ -20,43 +20,55 @@
 
     <section class="main-content">
 
-<a href="config.html"> << go_back</a> 
+<a href="install.html"> << go_back</a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a  href="index.html"> -Main Site-</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="knowledge.html"> >> Some things to know </a>
+<a href="install_modules.html"> >> Linjark modules </a>
 
       <h1>
-<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Linjark modules </h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Simon configuration </h1>
 
 <p>
 
-Go into the modules folder on Github and download the module you want.<br>
+Here are some remarks about my Simon config, I found that they work best for me.<br>
 <br>
+There is no guarantee that this will work with your setup. Every hardware is different! Read the Handbook from Simon!<br>
+<br>
+Go to "<i>Settings</i>" -> "<i>Configure Simon</i>" -> "<i>General</i>"<br><br>
 
-<a href="https://github.com/ManuGithubSteam/LinJarK/tree/master/modules">https://github.com/ManuGithubSteam/LinJarK/tree/master/modules</a>
+Tick box: "<i>Show warning when Simon detects a problem with a sample</i>"<br><br>
 
-<br><br>
-Then extract it in your <i>Home</i> folder. The scripts will be automatically installed into the right folder.
-<br><br>
-<code>tar xvf MODULE.tar.gz</code>
-<br><br>
-Open up Simon and click on "<i>Manage Scenarios</i>" -> "<i>Open</i>" -> "<i>Import from file</i>" then import the <i>"SOMETHING.scenario"</i> file from your HOME folder.
-<br><br>
-<i>Check if there is a <b>README</b> file in your HOME folder and read it !</i><br><br>
-Just read it!!
+Then go to "<i>Recording</i>" -> <i>"Voice Activity Detection"</i>
+<br>
+Use this settings.
 
+<ul><li>Cutofflevel: Everything below this level is considered “silence” (background noise).</li>
+
+<li>HeadMargin: Cache for as long as head margin to start consider it a real sample. (gives better training results as longer samples yield better recognition results) <br>
+</li>
+<li>Tail Margin:After the recording went below the cutoff level. Simon waits that long. See reason above.</li> 
+
+<li>Skip Samples: Skip samples shorter than...</li></ul>
+
+
+Cutofflevel: <i>2000</i> <br>HeadMargin: <i>300</i> <br>Tail Margin: <i>600</i> <br>Skip Samples: <i>150</i><br><br>
+
+Then go to "<i>Training</i>" <br><br>
+
+Signal Noise Ratio: <i>300-500</i> for me.<br> Depends on the environment you are in. Lower means more background noise! <br>
+<br>
+Tick box: <i>Volume calibration <br>
+</i>
+Tick box: <i>Power Training</i> (not recommended at the beginning!)<br>
 
 
  </p>
- 
- <a href="config.html"> << go_back</a> 
+<a href="install.html"> << go_back</a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a  href="index.html"> -Main Site-</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="knowledge.html"> >> Some things to know </a>
-
-
+<a href="install_modules.html"> >> Linjark modules </a>
 
       <h1>
 

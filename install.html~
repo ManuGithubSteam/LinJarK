@@ -20,7 +20,11 @@
 
     <section class="main-content">
 
-<a href="index.html"> << go_back</a>
+
+<a href="install.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="config.html"> >> Configuration of Simon</a>
       <h1>
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation </h1>
@@ -129,7 +133,13 @@ Tick the box: "<i>Adapt base model using training samples</i>"<br><br>
 Next step: <a href="config.html"> >> Configuration of Simon</a>
 
  </p>
-<a href="index.html"> << go_back</a>
+ <a href="install.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="config.html"> >> Configuration of Simon</a>
+
+
       <h1>
 
 
