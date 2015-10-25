@@ -20,129 +20,126 @@
 
     <section class="main-content">
 
-<a href="index.html"> << go_back</a>
+
+<a href="install.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="config.html"> >> Configuration of Simon</a>
       <h1>
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation </h1>
 
 <p>
 
-To get speech recognition you need basicly four things:<br>
+To get speech recognition on your Linux box you need basicly four things:
 <br>
-<ul>A Language model that supports your said words<br></ul>
-   <ul> Simon, the speech recognition programm<br></ul>
-   <ul> MarryTTS the spreech systesizer to answer you<br></ul>
-  <ul>  A Scenario for Simon, so some action can be done<br></ul>
+<ul><li>A language/acoustic model that supports your spoken language</li>
+   <li>Simon, the speech recognition program</li>
+   <li>MarryTTS the spreech-synthesizer to answer you</li>
+<li>A scenario for Simon, so some actions can be done</li></ul>
 
-This document will guide you through the install process. Everything (apart from Simon) is installed in .linjark in your HOME.<br>
-
-First we will download the linjark script, that in turn will download and install MarryTTS and some other things. <br>Be aware that you still need to
- install Simon from your distribution repository.
+This document will guide you through the install process of may of the above. For the rest, see the <a href="config.html">Configuration</a> page.<br> Everything (apart from Simon) is installed in .linjark in your <i>HOME</i>.<br>
+<br>
+First we will download the linjark script, that in turn will download and install MarryTTS and set the groundwork for the modules later on. 
+<br><br>Be aware that you still need to
+ install Simon from your distribution repository (or compile it yourself).
 <h2>Installation of linjark</h2>
 
-<h4>Depencies:</h4>
+<h4>Dependencies:</h4>
 
-Linkajrk depends on the following to function properly. Please install the necessay packages.<br>
+Linkajrk depends on the following programs to function properly. Please install the necessary packages.<br>
 
-wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip<br><br>
+wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip<br>
 
 <code>wmctrl xdotool html-xml-utils kdialog sox xclip</code>
-<br>
-    Download the Install.sh script and make it executeable:<br>
+<br><br>
+    Download the Install.sh script and make it executable:<br>
 
 <code>wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/install.sh</code><br>
 
 <code>chmod +x install.sh</code><br>
-
+<br>
     Start the script with "i" parameter to start Install<br>
 
-<code>./install.sh i</code><br>
+<code>./install.sh i</code><br><br>
 
-<b>IMPORTANT:</b> Be aware that <i>"/home/$USER/.linjark/bin"</i> gets added to your $PATH var.<br>
-Be sure that your .bashrc is called or .bash_profile gets executed on login, otherwise Simon will not function properly!<br> 
+<b>IMPORTANT:</b> <br>Be aware that <i>"/home/$USER/.linjark/bin"</i> gets added to your $PATH variable.<br>
+Be sure that your .bashrc is called or .bash_profile gets executed on login, <ins>otherwise Simon will not function properly!</ins><br> <br>
 You can also add the Path to your /etc/environment. Check your distribution dokumentation for that!<br> <br> 
 
-You can start Simon this way in a terminal:<br> <br> 
+You can also start Simon this way in a terminal:<br>
 
 <code>PATH=\$PATH:/home/$USER/.linjark/bin simon</code><br> <br> 
 
-<b>NOTE:</b> If you are not happy with the predefined words who are used to adress you (Sir or Miss) just edit .linjark/gender file and write in it waht you want eg. Lord
+<b>NOTE:</b> If you are not happy with the predefined word who is used to address you (Sir or Miss) just edit .linjark/gender file 
+and write in it what you want eg. Lord
+
 <h2>Installation of Simon</h2> 
-<br> 
-Use the repository of your distribution to install Simon (min version: 0.4.1).<br>  It is a KDE/QT programm and has KDE/QT
-depencies among others used for speech model generation (sphinxtrain, sphinxbase etc).
+
+Use the repository of your distribution to install Simon (min version: 0.4.1!).<br>  It is a KDE/QT program and has KDE/QT
+dependencies among others used for speech model generation (sphinxtrain, sphinxbase etc).
+<br>
+Make sure that support for SHINX is present (default is HTK).
 <br> <br> 
 
-For Gentoo this would be:<br> <br> 
-
+<ins>For Gentoo this would be:</ins><br> 
 
 USE Flags: kdepim, libsamplerate, nls, opencv, sphinx<br> 
 
-
 <code>emerge simon pocketsphinx sphinx3 SphinxTrain</code><br> <br>
 
-For Debain/Ubuntu based distros:<br>
+<ins>For Debain/Ubuntu based distros:</ins><br>
 
 <code>apt-get install simon sphinx3 sphinxtrain</code><br><br>
 
-For Opensuse :<br>
+<ins>For Opensuse :</ins><br>
 
-Add the repository: "OpenSUSE Build Service: KDE:Extras" (in Community Repositorys)<br>
+Add the repository: "OpenSUSE Build Service: KDE:Extras" (in Community Repositorys), then<br>
 
 <code>zypper in simon</code><br>
 
 Also install SphinxTrain from software.opensuse.org:<br>
 
-http://software.opensuse.org/package/sphinxtrain?search_term=sphinxtrain<br><br>
+<a href="http://software.opensuse.org/package/sphinxtrain?search_term=sphinxtrain">http://software.opensuse.org/package/sphinxtrain?search_term=sphinxtrain</a><br><br>
 
-Also make sure that your microphone is properly configured and seen/heard by simon and alsa etc. You can test this for example with Audacity :-D<br><br>
+Also make sure that your microphone is properly configured and seen/heard by simon and alsa/pulseaudio etc. You can test this for example with Audacity :-D<br><br>
 
-<b>See:</b>
+<b>For more information on Simon see:</b><br>
 
 <a href="https://userbase.kde.org/Simon">https://userbase.kde.org/Simon</a> <br>
-<a href="https://userbase.kde.org/Simon/Handboo">https://userbase.kde.org/Simon/Handboo</a>k <br>
+<a href="https://userbase.kde.org/Simon/Handbook">https://userbase.kde.org/Simon/Handbook</a>k <br>
 <a href="https://forum.kde.org/viewforum.php?f=216">https://forum.kde.org/viewforum.php?f=216</a><br>
-
+<br>
 In general it is a very good idea to read the handbook! Simon must work correctly for the speech recognition.<br>
-
+<br>
 If you compile it from source, make sure that +nls, +sphinx are compiled in!<br>
+
+
 <h2>Installation of the language model in Simon</h2>
 
-Navigate in Simon to "Configure Accoustic Model" -> "Open Model" -> "Import"<br>
+This step will install the <b>German</b> language model who is provided by me.<br>
 
-Now navigate to you HOME there sould be an .sbm file. Import it.<br>
+<a href="http://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/">If you want to use Simon with another language you can find language models for SHINX here.</a>
+For further steps on this look into the FAQ.
 
-Tick the box: "Adapt base model using training samples"<br>
+<br> <br>
 
-<b>NOTE:</b> Be aware that training and computing the model can take many hours (6-12 hours and more!!!) dependent on CPU and RAM.<br><br>
+Navigate in Simon to "<i>Configure Acoustic Model</i>" -> "<i>Open Model</i>" -> <i>"Import</i>"<br>
 
-<b>TIP:</b> As Simon want to compile a new model every time you finished one training session it is a good idea to remove the tick in 
-"File" "Connect to server". Then the model will not be compiled.<br><br>
+Now navigate to you HOME there should be an <i>voxforge*.sbm </i>file. Import it.<br><br>
 
-When you are finished training the sentences of your scenarios (recognition rate should be above 30)<br>
-Tick the box again and the model will compile with your speech patterns.<br>
+Tick the box: "<i>Adapt base model using training samples</i>"<br><br>
 
-<h2>Installation of Modules</h2>
+Next step: <a href="config.html"> >> Configuration of Simon</a>
 
-Go into the modules folder on Github and download the module you want.
-
-<a href="https://github.com/ManuGithubSteam/LinJarK">https://github.com/ManuGithubSteam/LinJarK</a>
-
-Then extract it in your Home folder. The scripts will be automatically installed into the right folder.
-<code>
-tar xvf MODULE.tar.gz</code>
-
-Open up Simon and click on "Manage Scenarios" -> "Open" -> "Import from file" then import the .scenario file from your HOME folder.
-
-Check if there is a <b>READEME</b> file in your HOME folder and read it :-)
-<h2>Use</h2>
-
-It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech. To do that, use the provided training sentences in the modules.
-
-A good recognition rate is about 30-50 but more is even better (100-120). This depends also on the spoken word, shorter words are harder to train.
-
-Enjoy :-)
  </p>
-<a href="index.html"> << go_back</a>
+ <a href="install.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="config.html"> >> Configuration of Simon</a>
+
+
       <h1>
 
 
