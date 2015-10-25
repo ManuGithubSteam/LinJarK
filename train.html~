@@ -20,55 +20,63 @@
 
     <section class="main-content">
 
-<a href="install.html"> << go_back</a> 
+<a href="knowledge.html"> << go_back</a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a  href="index.html"> -Main Site-</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="install_modules.html"> >> Linjark modules </a>
 
       <h1>
-<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Simon configuration </h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to train properly with Simon </h1>
 
 <p>
 
-Here are some remarks about my Simon config, I found that they work best for me.<br>
+To work around the bug with the wrong encoding of the sample-files, you are advised to train with Simon in this way.<br>
 <br>
-There is no guarantee that this will work with your setup. Every hardware is different! Read the Handbook from Simon!<br>
+Also this approach will help reduce redundant/overlapping compiles (as Simon does normally recompile the model 
+after each training session, even if you start another immediately afterwards) which in itself can lead to some strange errors. <br><br>
+
+As the data for the model has then different states all the time the following compiles get screwed also this prolongs the time further 
+for a successful recompilation of the speech model and clogs up you pc.<br>
 <br>
-Go to "<i>Settings</i>" -> "<i>Configure Simon</i>" -> "<i>General</i>"<br><br>
+<ins>For training the acoustic model to your speech:</ins>
+<ul>
+1. Start Simon<br>
+2. Go to "<i>File</i>" and uncheck the box "<i>Connected</i>"<br>
+3. On the bottom there should be: "<i><b>Disconnected</b></i>"<br>
+4. Now select any training you want from the Training-field and click "<i>Start Training</i>"<br>
+5. Do as many trainings as you like.<br>
+6. Now <b>close Simon</b> with <i>Ctrl+Q</i> or "<i>File</i>" then "<i>Quit</i>"<br>
+7. Now start the "<i>Simon_repair_training_data.sh</i>" script, it should be in your <i>HOME</i> directory. 
+	You can just click on it. A message will display when the repair is finished.<br>
+8. After the script is finished, <i><b>restart Simon</b></i> to start the recompilation of the acoustic model.	<br>
+9. Wait..... and wait....
+<br><br>
+Have fun with your new model.
 
-Tick box: "<i>Show warning when Simon detects a problem with a sample</i>"<br><br>
+<h1>Common Errors</h1>
 
-Then go to "<i>Recording</i>" -> <i>"Voice Activity Detection"</i>
+Ever seen this after a recompile of the model: <br>
+
+<img src="gramer_error.png" width="464" height="454" alt="">
+
 <br>
-Use this settings.
 
-<ul><li>Cutofflevel: Everything below this level is considered “silence” (background noise).</li>
-
-<li>HeadMargin: Cache for as long as head margin to start consider it a real sample. (gives better training results as longer samples yield better recognition results) <br>
-</li>
-<li>Tail Margin:After the recording went below the cutoff level. Simon waits that long. See reason above.</li> 
-
-<li>Skip Samples: Skip samples shorter than...</li></ul>
-
-
-Cutofflevel: <i>2000</i> <br>HeadMargin: <i>300</i> <br>Tail Margin: <i>600</i> <br>Skip Samples: <i>150</i><br><br>
-
-Then go to "<i>Training</i>" <br><br>
-
-Signal Noise Ratio: <i>300-500</i> for me.<br> Depends on the environment you are in. Lower means more background noise! <br>
+<b><ins>Reason:</ins></b> <br>
 <br>
-Tick box: <i>Volume calibration <br>
-</i>
-Tick box: <i>Power Training</i> (not recommended at the beginning!)<br>
+The reason for this is, that the grammar from a scenario can not be understood by Simon/SHPINX. The grammar structure gets more complicated with each added scenario. <br>
+ <br>
+To solve this, <b>remove the scenario</b> in question and if it is a scenario from here, <b><a href="https://github.com/ManuGithubSteam/LinJarK/issues" target="_blank">write a bugreport!</a></b>
+
+
+
+
+</ul>
+
 
 
  </p>
-<a href="install.html"> << go_back</a> 
+<a href="knowledge.html"> << go_back</a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a  href="index.html"> -Main Site-</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="install_modules.html"> >> Linjark modules </a>
 
       <h1>
 

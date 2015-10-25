@@ -29,6 +29,44 @@
 
 <p>
 
+To work around the bug with the wrong encoding of the sample-files, you are advised to train with Simon in this way.<br>
+<br>
+Also this approach will help reduce redundant/overlapping compiles (as Simon does normally recompile the model 
+after each training session, even if you start another immediately afterwards) which in itself can lead to some strange errors. <br><br>
+
+As the data for the model has then different states all the time the following compiles get screwed also this prolongs the time further 
+for a successful recompilation of the speech model and clogs up you pc.<br>
+<br>
+<ins>For training the acoustic model to your speech:</ins>
+<ul>
+1. Start Simon<br>
+2. Go to "<i>File</i>" and uncheck the box "<i>Connected</i>"<br>
+3. On the bottom there should be: "<i><b>Disconnected</b></i>"<br>
+4. Now select any training you want from the Training-field and click "<i>Start Training</i>"<br>
+5. Do as many trainings as you like.<br>
+6. Now <b>close Simon</b> with <i>Ctrl+Q</i> or "<i>File</i>" then "<i>Quit</i>"<br>
+7. Now start the "<i>Simon_repair_training_data.sh</i>" script, it should be in your <i>HOME</i> directory. 
+	You can just click on it. A message will display when the repair is finished.<br>
+8. After the script is finished, <i><b>restart Simon</b></i> to start the recompilation of the acoustic model.	<br>
+9. Wait..... and wait....
+<br><br>
+Have fun with your new model.
+
+<h1>Common Errors</h1>
+
+Ever seen this after a recompile of the model: <br>
+
+<img src="gramer_error.png" width="464" height="454" alt="">
+
+<br>
+
+<b><ins>Reason:</ins></b> <br>
+<br>
+The reason for this is, that the grammar from a scenario can not be understood by Simon/SHPINX. The grammar structure gets more complicated with each added scenario. <br>
+ <br>
+To solve this, <b>remove the scenario</b> in question and if it is a scenario from here, <b><a href="https://github.com/ManuGithubSteam/LinJarK/issues" target="_blank">write a bugreport!</a></b>
+
+</ul>
 
 
 

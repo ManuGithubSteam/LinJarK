@@ -107,7 +107,7 @@ Jump right in and see the contents below :-)
 <a href="config.html" >2. Basic Configuration of Simon</a><br>
 <a href="install_modules.html" >3. Install some Linjark-Modules</a><br>
 <a href="knowledge.html" >4. Some things you should know</a><br>
-<a href="train.html" >5. How to train properly</a><br>
+<a href="train.html" >5. How to train properly / Common errors</a><br>
 6. Have a blast!<br>
 
 <a href="#goal" >Aim of this project</a><br>
@@ -116,11 +116,11 @@ Jump right in and see the contents below :-)
 <a href="#structure--used-technologie" >Used technologies</a><br>
 <a href="#trouble" >Troubleshoot</a><br>
 <a href="#want-to-help" >Care to help?</a><br>
-
+<a href="#gpl" >License</a><br>
 <h1>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h1>
 
-<b>ATTENTION:</b> Due to some errors in (some) scenarios the compilation of own accustic models is broken atm. I'm working on a fix. 25/10/15<br><br>
+<b>ATTENTION:</b> Due to some errors in (some) scenarios the compilation of own acoustic models is broken atm. Also some modules are broken too. I'm working on a fix. 25/10/15<br><br>
 
 <ul>
 <li>
@@ -240,6 +240,23 @@ It is all done here. I use bash scripts for this because they are easy to unders
 <a id="want-to-help" class="anchor" href="#want-to-help-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to help !?</h1>
 
 <p>Just get in touch! Help is always needed and there is plenty to do!</p>
+
+<h1>
+<a id="gpl" class="anchor" href="#gpl" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<ul>
+   <cite> This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.<br>
+<br>
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.<br>
+<br>
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.</cite></ul>
 
 
       <footer class="site-footer">
