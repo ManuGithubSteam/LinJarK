@@ -47,11 +47,13 @@ if [ "$1" == 'i' ]
    cd ..
    cd ..
  
+ cd ~
+ cd .linjark
  
   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/start_marry.sh
   chmod +x start_marry.sh
   
-   
+  cd ~
   echo ""
   echo "Downloading INSTALL.md"
   echo ""
