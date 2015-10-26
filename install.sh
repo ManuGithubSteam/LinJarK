@@ -46,7 +46,10 @@ if [ "$1" == 'i' ]
    chmod +x marytts-component-installer.sh
    cd ..
    cd ..
-     
+   
+   wget 
+   chmod +x start_marry.sh
+   
   echo ""
   echo "Downloading INSTALL.md"
   echo ""
