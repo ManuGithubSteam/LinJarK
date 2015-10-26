@@ -52,6 +52,9 @@ Linkajrk depends on the following programs to function properly. Please install 
 wmctrl, xdotool, html-xml-utils, kdialog, sox, xclip<br>
 
 <code>wmctrl xdotool html-xml-utils kdialog sox xclip</code>
+
+<br><br>
+<i><b>NOTE:</b> Some modules maybe need additional software to function.</i>
 <br><br>
     Download the Install.sh script and make it executable:<br>
 
