@@ -46,9 +46,11 @@ if [ "$1" == 'i' ]
    chmod +x marytts-component-installer.sh
    cd ..
    cd ..
-   
-   wget 
-   chmod +x start_marry.sh
+ 
+ 
+  wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/start_marry.sh
+  chmod +x start_marry.sh
+  
    
   echo ""
   echo "Downloading INSTALL.md"
@@ -65,13 +67,13 @@ if [ "$1" == 'i' ]
 #   echo ""
 #   ./marytts-component-installer.sh
 #    
-   cd ~
+  cd ~
    
   echo ""
   echo "Downloading Simon repair training data script"
   echo ""
    
-  wget https://github.com/ManuGithubSteam/LinJarK/raw/master/Simon_repair_training_data.sh
+  wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/Simon_repair_training_data.sh
   chmod +x Simon_repair_training_data.sh
   
   
@@ -92,14 +94,16 @@ if [ "$1" == 'i' ]
 
    
    mkdir bin
-   awk_path="/home/$USER/bin/linjark"
+   awk_path="/home/$USER/bin/simon"
 cat > "${awk_path}" <<EOT
 #!/bin/bash
 
 PATH=$PATH:/home/$USER/.linjark/bin simon
 EOT
 chmod u+x "${awk_path}"
-   
+   cd ~/bin
+   chmod +x simon
+   cd ~
       
     echo ""
    echo ""
@@ -130,12 +134,20 @@ chmod u+x "${awk_path}"
    PATH=$PATH:/home/$USER/.linjark/bin   
    export PATH
 
+  echo ""
+  echo "Making MarryTTS Autostart on KDE Login"
+  echo ""
+   cd .kde4
+   mkdir Autostart
+   cd Autostart
+   ln -s ../../.linjark/start_marry.sh
+   
    echo ""
    echo " Please specify your gender/sex:"
    echo ""
     echo "This will allow MarryTTS to resond to you in the right words :-D"  
    echo ""
-   echo "Press [m] for male (Sir resonse), [f] for female (Miss response)"
+   echo "Press [m] for male, [f] for female"
    echo ""
    read SEX
 
@@ -165,7 +177,11 @@ chmod u+x "${awk_path}"
    echo ""
     echo " Now install Simon and download an install some modules :-D"
    echo ""
-    
+      echo ""
+    echo " After the installation of Simon, you can start Simon with $USER/bin/simon"
+   echo ""
+   
+   
     echo ""
     echo " Get your guns and have fun with your own electronic butler....."
    echo ""
