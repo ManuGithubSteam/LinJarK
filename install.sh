@@ -12,7 +12,7 @@ if [ -z "$1" ]
     echo ""
     echo "It will also guide and provide basic guidiance to install Simon and the speech model"
     echo ""
-    echo "To start the install restart the script with ./install i"
+    echo "To start the install restart the script with ./install.sh i"
     exit
 fi
 
