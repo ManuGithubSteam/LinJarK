@@ -1,3 +1,10 @@
+New Website
+=======
+
+Find us now here: https://manugithubsteam.github.io/LinJarK/
+
+For updates see the new site :-)
+
 What does it do ?
 =======
 It is your own personal electronic butler like in the Iron Man movies for your Linux desktop. 

@@ -66,7 +66,7 @@ What's with the J_w# grammar??
 ---------------------------
 
 This is needed to get better recognition results in Simon. Simon uses Grammar to make sense of words.
-If we would use normal Grammar like adjectives and noun it would ne computed like this:
+If we would use normal Grammar like adjectives and noun it would be computed like this:
 
 All Adjectives would be computed with all possible combinations even if only one was correct for this scenario. This can lead to many false positives.
 
