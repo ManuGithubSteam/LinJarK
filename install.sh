@@ -33,7 +33,7 @@ if [ "$1" == 'i' ]
   echo ""
   echo "Downloading/Install MarryTTS...."
   echo ""
-   wget https://bitbucket.org/marytts/marytts/downloads/marytts-5.1.zip
+   wget https://github.com/marytts/marytts/releases/download/v5.1.2/marytts-5.1.2.zip
    unzip marytts-5.1.zip &2> /dev/null
    
    cd marytts-5.1
