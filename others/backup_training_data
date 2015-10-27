@@ -22,18 +22,18 @@ cd .kde4/share/apps/simon/model/
 
 XZ_OPT=-9
 
-tar cfvJ training.data.archive.tar.xz training.data/ prompts
+tar cfJ Simon_training.data.archive.tar.xz training.data/ prompts
 
-mv training.data.archive.tar.xz training.data.archive_$dat.tar.xz
+mv Simon_training.data.archive.tar.xz Simon_training.data.archive_$dat.tar.xz
 
 if [ "$1" == "e" ]; then
     echo ""
     echo "Moving backup to external HDD!"
     echo ""
-    mv training.data.archive_$dat.tar.xz /run/media/manuel/bea5b975-3643-48ae-b0e3-9157b0905250/BACKUP/
+    mv Simon_training.data.archive_$dat.tar.xz /run/media/manuel/bea5b975-3643-48ae-b0e3-9157b0905250/BACKUP/
 else
 
-mv training.data.archive_$dat.tar.xz /mnt/data
+mv Simon_training.data.archive_$dat.tar.xz /mnt/data
 
 echo "moved archive to /mnt/data"
 
