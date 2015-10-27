@@ -37,7 +37,7 @@ It is most likely that you need to train Simon to your voice, otherwise it will 
 A good recognition rate is about 30-50 but more is even better (100-120). <br>This depends also on the spoken word and your way of saying it, shorter words are harder to train.
  <br> For very short words who are not clearly spoken sometimes a recognition rate of 500 or more is necessary.
  
- <h4>How much do I need to train ? </h4> 
+ <h2>How much do I need to train ? </h2> 
 <ins>Well this depends on many factors:</ins><br>
 
 How good is the base language model ?<br>
@@ -97,6 +97,8 @@ You can do it but it will be not as good as if you would speak the whole sentenc
  Also this can lead to strange SPHINX errors (who are ignored, to a certain extend but if they are to much, sphinx just crashes!)!
  
  <br>
+ <hr>
+While a new model is compiling, no speechregognition is possible, even if the "Activated" button is pressed, it just does not work while the compilation is in progress.
  
  <h1>What is the GOOGLE API key ?</h1>
 
@@ -113,17 +115,17 @@ to use these modules. (This list will most likely grow over time as new words wi
     <li>Translation (translate words in other languages)<br></li>
     <li>Music (the ability to select a specific track by just saying its name)</li></ul>
 
-<h4>How to get one?</h4>
+<h2>How to get one?</h2>
 
 Follow this Google HowTo -> <a href="http://www.chromium.org/developers/how-tos/api-keys">http://www.chromium.org/developers/how-tos/api-keys</a>
 <br><br>
 Note that the keys you have now acquired are not for distribution purposes and must not be shared with other users.
 
-<h4>Restrictions</h4>
+<h2>Restrictions</h2>
 
 Google restricts the use of their Speech API to 50 uses per day per API-Project.
 
-<h4>How to use the API key with linjark ?</h4>
+<h2>How to use the API key with linjark ?</h2>
 
 Copy the API Key (and only the API KEY) and paste it into a bash terminal with this command:<br>
 
