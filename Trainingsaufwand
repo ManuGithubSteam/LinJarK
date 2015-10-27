@@ -1,9 +1,0 @@
-
-
-Im Vorfeld habe ich schon 516 Minuten an Text in das voxforge Model eingesprochen indem ich ein Audiobook vorgelesen habe und die Prompts von voxforge. -> (http://voxforge.org/de/Read)
-
-Es reichen aber auch nur ca 120 min. So bekommt das Modell eine gute Ahnung wie man spricht. (Voxforge selbst empfieltca 15-30 minuten, aber das ist meiner Erfahrung nach zu wenig)
-
-Die Kommandos für Simon spreche ich so oft ein bis ich eine Erkennnungsrate von ca 100 erreicht habe. Gute Resultate bekommt man aber auch schon zwischen 20-30. Hierbei kann es jedoch zu false-positive Ergebnissen kommen, vor allem, wenn man viele Scenarien gleichzeitig verwendet! Je mehr Scenarien gleichzeitg verwendet werden, desto besser muss jedes einzele Trainiert sein.
-
-Generell, sind false-positive Erkennungen auf zu wenig Training zurück zu führen!

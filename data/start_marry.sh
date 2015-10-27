@@ -6,5 +6,5 @@ cd .linjark/marytts-5.1.2/bin/
 
 touch autostart_working
 
-./marytts-server.sh & 
+./marytts-server & 
 
