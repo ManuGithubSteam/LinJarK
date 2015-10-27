@@ -91,8 +91,7 @@ model with the words you need to control something for it.</strong></p>
 
 <p>Till now this is not really an easy task, mostly because the open source <strong>German</strong> language model does not support the right words 
 for controlling applications and devices. But also because their are not many scenarios written for Simon and scripts to implement things in an 
-easy way or another program who would scan the pocketsphinx output and launch some stuff (at least of that I know of).
- <strong>This project will change that!</strong></p>
+easy way.
 
 Jump right in and see the contents below :-)
 
@@ -117,8 +116,21 @@ Jump right in and see the contents below :-)
 <a href="#gpl" >License</a><br>
 <h1>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h1>
+<hr>
 
-<b>ATTENTION:</b> Some modules are broken due to old age. Look for the most recent ones in the Github folder. I'm working on fixing the rest. 25/10/15<br><br>
+
+<b>ATTENTION:</b> Some modules are broken due to old age. Look for the most recent ones in the Github folder.
+ I'm working on fixing the rest. 25/10/15<br>
+
+
+<hr>
+
+
+<p>This project is considered (again) active in development and not stable or bugfree!</p>
+
+
+<hr>
+
 
 <ul>
 <li>
@@ -128,6 +140,12 @@ Jump right in and see the contents below :-)
 <li>The current model has many words for controlling and getting information of various sources.</li>
 </ul>
 </li>
+
+
+</ul>
+<hr><ul>
+
+
 <li>
 <p>As Google Speech API v2 now requires personal keys, these modules will (for now) not work out of the box:</p>
 
@@ -138,8 +156,8 @@ Jump right in and see the contents below :-)
 </li>
 </ul>
 
+<hr>
 
-<p>This project is considered (again) active in development and not stable or bugfree!</p>
 
 
 
