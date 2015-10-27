@@ -29,7 +29,7 @@
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some things to know </h1>
 
 <p>
-<h4>Usage</h4>
+<h2>Usage</h2>
 
 It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech.<br>
  To do that, use the provided training sentences in the modules.<br>
@@ -37,7 +37,7 @@ It is most likely that you need to train Simon to your voice, otherwise it will 
 A good recognition rate is about 30-50 but more is even better (100-120). <br>This depends also on the spoken word and your way of saying it, shorter words are harder to train.
  <br> For very short words who are not clearly spoken sometimes a recognition rate of 500 or more is necessary.
  
- <h4>How much do I need to train ? </h4> 
+ <h2>How much do I need to train ? </h2> 
 <ins>Well this depends on many factors:</ins><br>
 
 How good is the base language model ?<br>
@@ -60,7 +60,7 @@ Read a book or something so it gets a "feel" for your general voice. <br>
 
 <i>If you get a lot of false-positives, train MORE!!!</i>
  
-<h4>Other things of importance </h4> 
+<h2>Other things of importance </h2> 
  
  Be aware that training and computing the model can take many hours (6-12 hours and more!!!) dependent on CPU and some RAM. <br> 
  Here on my quad 3.ghz cpu with all modules installed and properly trained for me it takes like 10 hours to recalculate to model.<br> <br> 
@@ -93,7 +93,8 @@ Sadly the simon development has stopped and the successor who is being built lac
 <br>
 <hr>
 Another thing you should be aware of is, that it is not beneficial to train only words without the grammar structure. <br>
-You can do it but it will be not as good as if you would speak the whole sentence. Also this can lead to strange SPHINX errors (who are ignored but still)!
+You can do it but it will be not as good as if you would speak the whole sentence.
+ Also this can lead to strange SPHINX errors (who are ignored, to a certain extend but if they are to much, sphinx just crashes!)!
  
  <br>
  
@@ -103,7 +104,7 @@ It is an unique key that allows you as user to use sepcial Google services like 
 Geolocation and many more WITHOUT the need to use a Webbrowser. This enables you to use these services in your programms and scripts.<br><br>
 
 It allows Google to monitor your usage of these services, so they can block you or charge you for using more than they allow freely.
-<h4>Why do I need one ?</h4>
+<h2>Why do I need one ?</h2>
 
 For the use of the voicecontrol/speech-recognition you don't have to have one but without it you will not be able 
 to use these modules. (This list will most likely grow over time as new words will enter the language model)<br><br>
@@ -112,17 +113,17 @@ to use these modules. (This list will most likely grow over time as new words wi
     <li>Translation (translate words in other languages)<br></li>
     <li>Music (the ability to select a specific track by just saying its name)</li></ul>
 
-<h4>How to get one?</h4>
+<h2>How to get one?</h2>
 
 Follow this Google HowTo -> <a href="http://www.chromium.org/developers/how-tos/api-keys">http://www.chromium.org/developers/how-tos/api-keys</a>
 <br><br>
 Note that the keys you have now acquired are not for distribution purposes and must not be shared with other users.
 
-<h4>Restrictions</h4>
+<h2>Restrictions</h2>
 
 Google restricts the use of their Speech API to 50 uses per day per API-Project.
 
-<h4>How to use the API key with linjark ?</h4>
+<h2>How to use the API key with linjark ?</h2>
 
 Copy the API Key (and only the API KEY) and paste it into a bash terminal with this command:<br>
 
