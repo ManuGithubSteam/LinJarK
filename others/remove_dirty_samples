@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo ""
+echo "WARNING: Removing samples!!!!"
+echo ""
+
+cd /tmp
+
+cat $1 | grep "ERROR: \"baum_welch.c\"" > dead_files
+ 
+cat dead_files | cut -d':' -f3 | cut -d' ' -f2 | sed 's/$/.wav/' > delete_sampls
+
+cd ~/.kde4/share/apps/simon/model/training.data/
+
+xargs rm < /tmp/delete_sampls 
