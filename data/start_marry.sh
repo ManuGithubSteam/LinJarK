@@ -2,7 +2,7 @@
 
 cd ~
 
-cd .linjark/marytts-5.1/bin/
+cd .linjark/marytts-5.1.2/bin/
 
 touch autostart_working
 

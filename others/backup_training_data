@@ -7,7 +7,7 @@ if [ "$1" == "m" ]; then
     echo "Backup of current active model to github!"
     echo ""
 
-    cp /home/manuel/.kde4/share/apps/simond/models/default/active/active.sbm /mnt/data/voxforge/jaRvis/GITHUB/others/
+    cp /home/manuel/.kde4/share/apps/simond/models/default/active/active.sbm /mnt/data/voxforge/nEW/GIT/LinJarK/others/
     exit
 fi
 
@@ -22,7 +22,7 @@ cd .kde4/share/apps/simon/model/
 
 XZ_OPT=-9
 
-tar cfJ training.data.archive.tar.xz training.data/
+tar cfvJ training.data.archive.tar.xz training.data/ prompts
 
 mv training.data.archive.tar.xz training.data.archive_$dat.tar.xz
 
