@@ -12,18 +12,17 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Linjark</h1>
-      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux Desktop users</h2>
+      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux desktop users</h2>
       <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
-      <a href="https://github.com/ManuGithubSteam/LinJarK/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/ManuGithubSteam/LinJarK/tarball/master" class="btn">Download .tar.gz</a>
+ 
     </section>
 
     <section class="main-content">
       <h1>
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is it ?</h1>
 
-<p>It is your own personal electronic butler like in the Iron Man movies for your Linux desktop :-)<br>
-
+<p>It is your own personal electronic butler like in the Iron Man movies for your Linux desktop :-)<br><br>
+To make this complex task somewhat easier for the average user, is the aim of this project.
 <br> This is achieved with different software which is bundled together by me to make the whole experience somewhat user friendly.
  </p>
 
@@ -33,18 +32,17 @@
 <p>Simon/Linjark can support any language if there is a language model available and scenarios are written for it. 
 <br><br>
 Currently supported:<br>
-- German (language model and scenarios)
+- German (language model, marry voice and scenarios)
  </p>
 
       <h1>
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>What can I actually do?</h1>
 
-<p>Currently these Scenarios are implemented: <br>
-- Window Management -> eg: Close a window with your voice<br>
-- Starting of programs -> eg: Using your voice to start Firefox<br>
-- Dictating an Email with Thunderbird -> eg: If your hands are full<br>
-- Controlling Mypaint -> eg: Use your voice to select different brush sizes while you draw with your hands.<br>
-- and many more....<br>
+<p>The tour shows some main features. <br>
+
+<a href="tour1.html"><img src="tour_thumb.png" width="630" height="454" alt=""></a>
+<br>
+There are many more modules available. <a href="https://github.com/ManuGithubSteam/LinJarK/tree/master/modules">Look into the modules section.</a>
 <br>
 For an in detail view what you can do, look into the <a href="https://github.com/ManuGithubSteam/LinJarK/raw/master/linjark_grammar3.ods">grammar file of Linjark</a>
 
@@ -53,7 +51,7 @@ For an in detail view what you can do, look into the <a href="https://github.com
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Will you send my data to the Cloud</h1>
 
 <p>
-<b>Normally not. </b>Simon, the front-end of this little project uses the SPHINX language model and tools. SPHINX does not use cloud computing to understand what you are saying, 
+<b>Normally not. </b>Simon, the front-end of this little project uses the SPHINX language suite and tools. SPHINX does not use cloud computing to understand what you are saying, 
 instead it relies on pre-formed sentences from different scenarios that you train. If you train a sentence enough it will understand you. After training it needs to recompile its 
 language model locally on your machine.<br><br>
 
@@ -61,10 +59,9 @@ However there are some modules who will send data to the could because you can s
 <br><br>A good example is the translate module: It will rely on the pre-formed sentence: "Simon translate to spanish" when you speak that sentence simon will pick it up and 
 after a ping sound you can say any random word. This will then be sent to Google. Google will return what you have said and Linjark will then translate this word into spanish.
 <br><br>
-Linjark will not listen into your home like other solutions do. You can always decide not to use these modules anyway.<br>
+Linjark will not listen into your home like other (commercial) solutions do. You can always decide not to use these modules anyway.<br>
 Even the modules who require cloud computing are only started when you ask them and only about 4 seconds of sound/voice is recorded.<br>
 If you don't believe it look into the code :-)
-
 
 </p>
 
@@ -118,19 +115,19 @@ Jump right in and see the contents below :-)
 <a href="#structure--used-technologie" >Used technologies</a><br>
 <a href="#trouble" >Troubleshoot</a><br>
 <a href="#want-to-help" >Care to help?</a><br>
+<a href="structure.html" >&nbsp;&nbsp; - Project structure</a><br>
 <a href="#gpl" >License</a><br>
 <h1>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h1>
 
-<b>ATTENTION:</b> Aome modules are broken due to old age. Look for the most recent ones in the Github folder I'm working on a fix. 25/10/15<br><br>
+<b>ATTENTION:</b> Some modules are broken due to old age. Look for the most recent ones in the Github folder. I'm working on fixing the rest. 25/10/15<br><br>
 
 <ul>
 <li>
 <p>Pretty good model is online, secarios and scripts can be made.</p>
 
 <ul>
-<li>The current model has many words for controlling and getting information of various sources.
--&gt; There are some things missing but this is normal as along the way some new things always get added......</li>
+<li>The current model has many words for controlling and getting information of various sources.</li>
 </ul>
 </li>
 <li>
@@ -140,14 +137,11 @@ Jump right in and see the contents below :-)
 <li>Translation (translate words in other languages)</li>
 <li>Internetsearch (search for something you said on the net)</li>
 </ul>
-
-<p>-&gt; If you are interested, read the "Get_GOOGLE_API_Key.md" and give me some feedback how tey work for you :-D</p>
 </li>
 </ul>
 
-<p>Always check out: linjark_grammar#.ods for progress and the FAQ.md file</p>
 
-<p>This project is considered active in development and not stable or bugfree!</p>
+<p>This project is considered (again) active in development and not stable or bugfree!</p>
 
 
 
@@ -243,6 +237,8 @@ It is all done here. I use bash scripts for this because they are easy to unders
 
 <p>Just get in touch! Help is always needed and there is plenty to do!</p>
 
+For more information on this, see:
+<a href="structure.html" >Project structure</a><br>
 <h1>
 <a id="gpl" class="anchor" href="#gpl" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
 

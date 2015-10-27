@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linjark by ManuGithubSteam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Linjark</h1>
+      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux desktop users</h2>
+      <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
+    </section>
+
+    <section class="main-content">
+
+<a href="index.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+
+      <h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project structure</h1>
+
+<p>
+
+<h1>How this project is organized</h1>
+Work flow:<br>
+
+    <ul>1. Words are in the language model<br>
+    2. Write the bash scripts and check if they do what you want.<br>
+    3. Write the Grammar for Simon and create the scenario in Simon with the grammar from the .ods file.<br>
+    4. Test the scenario<br>
+    5. Test again<br>
+    6. Write me so I can put them on here -> open an Issue on github.</ul>
+<br>
+If the words for a particular purpose are in the language model, work can start on the backend scripts. 
+If not, open an ISSUE with the words in it and I see what I can do on adding them into the dictionary<br><br>
+
+<i><b>NOTE:</b> As it seems that Guenter does not provide newer base models, the added words are not trained in the base model and you need to train them to your voice from scratch.
+Also this means that <ins>there is no guarantee that the words are phoneticly correct</ins>, as he has much more expertise in this area than me.</i><br><br>
+
+For this just think what should be done.<br> For example: When I say 'Computer Wetterbericht' he should speak to me the local weather.<br><br>
+
+So my bash script must be able to download a local weather forecast and extract some data like temperature and give 
+them to MarryTTS for speaking.<br><br> After this is done you can start on your activation sentences like:
+ "Computer wie wird das Wetter heute" if you put them into the .ods sheet make sure <b>not to double use </b>
+ some variables for different words. <br><br>Then generate the Simon scenario and test your work.<br><br> 
+ 
+<i> Note that you need to add the "shadow dict" for that to work.</i><br>
+
+The shadow dictionary is in SPHINX format and can be found in your local .linjark install folder.
+ It needs to be added or looked into so you know what words you can use. You also need it to create the scenario.<br><br>
+
+<i><b>NOTE:</b> When you make a Simon Scenario be sure to include a "Training" Section so the user 
+can train the used sentences! Also note the naming sheme: [DE/VF/SPHINX] NAME</i><br><br>
+
+If the script needs user interaction you should supply a <i>Readme</i> file with the script and explain what needs
+ to be done for ex. placing a local Weather URL code in the script.
+<h2>Important stuff you need to know:</h2>
+
+All the programs needed for the end user should be stored in: /home/$USER/.linjark<br><br>
+
+Scripts go into .linjark/scripts<br><br>
+
+Scripts for a module like "Weather" go into a subfolder: .linjark/scripts/weather<br><br>
+
+A symbolic link from the script goes to .linjark/bin<br><br>
+
+ALL script links in .linjark/bin are named: linjark_NAME (eg_ linjark_weather)<br><br>
+
+The local MarryTTS gets extracted into .linjark so it becomes .linjark/marytts-5.1<br><br>
+
+This is important as you need to refer these paths in the bash scripts to make marry speak with the user.<br><br>
+
+<i><b><i>IMPORTANT:</i></b> as Simon can not refer to paths like "~" all scripts need to be adressed in the scenario commands with the 
+name who is in .linjark/bin</i>
+This also means, that you need to execute (and modify) the script "<i>create_commands</i>" to filter out your path like "/home/manuel/linjark_programs"
+<br><br>
+
+The Path var of the user will be edited to search in .linjark/bin for the script names!!!
+
+<h1>Distribution of modules</h1>
+
+Look at the structure of a module from here and consider these notes:<br><br>
+
+A module package is a linjark_NAME_mod.tar.gz package who consists of the following files:<br><br>
+
+Linjark_NAME.scenario <br>
+(Your generated Scenario for Simon to import, gets extracted into the HOME dir) <br>
+.linjark/scripts/FOLDERNAME (Your scriptsfolder, extracts to the .linjark/scripts/ folder)<br><br>
+
+<i><b>Note:</b> Your FOLDERNAME folder can hold any files necessary for the scenario to function, like pictures etc.</i><br><br>
+
+A Linjark__README_NAME file with further instructions, if the user needs to modify something in the script directly.<br><br>
+
+A Linjark_COMMANDS_NAME file with the speakable commands should be supplied.(gets auto generated with the create_commands script)<br><br>
+
+<i>Readme's in another language the end-user have different suffixes like. README_linjark_NAME.de, README_linjark_NAME.en</i>
+
+
+<h1>What's with the J_w# grammar??</h1>
+
+This is needed to get better recognition results in Simon. <br>
+Simon uses Grammar to make sense of words. If we would use normal Grammar like adjectives and noun it would be computed like this:<br><br>
+
+All adjectives would be computed with all possible combinations even if only one was correct for this scenario.<br>
+ This can lead to many false positives and a bigger, fuzzier acoustic model. Also compile times unnecessarily increase significantly.<br><br>
+
+Lets look at this example to make it clear: <br>
+(Note that B1 etc is only used to illustrate that they are not the same words(1) but the same grammar structure (B))<br><br>
+
+Desired Sentence structure: A &nbsp;B1&nbsp; C1<br><br>
+
+Desired Sentence structure: A&nbsp; B2&nbsp; B3 &nbsp;C2<br><br>
+
+Now simon would compute solutions like this:<br><br>
+
+A&nbsp; B1&nbsp; B3&nbsp; C1<br>
+A&nbsp; B2&nbsp; B1&nbsp; C1<br>
+A&nbsp; B2&nbsp; B3&nbsp; C1<br>
+A&nbsp; B3&nbsp; B2&nbsp; C1<br>
+A&nbsp; B3&nbsp; B1&nbsp; C1<br><br>
+
+A&nbsp; B1&nbsp; B3&nbsp; C2<br>
+A&nbsp; B2&nbsp; B1&nbsp; C2<br>
+<i>A&nbsp; B2&nbsp; B3&nbsp; C2</i><br>
+A&nbsp; B3&nbsp; B2 &nbsp;C2<br>
+A&nbsp; B3 &nbsp;B1&nbsp; C2<br><br>
+
+<i>A&nbsp; B1 &nbsp;C1</i> <br>
+A&nbsp; B3&nbsp; C1<br>
+A&nbsp; B2&nbsp; C1<br><br>
+
+A&nbsp; B1&nbsp; C2 <br>
+A&nbsp; B3 &nbsp;C2<br>
+A&nbsp; B2&nbsp; C2<br><br>
+
+But only <b>A B1 C1</b> and <b>A B2 B3 C2</b> are valid and would trigger the start of a script.<br><br>
+
+Only because they all in the same grammar group. To avoid this every used word gets its own grammar "tag"!<br><br>
+
+To check what grammar tags are <b>already reserved</b> check out the <i>linjark_Grammar.ods</i> if you want to add 
+sentences just do it and make sure to use the tags if a word is already used. <ins>Also make sure not to overwrite tags!</ins>
+
+ </p>
+<a href="index.html"> << go_back</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a  href="index.html"> -Main Site-</a>
+
+      <h1>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ManuGithubSteam/LinJarK">Linjark</a> is maintained by <a href="https://github.com/ManuGithubSteam">ManuGithubSteam</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

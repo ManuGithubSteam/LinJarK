@@ -14,8 +14,7 @@
       <h1 class="project-name">Linjark</h1>
       <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux Desktop users</h2>
       <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
-      <a href="https://github.com/ManuGithubSteam/LinJarK/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/ManuGithubSteam/LinJarK/tarball/master" class="btn">Download .tar.gz</a>
+  
     </section>
 
     <section class="main-content">
@@ -24,7 +23,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a  href="index.html"> -Main Site-</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="train.html"> >> Train properly</a>
+<a href="train.html"> >> How to train properly / Common errors </a>
 
       <h1>
 <a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some things to know </h1>
@@ -121,7 +120,7 @@ Copy the API Key (and only the API KEY) and paste it into a bash terminal with t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a  href="index.html"> -Main Site-</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="train.html"> >> Train properly</a>
+<a href="train.html"> >> How to train properly / Common errors</a>
 
       <h1>
 

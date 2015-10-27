@@ -14,8 +14,6 @@
       <h1 class="project-name">Linjark</h1>
       <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux Desktop users</h2>
       <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
-      <a href="https://github.com/ManuGithubSteam/LinJarK/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/ManuGithubSteam/LinJarK/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -51,8 +49,10 @@ Just read it!!
 Simon does prioritize the scenarios from the top down. <br>
 <br>
 That means, the first scenario gets checked first, if the sentence does not match it checks the second one and so forth. <br>
-If it does match, there is no further check!
+If it does match, there is no further check!<br>
 
+<br>
+So the placement of the scenarios is also an important point to consider.
 
  </p>
  
