@@ -13,3 +13,7 @@ cat dead_files | cut -d':' -f3 | cut -d' ' -f2 | sed 's/$/.wav/' > delete_sampls
 cd ~/.kde4/share/apps/simon/model/training.data/
 
 xargs rm < /tmp/delete_sampls 
+
+cd ~/.kde4/share/apps/simond/models/default/samples/
+
+xargs rm < /tmp/delete_sampls 
