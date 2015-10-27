@@ -108,12 +108,12 @@ Jump right in and see the contents below :-)
 <a href="knowledge.html" >4. Some things you should know</a><br>
 <a href="train.html" >5. How to train properly / Common errors</a><br>
 6. Have a blast!<br>
-
+<a href="#trouble" >Troubleshoot</a><br>
 <a href="#goal" >Aim of this project</a><br>
 
 <a href="#inspiration" >Inspiration</a><br>
-<a href="#structure--used-technologie" >Used technologies</a><br>
-<a href="#trouble" >Troubleshoot</a><br>
+<a href="tech.html" >Used technologies</a><br>
+
 <a href="#want-to-help" >Care to help?</a><br>
 <a href="structure.html" >&nbsp;&nbsp; - Project structure</a><br>
 <a href="#gpl" >License</a><br>
@@ -164,73 +164,12 @@ Jump right in and see the contents below :-)
 </ul>
 
 <h1>
-<a id="inspiration" class="anchor" href="#inspiration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inspiration</h1>
-
-<p>This project is heavily inspired by the Iron Man movies and the speaking JARVIS computer. Also some inspiration is drawn from the J.A.R.V.I.S project for Microsoft Windows. (Who uses a non open source speech model to do his work!)</p>
-
-<p>Just check out Youtube for some videos etc. </p>
-
-<p>For the English version of the language model / speech recognition check out Blather: <a href="https://gitorious.org/blather/pages/Home">https://gitorious.org/blather/pages/Home</a> or Youtube: <a href="https://www.youtube.com/watch?v=gr1FZ2F7KYA">https://www.youtube.com/watch?v=gr1FZ2F7KYA</a></p>
-
-<h1>
-<a id="structure--used-technologie" class="anchor" href="#structure--used-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Structure / Used technologies</h1>
-
-<ul>
-<li>Backend: language model</li>
-<li>Middleware: Bash-scripts who do various things and MarryTTS</li>
-<li>Frontend: Simon </li>
-</ul>
-
-<h2>
-<a id="backend-language-model" class="anchor" href="#backend-language-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>BACKEND: language model</h2>
-
-<p>For a PC to understand humans it needs to know how they sound and what words they use. It does that with a language model. It is the brain of this project :-D
-There are two types of models that describe language - grammars and statistical language models. Grammars describe very simple types of languages for command and control, and they are usually written by hand or generated automatically with plain code (Simon scenarios). </p>
-
-<p>However, for now not even all command and control words are in the open source GERMAN language model.</p>
-
-<p>I use the German language model from Voxforge: <a href="http://voxforge.org/">http://voxforge.org/</a></p>
-
-<p>More specific the on from Guenter: <a href="http://goofy.zamia.org/voxforge/">http://goofy.zamia.org/voxforge/</a></p>
-
-<p>I rely on Guenter to publish new language models (as they won't compile on my machine for some miraculous reason :-( ).
-I work actively with him to add new words into the model who can than be understood by Simon (speech recognition) and used for controling various things.</p>
-
-<p>If you want to know more about the whole model compilation business check out his awesome tools: <a href="https://github.com/gooofy/voxforge/">https://github.com/gooofy/voxforge/</a></p>
-
-<h2>
-<a id="middleware-bash-scripts-do-the-stuff--" class="anchor" href="#middleware-bash-scripts-do-the-stuff--" aria-hidden="true"><span class="octicon octicon-link"></span></a>MIDDLEWARE: bash scripts do the stuff .-)</h2>
-
-<p>Here is most of the work for my purpose done. Get the local weather data and play it back to you, get some jokes from the net, switch on a lamp ??
-It is all done here. I use bash scripts for this because they are easy to understand and to modify if the web page does change their information layout etc. Also they don't need much knowledge so many people can contribute.</p>
-
-<p>MarryTTS is used to generate spoken responses and output of the data collected. -&gt; <a href="https://github.com/marytts/marytts">https://github.com/marytts/marytts</a></p>
-
-<h2>
-<a id="frontend-simon" class="anchor" href="#frontend-simon" aria-hidden="true"><span class="octicon octicon-link"></span></a>FRONTEND: Simon</h2>
-
-<p>Great program, it is very powerful and heart of this project! The dev is also really helpful and nice guy! 
-<strong>It handles all the basics like microphone calibration, recording what you are saying, comparing that with the language model and launching commands etc</strong></p>
-
-<p>Other than that I use Simon to do various things from me:</p>
-
-<ul>
-<li>Break down the functionality of the scripts into modules (called Scenarios), so someone can only use the "Search" module and don't has to install all the other modules like Translation etc.</li>
-<li>It is possible to train the speech model to your voice so it understands you (better) (very important!)</li>
-<li>Provides and easy method to change the activation sentences to your likening</li>
-<li>Can do many more things on its own without the scripts :-D</li>
-</ul>
-
-<p>Check out Simon here: <a href="http://grasch.net/blog">http://grasch.net/blog</a> and here <a href="https://simon.kde.org/">https://simon.kde.org/</a> </p>
-
-<p>Youtube video: <a href="http://www.youtube.com/watch?v=x_9ImaiOISs&amp;list=UUiVicBYegdFX9BnYOD2EMNw">http://www.youtube.com/watch?v=x_9ImaiOISs&amp;list=UUiVicBYegdFX9BnYOD2EMNw</a> (quite old but you sould get the idea :-D)</p>
-
-<h1>
 <a id="trouble" class="anchor" href="#trouble-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trouble ?</h1>
 
 <p>As this is for the German model I do obviously speak German and you can use that language if you contact me :-)</p>
 
-<p><a href="https://github.com/ManuGithubSteam/LinJarK/issues" target="_blank">Please open a "Issue" here on github with a description what went wrong!</a> Thanks.</p>
+<p><a href="https://github.com/ManuGithubSteam/LinJarK/issues" target="_blank">Please open a "Issue" here on github with a
+<i>detailed</i> description what went wrong!</a> <br>Thanks.</p>
 
 <h1>
 <a id="want-to-help" class="anchor" href="#want-to-help-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to help !?</h1>
