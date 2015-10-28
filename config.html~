@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Linjark</h1>
-      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux Desktop users</h2>
+      <h2 class="project-tagline">Getting easy speechrecognition/voicecontrol to the average Linux desktop users</h2>
       <a href="https://github.com/ManuGithubSteam/LinJarK" class="btn">View on GitHub</a>
     </section>
 
