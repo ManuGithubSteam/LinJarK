@@ -50,7 +50,7 @@ Use this settings.
 <li>Skip Samples: Skip samples shorter than...</li></ul>
 
 
-Cutofflevel: <i>2000</i> <br>HeadMargin: <i>300</i> <br>Tail Margin: <i>600</i> <br>Skip Samples: <i>150</i><br><br>
+Cutofflevel: <i>2000</i> <br>HeadMargin: <i>1300</i> <br>Tail Margin: <i>1500</i> <br>Skip Samples: <i>150</i><br><br>
 
 Then go to "<i>Training</i>" <br><br>
 
