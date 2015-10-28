@@ -55,14 +55,10 @@ if [ "$1" == 'i' ]
   
   cd ~
   echo ""
-  echo "Downloading INSTALL.md"
+  echo "Open INSTALL manual"
   echo ""
-   
-   wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/INSTALL_DE.md
-   sleep 4 
-   kate INSTALL_DE.md &2> /dev/null
-
-
+  
+  firefox https://manugithubsteam.github.io/LinJarK/install.html
    
 #         echo ""
 #   echo "Install Marry language pack, see readme for the right one :-)"
