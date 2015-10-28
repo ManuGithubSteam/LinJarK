@@ -150,7 +150,7 @@ chmod u+x "${awk_path}"
    mkdir model
    cd model
    wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/data/fix_names.py
-   
+   cd ~
    echo ""
    echo " Please specify your gender/sex:"
    echo ""
