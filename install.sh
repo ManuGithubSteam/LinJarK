@@ -144,6 +144,17 @@ chmod u+x "${awk_path}"
    cd Autostart
    ln -s ../../.linjark/start_marry.sh
    
+  echo ""
+  echo "Downloading sample_fix script"
+  echo ""
+   cd ~
+   cd .kde4/share/apps
+   mkdir simon
+   cd simon
+   mkdir model
+   cd model
+   wget https://raw.githubusercontent.com/ManuGithubSteam/LinJarK/master/data/fix_names.py
+   
    echo ""
    echo " Please specify your gender/sex:"
    echo ""
