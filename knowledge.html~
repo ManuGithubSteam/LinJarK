@@ -98,8 +98,18 @@ You can do it but it will be not as good as if you would speak the whole sentenc
  
  <br>
  <hr>
-While a new model is compiling, no speechregognition is possible, even if the "Activated" button is pressed, it just does not work while the compilation is in progress.
+While a new model is compiling, no speech-recognition is possible, even if the "<i>Activated</i>" button is pressed, it just does 
+not work while the compilation is in progress.
+  <br>
+ <hr>
  
+Simon does all the compilation work and caching in<i><b> /tmp</b></i>.  <i>This can lead to many strange errors in Simon itself, 
+if there is no space left!</i>
+ <br> I would advise you to have at least 1-2G of space left in /tmp for <b>one</b> decent model compilation 
+ (the compilation of previous models get's <i>NOT</i> cleaned up).
+ 
+ 
+  <hr>
  <h1>What is the GOOGLE API key ?</h1>
 
 It is an unique key that allows you as user to use sepcial Google services like translation,
