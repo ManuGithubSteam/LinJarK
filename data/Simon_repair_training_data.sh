@@ -39,4 +39,19 @@ rm 1.txt
 rm 2.txt
 rm 3.txt
 
-kdialog --caption "Bitte warten" --title "Wichtig" --msgbox "Fertig. Bitte Simon neu starten."
+# remove old models
+
+cd /tmp/kde-$USER/simond/default/compile/sphinx/
+
+rm -fr default\{*
+
+space=$(df -Ph . | tail -1 | awk '{print $4}')
+
+cd 
+
+kdialog --caption "Fertig" --title "Wichtig" --msgbox "Trainingsdaten repariert.\n $space an Speicherplatz verfügbar. \n Es sollte mindestens 1 GB verfügbar sein. \n Bitte Simon neu starten um Model neu zu berechnen."
+
+
+
+
+
