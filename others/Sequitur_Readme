@@ -1,0 +1,32 @@
+ 
+Sequitur G2P
+A trainable Grapheme-to-Phoneme converter
+
+Introduction
+
+Sequitur G2P is a data-driven grapheme-to-phoneme converter developed at RWTH Aachen University - Department of Computer Science by Maximilian Bisani.
+The method used in this software is described in
+
+    M. Bisani and H. Ney. "Joint-Sequence Models for Grapheme-to-Phoneme Conversion". Speech Communication, Volume 50, Issue 5, May 2008, Pages 434-451 
+
+Sourcecode / Download
+
+This software is made available to you under terms of the GNU Public License. It may be used for experimentation and as part of other free software projects. For details see the licensing terms below. We have published this software in the hope that it will be useful to researchers in the field of speech and natural language processing. If you publish about work that involves the use of this software, please cite the above paper. (You should feel obliged to do so by rules of good scientific conduct.)
+Downloads
+
+    current release 2011-08-03: g2p-r1668.tar.gz
+    older release 2008-12-12: g2p-r103.tar.gz
+    older release 2007-06-03: g2p-r96.tar.gz 
+
+You will need Python, NumPy, and Swig to build and run this program. See the README file for instructions.
+License
+
+The copyright on this software is owned by RWTH Aachen University.
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License Version 2 (June 1991) as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, you will find it at http://www.gnu.org/licenses/gpl.html, or write to the Free Software Foundation, Inc., 51 Franlin Street, Fifth Floor, Boston, MA 02110, USA.
+
+Should a provision of no. 9 and 10 of the GNU General Public License be invalid or become invalid, a valid provision is deemed to have been agreed upon which comes closest to what the parties intended commercially. In any case guarantee/warranty shall be limited to gross negligent actions or intended actions or fraudulent concealment.
