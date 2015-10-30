@@ -23,9 +23,25 @@
 <a  href="index.html"> -Main Site-</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="install_modules.html"> >> Linjark modules </a>
+      <h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true">
+<span class="octicon octicon-link"></span></a>Setup Sphinx </h1>
+
+When you install Simon, it has a daemon Simond, this daemon controls the model compilation. This daemon has a fronted: <code>ksimond</code><br>
+<br>
+Open it up and go to "Speech Model Compilation"
+
+<img src="simond_empty.png" width="883" height="732" alt=""><br><br>
+
+As you see there are some paths missing. Get the paths from your Distribution package manager from the SPHINX package and fill the gaps! <br>
+<br>
+Here on Gentoo it looks like this: <br>
+<img src="simond_filled.png" width="883" height="732" alt=""> <br><br>
+Now on to the Simon config.
 
       <h1>
-<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Simon configuration </h1>
+<a id="what-does-it-do-" class="anchor" href="#what-does-it-do-" aria-hidden="true">
+<span class="octicon octicon-link"></span></a>Basic Simon configuration </h1>
 
 <p>
 
@@ -50,7 +66,7 @@ Use this settings.
 <li>Skip Samples: Skip samples shorter than...</li></ul>
 
 
-Cutofflevel: <i>2000</i> <br>HeadMargin: <i>1300</i> <br>Tail Margin: <i>1500</i> <br>Skip Samples: <i>150</i><br><br>
+Cutofflevel: <i>2000</i> <br>HeadMargin: <i>1350</i> <br>Tail Margin: <i>1300</i> <br>Skip Samples: <i>150</i><br><br>
 
 Then go to "<i>Training</i>" <br><br>
 
