@@ -13,13 +13,16 @@ cd ~/.kde4/share/apps/simon/model/training.data
 
 find . -type f -print0 | perl -n0e '$new = $_; if($new =~ s/[^[:ascii:]]/#/g) { print("Renaming $_ to $new\n"); rename($_, $new); print("Renaming $_ to $new\n"); rename($_, $new);}'
 
+samples=$(ls -1 | wc -l)
 
+sleep 1
 # very very very slow when we got many files!
 
 cd ~/.kde4/share/apps/simon/model
 
 python fix_names.py
 
+sleep 1
 cd ~/.kde4/share/apps/simon/model/training.data
 ###
 ls -1 | sed 's/.wav//g' | sed 's/$/ "default" /' > ../1.txt
@@ -49,7 +52,7 @@ space=$(df -Ph . | tail -1 | awk '{print $4}')
 
 cd 
 
-kdialog --caption "Fertig" --title "Wichtig" --msgbox "Trainingsdaten repariert.\n $space an Speicherplatz verfügbar. \n Es sollte mindestens 1 GB verfügbar sein. \n Bitte Simon neu starten um Model neu zu berechnen."
+kdialog --caption "Fertig" --title "Wichtig" --msgbox "Trainingsdaten repariert.\n $space an Speicherplatz verfügbar. \n Es sollte mindestens 1 GB verfügbar sein. \n $samples samples.\n Bitte Simon neu starten um Model neu zu berechnen."
 
 
 

@@ -16,15 +16,20 @@ echo ""
 echo "use 'e' parameter to backup to external hdd!!"
 echo ""
 
-cd ~
-
-cd .kde4/share/apps/simon/model/
+cd
+cd .kde4/share/apps/simon/model
 
 XZ_OPT=-9
 
-tar cfJ Simon_training.data.archive.tar.xz training.data/ prompts
+tar cfJ /mnt/data/Simon_training.data.archive.tar.xz training.data/ prompts
+
+cd /mnt/data
 
 mv Simon_training.data.archive.tar.xz Simon_training.data.archive_$dat.tar.xz
+
+#mv Simon_training.data.archive_$dat.tar.xz /mnt/data
+
+sync
 
 if [ "$1" == "e" ]; then
     echo ""
@@ -34,6 +39,8 @@ if [ "$1" == "e" ]; then
 else
 
 mv Simon_training.data.archive_$dat.tar.xz /mnt/data
+
+sync
 
 echo "moved archive to /mnt/data"
 
