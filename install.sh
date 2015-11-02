@@ -195,5 +195,7 @@ chmod u+x "${awk_path}"
     echo " Get your guns and have fun with your own electronic butler....."
    echo ""
     
+   cd ~
+   rm install.sh
   
 fi

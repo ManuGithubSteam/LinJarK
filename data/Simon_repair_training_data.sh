@@ -44,6 +44,7 @@ rm 3.txt
 
 # remove old models
 
+cd /tmp
 cd /tmp/kde-$USER/simond/default/compile/sphinx/
 
 rm -fr default\{*
