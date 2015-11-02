@@ -21,7 +21,7 @@ cd .kde4/share/apps/simon/model
 
 XZ_OPT=-9
 
-tar cfJ /mnt/data/Simon_training.data.archive.tar.xz training.data/ prompts
+time tar cfJ /mnt/data/Simon_training.data.archive.tar.xz training.data/ prompts
 
 cd /mnt/data
 
