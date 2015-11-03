@@ -55,7 +55,7 @@ cd
 
 kdialog --caption "Fertig" --title "Wichtig" --msgbox "Trainingsdaten repariert.\n $space an Speicherplatz verfügbar. \n Es sollte mindestens 1 GB verfügbar sein. \n $samples samples.\n Bitte Simon neu starten um Model neu zu berechnen."
 
-
+kdialog --caption "Fertig" --title "Wichtig" --msgbox "Es wird empfohlen, von den Trainingsdaten regelmäsig eine Sicherung an zu legen."
 
 
 

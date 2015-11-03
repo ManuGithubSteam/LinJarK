@@ -17,10 +17,10 @@ for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("##ffne", "öffne"))
 
 for fileName in os.listdir("."):
-    os.rename(fileName, fileName.replace("schlie####e", "schließe"))
+    os.rename(fileName, fileName.replace("schlie####e", "schliesse"))
 
 for fileName in os.listdir("."):
-    os.rename(fileName, fileName.replace("schlie##e", "schließe"))
+    os.rename(fileName, fileName.replace("schlie##e", "schliesse"))
 
 for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("einf####gen", "einfügen"))
@@ -59,10 +59,10 @@ for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("R##ckg##ngig", "Rückgängig"))
 
 for fileName in os.listdir("."):
-    os.rename(fileName, fileName.replace("gr########er", "größer"))
+    os.rename(fileName, fileName.replace("gr########er", "grösser"))
 
 for fileName in os.listdir("."):
-    os.rename(fileName, fileName.replace("gr####er", "größer"))
+    os.rename(fileName, fileName.replace("gr####er", "grösser"))
 
 for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("####bersetze", "übersetze"))
@@ -161,7 +161,8 @@ for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("Franz##sisch", "Französisch"))
     
 
-
+for fileName in os.listdir("."):
+    os.rename(fileName, fileName.replace("ß", "ss"))
 
 
 
