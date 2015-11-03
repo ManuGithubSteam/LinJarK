@@ -34,8 +34,12 @@
 It is most likely that you need to train Simon to your voice, otherwise it will not recognise your speech.<br>
  To do that, use the provided training sentences in the modules.<br>
 <br>
-A good recognition rate is about 30-50 but more is even better (100-120). <br>This depends also on the spoken word and your way of saying it, shorter words are harder to train.
- <br> For very short words who are not clearly spoken sometimes a recognition rate of 500 or more is necessary.
+A good recognition rate (in the Vocabulary tab of the scenario) is about 30-50 but more is even better (100-120). <br>This depends also on the spoken word and your way of saying it, shorter words are harder to train.
+ <br> For very short words who are not clearly spoken sometimes a recognition rate of 100 or more is necessary.<br><br>
+ 
+<i>Also the more scenarios you use, the more you need to train.</i>
+Think of it as tree branches, if there are more branches to go to 
+Simon needs more direction from the starting point on what is the right direction.
  
  <h2>How much do I need to train ? </h2> 
 <ins>Well this depends on many factors:</ins><br>
@@ -56,7 +60,7 @@ is harder to recognise.</i><br>
 <a href="https://docs.kde.org/trunk4/en/extragear-accessibility/simon/recording.html#sample_quality_assurance">More information</a><br>
 - Train the <b>basemodel</b> at <a href="http://www.voxforge.org/" target="_blank">Voxforge</a> if possible with your voice. Anything from 120 to 500 minutes is good.
 Read a book or something so it gets a "feel" for your general voice. <br>
-- Simon commands should be trained till the recognition rate is above 100<br><br>
+- Simon commands should be trained till the recognition rate is above 50-70<br><br>
 
 <i>If you get a lot of false-positives, train MORE!!!</i>
  
@@ -69,8 +73,9 @@ Read a book or something so it gets a "feel" for your general voice. <br>
 <hr>
 As for now (10/2015) there is a bug in Simon(4.0 and 4.1) (using US ASCII) which leads to a malformation of the sample-filenames and 
 also of the prompt-texts
- if you use German Umlauts in the scenarios.<br> <br>As this is heavily the case for a German speaking community. I wrote a fixing-script for this. 
-Sadly the simon development has stopped and the successor who is being built lacks many features of Simon. <br><br>
+ if you use German Umlauts and ß in the scenarios.<br> <br>As this is heavily the case for a German speaking community.
+  I wrote a fixing-script for this. 
+Sadly the simon development has stopped and the successor who is being built could lack many of the features of Simon. <br><br>
  
  For more information see: <a href="train.html">How to train properly.</a>
  
@@ -106,8 +111,29 @@ not work while the compilation is in progress.
 Simon does all the compilation work and caching in<i><b> /tmp</b></i>.  <i>This can lead to many strange errors in Simon itself, 
 if there is no space left!</i>
  <br> I would advise you to have at least 1-2G of space left in /tmp for <b>one</b> decent model compilation 
- (the compilation of previous models get's <i>NOT</i> cleaned up).
- 
+ (the compilation of previous models get's cleaned up by the fixing script).
+   <br>
+ <hr>
+ If you start a model compilation and disconnect from Simond server too soon, the compilation will fail. <br>
+To be sure do not disconnect while the compilation is running.
+  <br>
+ <hr>
+ The relevance in the Trainingcolumn in Simon is the combined relevance off all words in that scenario, 
+ not the individual recognition rate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
   <hr>
  <h1>What is the GOOGLE API key ?</h1>
