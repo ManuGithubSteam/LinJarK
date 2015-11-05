@@ -65,6 +65,9 @@ for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("gr####er", "grösser"))
 
 for fileName in os.listdir("."):
+    os.rename(fileName, fileName.replace("gr##sser", "grösser"))
+
+for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("gr##er", "grösser"))
 
 for fileName in os.listdir("."):
@@ -167,7 +170,10 @@ for fileName in os.listdir("."):
     os.rename(fileName, fileName.replace("ß", "ss"))
 
 for fileName in os.listdir("."):
-    os.rename(fileName, fileName.replace("größ", "gröss"))
+    os.rename(fileName, fileName.replace("gr####sser", "grösser"))
+
+for fileName in os.listdir("."):
+    os.rename(fileName, fileName.replace("gr##sser", "grösser"))
 
 
 
