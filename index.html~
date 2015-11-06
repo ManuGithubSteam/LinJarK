@@ -58,7 +58,7 @@ cloud computing to make voice detection possible (like the project <a href="http
 instead it relies on pre-formed sentences from different scenarios that you train.
 If you train a sentence enough it will understand you.
 <br><br>
-<i>This makes its the obvious choice for people who are concerned about their privacy 
+<i>This makes it the obvious choice for people who are concerned about their privacy 
 or who just have a fishy feeling about sending everything who is spoken in the room to Googles datacenters.<br><br></i>
 
 This also removes the restrictions who apply when using the service from Google.<br><br>
@@ -126,6 +126,10 @@ Jump right in and see the contents below :-)
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h1>
 <hr>
 
+07/11/15 <b>ATTENTION:</b> Priorities are shifting. <a href="objectives.html">Read more here.</a> <br>
+
+
+<hr>
 
 25/10/15 <b>ATTENTION:</b> Some modules are broken due to old age. Look for the most recent ones in the Github folder.
  I'm working on fixing the rest. <br>
