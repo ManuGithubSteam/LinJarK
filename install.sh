@@ -36,7 +36,7 @@ if [ "$1" == 'i' ]
    wget https://github.com/marytts/marytts/releases/download/v5.1.2/marytts-5.1.2.zip
    unzip marytts-5.1.2.zip &2> /dev/null
    
-   cd marytts-5.1.2
+   cd marytts-5.1.2/
    
    wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
    tar xf marry_5.1_voice.tar.gz
