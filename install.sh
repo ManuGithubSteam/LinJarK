@@ -101,7 +101,7 @@ if [ "$1" == 'i' ]
    awk_path="/home/$USER/bin/simon"
 cat > "${awk_path}" <<EOT
 #!/bin/bash
-
+simond &
 PATH=$PATH:/home/$USER/.linjark/bin simon
 EOT
 chmod u+x "${awk_path}"
