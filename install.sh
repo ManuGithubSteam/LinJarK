@@ -53,6 +53,12 @@ if [ "$1" == 'i' ]
   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/start_marry.sh
   chmod +x start_marry.sh
   
+  wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/start_daemon.sh
+  chmod +x start_daemon.sh
+  
+  wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/linjark_daemon.sh
+  chmod +x linjark_daemon.sh
+  
   cd ~
   echo ""
   echo "Open INSTALL manual"
@@ -139,6 +145,14 @@ chmod u+x "${awk_path}"
    mkdir Autostart
    cd Autostart
    ln -s ../../.linjark/start_marry.sh
+   
+   echo ""
+  echo "Making  Linjark daemon Autostart on KDE Login"
+  echo ""
+   cd .kde4
+   mkdir Autostart
+   cd Autostart
+   ln -s ../../.linjark/start_daemon.sh
    
   echo ""
   echo "Downloading sample_fix script"
