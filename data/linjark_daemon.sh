@@ -12,6 +12,7 @@ while true; do
 
 # Housekeeping
 sleep 1
+echo "linjark daemon working...."
 
 if [ "$ON_PI" == "yes" ]
   then
@@ -45,11 +46,21 @@ then
 
 
 # timer 
-if [ ! -f  ~/.linkark/.weather_update ] then
-echo "timestampfile" > ~/.linkark/.weather_update
+if [ ! -f  ~/.linjark/.weather_update ] 
+
+then
+echo "timestampfile" >> ~/.linjark/.weather_update
 fi
 
-if [ "$(( $(date +"%s") - $(stat -c "%Y" ~/.linkark/.weather_update) ))" -gt "7200" ]; then
+nowTime=$(date +"%s")
+creationTime=$(stat -c "%Y" ~/.linjark/.weather_update)
+count=$(expr $nowTime  - $creationTime)
+
+# 3 hours
+waitTime=10800 
+
+if [ "$count" -gt "$waitTime" ]; 
+then
    echo "is older then 2 hours"
    
    cd /tmp
@@ -63,7 +74,7 @@ MYCITY=$(echo $GETCITY | sed 's/http\:\/\/www.wetter.de\/deutschland\///'| sed '
   wget http://www.wetter.de/deutschland/$MYCITY/wetterbericht-aktuell.html -O wetterbericht-1.html &
   wget http://www.wetter.de/deutschland/$MYCITY/wetter-bericht.html -O wetterbericht-4.html &
   
-  rm ~/.linkark/.weather_update
+  rm ~/.linjark/.weather_update
   
 fi
   
