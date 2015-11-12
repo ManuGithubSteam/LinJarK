@@ -101,8 +101,22 @@ if [ "$1" == 'i' ]
    awk_path="/home/$USER/bin/simon"
 cat > "${awk_path}" <<EOT
 #!/bin/bash
+
+ON_PI="no"
+
 simond &
-PATH=$PATH:/home/$USER/.linjark/bin simon
+PATH=$PATH:/home/$USER/.linjark/bin simon &
+
+if [ "\$ON_PI" == "yes" ]
+  then
+
+sleep 4
+  
+  wmctrl -a Simon
+  sleep 1 && xdotool key Control+t
+ 
+ fi
+
 EOT
 chmod u+x "${awk_path}"
    cd ~/bin
