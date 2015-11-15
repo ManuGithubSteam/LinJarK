@@ -64,8 +64,39 @@ if [ "$1" == 'i' ]
   echo "Open INSTALL manual"
   echo ""
   
+  suc="n"
+ 
+  if [ -f /usr/bin/firefox ] && [ "$suc" == "n" ]
+  then
   firefox https://manugithubsteam.github.io/LinJarK/install.html
-   
+  suc="y"
+    fi
+  
+  if [ -f /usr/bin/chromium ]&& [ "$suc" == "n" ]
+  then
+  chromium https://manugithubsteam.github.io/LinJarK/install.html
+  suc="y"
+  fi
+  
+  if [ -f /usr/bin/opera ]&& [ "$suc" == "n" ]
+  then
+  opera https://manugithubsteam.github.io/LinJarK/install.html
+  suc="y"
+  fi
+  
+    if [ -f /usr/bin/konqueror ]&& [ "$suc" == "n" ]
+  then
+  konqueror https://manugithubsteam.github.io/LinJarK/install.html
+  suc="y"
+  fi
+  
+  if [ -f /usr/bin/epiphany ]&& [ "$suc" == "n" ]
+  then
+  epiphany https://manugithubsteam.github.io/LinJarK/install.html
+  suc="y"
+  fi
+  
+  
 #         echo ""
 #   echo "Install Marry language pack, see readme for the right one :-)"
 #   echo ""

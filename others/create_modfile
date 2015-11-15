@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cat $1/*.scenario | sed -n -e '/page/,$p' | sed '/trainingtext name/,+1 d' | sed 's/<[^>]*>//g' | sed '/^\s*$/d' | sed -e 's/^[ \t]*//' > $1/Linjark_Befehle_$1
+cd $1
+
+name=$(echo $1 |sed 's/\///g')
+
+cat *.scenario | sed -n -e '/page/,$p' | sed '/trainingtext name/,+1 d' | sed 's/<[^>]*>//g' | sed '/^\s*$/d' | sed -e 's/^[ \t]*//' > Linjark_Befehle_$name
 
 
-tar -zcvf linjark_$1_mod_pi_desk.tar.gz $1/.linjark/ $1/* 
+tar -jcvf ../linjark_"$name"_mod_pi_desk.tar.bz2 .linjark * 
