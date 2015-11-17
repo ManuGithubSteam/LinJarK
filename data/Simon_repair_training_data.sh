@@ -21,6 +21,7 @@ sleep 1
 cd ~/.kde4/share/apps/simon/model
 
 python fix_names.py
+python fix_names.py
 
 sleep 1
 cd ~/.kde4/share/apps/simon/model/training.data
@@ -44,7 +45,6 @@ rm 3.txt
 
 # remove old models
 
-cd /tmp
 cd /tmp/kde-$USER/simond/default/compile/sphinx/
 
 rm -fr default\{*
@@ -55,7 +55,7 @@ cd
 
 kdialog --caption "Fertig" --title "Wichtig" --msgbox "Trainingsdaten repariert.\n $space an Speicherplatz verfügbar. \n Es sollte mindestens 1 GB verfügbar sein. \n $samples samples.\n Bitte Simon neu starten um Model neu zu berechnen."
 
-kdialog --caption "Fertig" --title "Wichtig" --msgbox "Es wird empfohlen, von den Trainingsdaten regelmäsig eine Sicherung an zu legen."
+
 
 
 
