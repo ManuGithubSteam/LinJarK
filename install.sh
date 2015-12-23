@@ -34,11 +34,10 @@ if [ "$1" == 'i' ]
   echo "Downloading/Install MarryTTS...."
   echo ""
    wget https://github.com/marytts/marytts/releases/download/v5.1.2/marytts-5.1.2.zip
-   unzip marytts-5.1.2.zip &2> /dev/null
+   unzip marytts-5.1.2.zip && cd marytts-5.1.2/ && wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
    
-   cd marytts-5.1.2/
+   sleep 3
    
-   wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
    tar xf marry_5.1_voice.tar.gz
    
    cd bin
