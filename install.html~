@@ -45,7 +45,7 @@ First we will download the linjark script, that in turn will download and instal
 
 For <i>Marry</i> to work, you need a function install of <b>Oracle</b> latest Java! (nothing else is tested)
 
-<h2>Dependencies:</h2>
+<h3>Dependencies:</h3>
 
 Linkajrk also depends on the following programs to function properly. Please install the necessary packages.<br>
 
