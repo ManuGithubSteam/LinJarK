@@ -34,8 +34,7 @@ if [ "$1" == 'i' ]
   echo "Downloading/Install MarryTTS...."
   echo ""
    wget https://github.com/marytts/marytts/releases/download/v5.1.2/marytts-5.1.2.zip
-   unzip marytts-5.1.2.zip && cd marytts-5.1.2/ && wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz
-   && tar xf marry_5.1_voice.tar.gz
+   unzip marytts-5.1.2.zip && cd marytts-5.1.2/ && wget https://github.com/ManuGithubSteam/LinJarK/raw/master/data/marry_5.1_voice.tar.gz && tar xf marry_5.1_voice.tar.gz
    
    cd bin
    chmod +x marytts-server.sh
