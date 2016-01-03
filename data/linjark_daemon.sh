@@ -20,6 +20,7 @@ if [ "$ON_PI" == "yes" ]
   then
   
 Sleeptime_marry=30
+touch $HOME/.linjark/on_Pi
 
 ps cax | grep simond
 if [ $? -ne 0 ]
@@ -105,6 +106,7 @@ cat wetterbericht-00.html |  awk '/forecast-day-text/,/<\/div>/' | cut -d"<" -f1
 # Regenrisiko
 cat wetterbericht-$i.html | grep -Po '(?<=<span class="wt-font-semibold">)([^</span>]*)' | head -n 63 | grep % | head -n 20 | tail -n 2 | head -n 1 | sed 's/^/Regenrisiko:\ /' | sed 's/%/ Prozent/g' >> weatherfile-$i 
 
+#broken but gets ignored Jan 2016 - use not known
 cat wetterbericht-$i.html | grep -Po '(?<=<span class="wt-font-semibold">)([^</span>]*)' | head -n 63 | tail -n 1 |  sed 's/^/Regenrisiko:\ /' | sed 's/%/ Prozent/g'>> weatherfile-$i
 
 # niederschlag in Litern 
@@ -126,7 +128,7 @@ echo $Wind >> weatherfile-$i
 cat wetterbericht-$i.html | grep wt-font-semibold | tail -n 3 | head -n 1 | sed 's/<[^>]\+>/ /g' | sed -e 's/^[ \t]*//' >> weatherfile-$i
 
 # Pollenvorhersage
-# Nicht getestet! 11/2015
+
 cat wetterbericht-$i.html | grep Pollenvor | sed -e 's/^[ \t]*//' | cut -f5 -d "=" | sed 's/"//g' | sed 's/>//' >> weatherfile-$i
 cat wetterbericht-$i.html | grep Pollenvor
 status=$?
@@ -139,23 +141,23 @@ status=$?
         echo ".+.+.+">> weatherfile-$i  # wenn keine Pollenvorhersage gefunden 
          PollenArt=""
         else
-        cat wetterbericht-$i.html | grep wt-font-semibold | tail -n 10 | head -n 1 | sed 's/<[^>]\+>/ /g' | sed -e 's/^[ \t]*//' >> weatherfile-$i
+        cat wetterbericht-$i.html | grep wt-font-semibold | tail -n 11 | head -n 1 | sed 's/<[^>]\+>/ /g' | sed -e 's/^[ \t]*//' >> weatherfile-$i
     fi
 
 
 # Unwetter UnwetterWarnung
 # nicht getestet! 11/2015
-# CitName=$(echo $MYCITY | cut -f2 -d "-")
+ CitName=$(echo $MYCITY | cut -f2 -d "-")
 #   
-#  UnwetterWarnung="Achtung $MASTER! Es liegt eine UnwetterWarnung vor! Vor extremem Unwetter in $CitName wird gewarnt!"
+  UnwetterWarnung="Achtung $MASTER! Es liegt eine UnwetterWarnung vor! Vor extremem Unwetter in $CitName wird gewarnt!"
 #   
-#  cat wetterbericht-$i.html | grep Unwetterwa
-#  status=$?
-#     if [ $status -ne 0 ]; then
-#         UnwetterWarnung="" # wenn keine UnwetterWarnung gefunden wurde mit cat lösche text
-#     fi
+  cat wetterbericht-1.html | grep Unwetterwarnung | grep "warning-head wt-font-extrabold"
+  status=$?
+     if [ $status -ne 0 ]; then
+         UnwetterWarnung="" # wenn keine UnwetterWarnung gefunden wurde mit cat lösche text
+     fi
  
- UnwetterWarnung=" "
+ #UnwetterWarnung=" "
  ######################################
  #######################################
  
